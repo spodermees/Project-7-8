@@ -1,0 +1,37 @@
+Geert.mosterdijk@sens2sea.com
+E-mail opdrachtgever
+
+wat is het probleem
+Autonoom varen staat in de kinderschoenen, veel bedrijven zijn er mee bezig
+Zijn pogingen gedaan om monsters van het water te nemen
+
+Zijn veel problemen met aanleggen en weggevaren zekers met golven en (harde) winden (bij een ander schip)
+EVAP experimenteel varend … platform
+Dit is een estafette project
+Als je een haven maakt zijn er nog problemen als je een zuiger hebt, daar is een bak die elke keer die moet vervangen worden
+
+PK marine is een samenwerking waar wij niet afhankelijk van zijn
+SDI staat voor standarised distrubuted intel
+Eerst nadenken over het hoofdprobleem, dus niet nog niet beginnen met hard- en software
+
+Eerst een keertje langs voor SDI uitleg en meename
+Zoveel mogelijke scheiden van elkaar
+
+Zo veel mogelijke universaile manieren van meten en uitschrijven
+
+Ze willen eigenlijk heel onafhankelijk van 1 leverancier dus alles beetje open source
+
+Eerste afspraak donderdag komen naar RDM lopen we klem dan vaker komen zoals op de vrijdag of woensdag
+
+
+SDI uitleg
+Sdi is een manier hoe de componenten met elkaar communiceren
+
+
+Je begint met het project met het nadenken wat zijn de verschillende onderdelen van het probleem
+Dit is ook een begin van een verslag
+Deze benadering van problemen wordt ook wel functionele decompositie
+Tip maak je probleem juist zo groot mogelijk, dit kan helpen om er achter te komen wat er echt relevant is
+Je moet inzoomen naar wat belangrijk is en alles wat je niet doet mag je aannames van maken dat het allemaal goed komt
+
+ 
