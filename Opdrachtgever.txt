@@ -25,7 +25,7 @@ Eerste afspraak donderdag komen naar RDM lopen we klem dan vaker komen zoals op 
 
 
 SDI uitleg
-Sdi is een manier hoe de componenten met elkaar communiceren
+SDI is een gestandaardiseerde manier hoe de componenten met elkaar communiceren
 
 
 Je begint met het project met het nadenken wat zijn de verschillende onderdelen van het probleem
