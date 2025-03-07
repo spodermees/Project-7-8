@@ -22,7 +22,7 @@
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Projectgenoten komen de afspraken niet na</td>
 <td>4</td>
 <td>4</td>
@@ -34,7 +34,17 @@
 <td style="background-color: orange">8</td>
 <td>Ja, iedereen heeft het document getekend</td>
 </tr>
-<tr class="even">
+<tr>
+<td>Sensoren raken kapot</td>
+<td>3</td>
+<td>3</td>
+<td style="background-color: orange">9</td>
+<td>Is niet te voorkomen, maar voorzichting met de spullen omgaan en een goeie omhuising ontwerpen zou het risico moeten verminderen</td>
+<td>Netjes omgaan met de spullen, en goed nadenken over een geschikte omhuising</td>
+<td>1</td>
+<td>3</td>
+<td style="background-color:green">3</td>
+<td>We hebben een waterdichte omhuising ontworpen en gemaakt. En zijn netjes omgegaan met de spullen<.td>
 </tr>
 <!-- eind tweede colom moet nog ingevuld worden -->
 </tbody>
@@ -53,11 +63,11 @@
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>1</td>
 <td>7-3-2025</td>
 <td>Risico-inventarisatie is gemaakt/ eerste risico's zijn ingevuld</td>
 </tr>
-<tr class="even">
+<tr>
 </tr>
 </tbody>
