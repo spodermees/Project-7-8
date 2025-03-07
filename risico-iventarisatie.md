@@ -23,9 +23,41 @@
 </thead>
 <tbody>
 <tr class="odd">
+<td>Projectgenoten komen de afspraken niet na</td>
+<td>4</td>
+<td>4</td>
+<td style="background-color: red">16</td>
+<td>Samenwerkingsovereenkomst maken en ondertekenen</td>
+<td>Iedereen het samenwerkinsovereenkomst laten tekenen</td>
+<td>2</td>
+<td>4</td>
+<td style="background-color: orange">8</td>
+<td>Ja, iedereen heeft het document getekend</td>
 </tr>
-<!-- eind eerste colom moet nog ingevuld worden -->
 <tr class="even">
 </tr>
 <!-- eind tweede colom moet nog ingevuld worden -->
+</tbody>
+<!-- changelog -->
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 17%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Versie</strong></th>
+<th><strong>Datum</strong></th>
+<th><strong>Changelog</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>7-3-2025</td>
+<td>Risico-inventarisatie is gemaakt/ eerste risico's zijn ingevuld</td>
+</tr>
+<tr class="even">
+</tr>
 </tbody>
