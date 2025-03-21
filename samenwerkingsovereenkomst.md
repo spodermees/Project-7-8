@@ -6,6 +6,7 @@ Door ondertekening van dit contract verbinden de ondergetekenden zich aan de, in
 
 > Hwayda Hwayda Bashair (1049850)
 > Mees van der Waal (1052159)
+> Olaf Goudriaan (1071349)
 
 ## Voorwaarden
 
@@ -70,8 +71,9 @@ feedback, zal er contact opgenomen worden met de projectbegeleider vanuit onze s
 
 > handtekening: 
 
-> handtekening: 
+> handtekening: Olaf Goudriaan
 
 > handtekening: 
 
 > Akkoord : 
+kk

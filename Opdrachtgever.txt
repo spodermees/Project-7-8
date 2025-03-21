@@ -25,7 +25,7 @@ Eerste afspraak donderdag komen naar RDM lopen we klem dan vaker komen zoals op 
 
 
 SDI uitleg
-Sdi is een manier hoe de componenten met elkaar communiceren
+SDI is een gestandaardiseerde manier hoe de componenten met elkaar communiceren
 
 
 Je begint met het project met het nadenken wat zijn de verschillende onderdelen van het probleem
@@ -35,3 +35,4 @@ Tip maak je probleem juist zo groot mogelijk, dit kan helpen om er achter te kom
 Je moet inzoomen naar wat belangrijk is en alles wat je niet doet mag je aannames van maken dat het allemaal goed komt
 
  
+SDI module die communceerd met mqtt. Deze module is voor een sensor. Deze sensor is .... (onderzoek) 

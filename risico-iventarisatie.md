@@ -44,9 +44,20 @@
 <td>1</td>
 <td>3</td>
 <td style="background-color:green">3</td>
-<td>We hebben een waterdichte omhuising ontworpen en gemaakt. En zijn netjes omgegaan met de spullen<.td>
+<td>We hebben een waterdichte omhuising ontworpen en gemaakt. En zijn netjes omgegaan met de spullen</td>
 </tr>
-<!-- eind tweede colom moet nog ingevuld worden -->
+<tr>
+<td>Mqtt communicatie wilt niet werken</td>
+<td>2</td>
+<td>4</td>
+<td style="background-color: red">8</td>
+<td>Er zou iets van een keepalive gehandhaafd worden</td>
+<td>Schrijf een keepalive 'functie' zodat de clients constant de broker pingen om te checken dat de connectie nog bestaad</td>
+<td>1</td>
+<td>4</td>
+<td style="background-color: orange">4</td>
+<td>Nog niet toegepast</td>
+</tr>
 </tbody>
 <!-- changelog -->
 <table>
@@ -69,5 +80,8 @@
 <td>Risico-inventarisatie is gemaakt/ eerste risico's zijn ingevuld</td>
 </tr>
 <tr>
+<td>2</td>
+<td>21-3-2025</td>
+<td>nieuwe risico's toegevoegd</td>
 </tr>
 </tbody>
