@@ -1,0 +1,15 @@
+services:
+  websocket-server:
+    image: node:20 
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: ["node", "server.js"]
+    ports:
+      - "8080:8080"
+  webpage:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./webpage:/usr/share/nginx/html
