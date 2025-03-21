@@ -61,6 +61,10 @@ Als de teamleden niet de afgesproken inzet tonen, zal de betreffende persoon/per
 hierop aangesproken worden. Als deze persoon/personen geen gebruik maakt van deze
 feedback, zal er contact opgenomen worden met de projectbegeleider vanuit onze school.
 
+### Projecttaken
+
+1. 
+
 ## Bewijs van akkoord 
 
 > handtekening: Mees van der Waal
