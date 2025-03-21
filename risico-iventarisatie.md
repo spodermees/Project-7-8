@@ -1,0 +1,73 @@
+**Risico-iventarisatie**
+<table>
+<colgroup>
+<col style="width: 26%"/>
+<col style="width: 13%"/>
+<col style="width: 11%"/>
+<col style="width: 27%"/>
+<col style="width: 21%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Risico</strong</th>
+<th><strong>Impact (1t/m5)</strong></th>
+<th><strong>Kans (1tm/5)</strong></th>
+<th><strong>Risicogetal</strong></th>
+<th><strong>Hoe te voorkomen?</strong></th>
+<th><strong>Maatregel</strong></th>
+<th><strong>Kans (na)</strong></th>
+<th><strong>Impact (na)</strong></th>
+<th><strong>Risicogetal (na)</strong></th>
+<th><strong>Oplossing toegepast</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Projectgenoten komen de afspraken niet na</td>
+<td>4</td>
+<td>4</td>
+<td style="background-color: red">16</td>
+<td>Samenwerkingsovereenkomst maken en ondertekenen</td>
+<td>Iedereen het samenwerkinsovereenkomst laten tekenen</td>
+<td>2</td>
+<td>4</td>
+<td style="background-color: orange">8</td>
+<td>Ja, iedereen heeft het document getekend</td>
+</tr>
+<tr>
+<td>Sensoren raken kapot</td>
+<td>3</td>
+<td>3</td>
+<td style="background-color: orange">9</td>
+<td>Is niet te voorkomen, maar voorzichting met de spullen omgaan en een goeie omhuising ontwerpen zou het risico moeten verminderen</td>
+<td>Netjes omgaan met de spullen, en goed nadenken over een geschikte omhuising</td>
+<td>1</td>
+<td>3</td>
+<td style="background-color:green">3</td>
+<td>We hebben een waterdichte omhuising ontworpen en gemaakt. En zijn netjes omgegaan met de spullen<.td>
+</tr>
+<!-- eind tweede colom moet nog ingevuld worden -->
+</tbody>
+<!-- changelog -->
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 17%" />
+<col style="width: 71%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Versie</strong></th>
+<th><strong>Datum</strong></th>
+<th><strong>Changelog</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>7-3-2025</td>
+<td>Risico-inventarisatie is gemaakt/ eerste risico's zijn ingevuld</td>
+</tr>
+<tr>
+</tr>
+</tbody>
