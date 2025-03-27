@@ -18,7 +18,7 @@
     </div>
     
     <script>
-        const ws = new WebSocket('ws://your-websocket-server:port'); // Pas de URL aan
+        const ws = new WebSocket('ws://raspberrypi.local:8080'); // Pas de URL aan
 
         ws.onopen = () => console.log("WebSocket Verbonden");
         ws.onmessage = (event) => {
