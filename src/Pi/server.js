@@ -62,6 +62,7 @@ setInterval(() => {
       speed: Math.floor(Math.random() * 20) // Willekeurige snelheid (0-19 m/s)
     }
   };
-  data = JSON.stringify(data)
+  data = JSON.stringify(data);
+  mqttclient.publish(datatopic, data);
 }, 10);
 
