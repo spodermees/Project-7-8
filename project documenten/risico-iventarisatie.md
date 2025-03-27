@@ -58,6 +58,18 @@
 <td style="background-color: orange">4</td>
 <td>Nog niet toegepast</td>
 </tr>
+<tr>
+<td>Vertraging in levering van spullen</td>
+<td>3</td>
+<td>5</td>
+<td style="background-color: red">15</td>
+<td>Zorg dat we niet vastlopen zonder sensor/ of zoek een vervangende sensoor waarmee 'vergelijkbare' functionaliteiten getest kunnen worden</td>
+<td>Zorg dat er genoeg te doen is (wat er altijd is) zodat het project niet vast komt te liggen</td>
+<td>3</td>
+<td>3</td>
+<td style="background-color: orange">9</td>
+<td> nog niet van toepassing</td>
+</tr>
 </tbody>
 <!-- changelog -->
 <table>
@@ -83,5 +95,10 @@
 <td>2</td>
 <td>21-3-2025</td>
 <td>nieuwe risico's toegevoegd</td>
+</tr>
+<tr>
+<td>3</td>
+<td>27-3-2025</td>
+<td>Weer extra risico's toegevoegd</td>
 </tr>
 </tbody>
