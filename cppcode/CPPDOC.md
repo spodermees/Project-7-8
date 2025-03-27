@@ -1,4 +1,10 @@
+# CPP op de raspberrypi
 
+In dit document vind je alles wat je nodig hebt om C++ op de raspberrypi te runnen.
+
+
+
+``` cmd
 sudo apt update
 sudo apt install cmake gcc g++ git
 sudo apt install libssl-dev
@@ -27,7 +33,7 @@ cd ~
 git clone https://github.com/WiringPi/WiringPi.git
 cd WiringPi
 ./build
-
+```
 
 
 
