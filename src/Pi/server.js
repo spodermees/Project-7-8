@@ -45,9 +45,7 @@ server.on('connection', (socket) => {
   console.log('Dashboard connected');
   socket.on('message', (message) => console.log('Message received from websocket: ' + message));
   socket.on('close', () => console.log('Dashboard disconnected'));
-  socket.send('Dashboard succesfully connected to sensor');
-
-  console.log("WebSocket Verbonden, starten met data verzenden...");
+  socket.send('Hi from program');
   setInterval(() => {
     socket.send(data);
   }, 1000);
