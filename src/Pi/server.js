@@ -57,12 +57,11 @@ setInterval(() => {
   data = {
     sensor: 1,
     data: {
-      distance: Math.floor(Math.random() * 100), // Willekeurige afstand (0-99 cm)
-      speed: Math.floor(Math.random() * 20) // Willekeurige snelheid (0-19 m/s)
+      distance: Math.floor(Math.random() * 100),
+      speed: Math.floor(Math.random() * 20)
     }
   };
   data = JSON.stringify(data);
   mqttclient.publish(datatopic, data);
-  console.log("Data gelezen")
 }, 10);
 
