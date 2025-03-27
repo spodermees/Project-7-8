@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        .data-container { display: inline-block; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Sensor Dashboard</h1>
+    <div class="data-container">
+        <p><strong>Sensor ID:</strong> <span id="sensor-id">-</span></p>
+        <p><strong>Afstand:</strong> <span id="distance">-</span> cm</p>
+        <p><strong>Snelheid:</strong> <span id="speed">-</span> m/s</p>
+    </div>
+    
+    <script>
+        const ws = new WebSocket('ws://your-websocket-server:port'); // Pas de URL aan
+
+        ws.onopen = () => console.log("WebSocket Verbonden");
+        ws.onmessage = (event) => {
+            try {
+                const data = JSON.parse(event.data);
+                document.getElementById("sensor-id").innerText = data.sensor;
+                document.getElementById("distance").innerText = data.data.distance;
+                document.getElementById("speed").innerText = data.data.speed;
+            } catch (error) {
+                console.error("Ongeldige JSON ontvangen", error);
+            }
+        };
+        ws.onerror = (error) => console.error("WebSocket Fout", error);
+        ws.onclose = () => console.log("WebSocket Verbroken");
+    </script>
+</body>
+</html>
