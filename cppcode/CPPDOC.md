@@ -1,8 +1,11 @@
 # CPP op de raspberrypi
 
-In dit document vind je alles wat je nodig hebt om C++ op de raspberrypi te runnen.
+In dit document vind je alles wat je nodig hebt om de code op de raspberrypi te runnen.
 
 
+---
+### C++ code
+Om de c++ code te compilen op de raspberry pi heb je de library's nodig. Deze moet je instaleren op de raspberry pi. dat doe je met de volgende commando's.
 
 ``` cmd
 sudo apt update
@@ -35,15 +38,13 @@ cd WiringPi
 ./build
 ```
 
+Daarna moet je de code compilen. Ga naar de zelfde directory als de cpp file en voer het volgende command in de terminal.
 
+```cmd
+g++ -o sensor-module sensor-module.cpp -lpaho-mqttpp3 -lpaho-mqtt3a -lpaho-mqtt3c -lwiringPi -pthread
+```
+Om de file te runnen voer je `sudo ./sensor-module` uit. De naam van het begin bestand is sensor-module.cpp. indien er een andere naam is zal je deze in de commands moeten veranderen.
 
-
-g++ -o mqtt-client mqtt-client.cpp -lpaho-mqttpp3 -lpaho-mqtt3a -lpaho-mqtt3c -pthread
-sudo ./mqtt-client
-
-
-
-
-
-
-g++ -o read_gpio read_gpio.cpp -lwiringPi
+---
+### Webserver
+De cpp code heeft een websocket naar een webserver. Hiervoor moet de webserver aangezet worden.
