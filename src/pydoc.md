@@ -6,4 +6,4 @@ cd home/olaf/Documents/
 python3 -m venv .venv
 source .venv/bin/activate
 pip install "paho-mqtt<2.0.0"
-pip install lgpio
+pip install lgpio kkkk
