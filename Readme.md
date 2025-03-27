@@ -3,4 +3,4 @@ Dit project is een project waarin word gewerkt aan het autonoom manouvreren in d
 
 
 ## Contact gegevens opdrachtgever
-Geert.mosterdijk@sens2sea.com 
+Geert.mosterdijk@sens2sea.com  
