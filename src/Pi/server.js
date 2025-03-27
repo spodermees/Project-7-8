@@ -50,7 +50,6 @@ server.on('connection', (socket) => {
   console.log("WebSocket Verbonden, starten met data verzenden...");
   setInterval(() => {
     socket.send(data);
-    console.log("Verzonden:", data);
   }, 1000);
 });
 
@@ -64,5 +63,6 @@ setInterval(() => {
   };
   data = JSON.stringify(data);
   mqttclient.publish(datatopic, data);
+  console.log("Data gelezen")
 }, 10);
 
