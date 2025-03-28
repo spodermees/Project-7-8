@@ -17,3 +17,9 @@ Voor dit project wordt er een sensoor "ontwikkeld" die op een boot komt te staan
 |----|----|----|----|
 | Er kan water in de behuizing komen| Wanneer er een opening is in de behuizing | Kies voor een materiaal en "dichtmaakmethode" die waterdicht is | Er komt vele male minder tot geen water bij de sensor |
 | Draadje schiet los | Wanneer er veel kracht aan het onderdeel wordt uitgeoefend | Draadjes extra vast maken | De draadjes komen minder snel los |
+
+## Changelog
+
+| Versie | Datum | Wat is er veranderd |
+|-| --- | ---------------- |
+| 1 | 28-03-2025  | Eerste opzet gemaakt en eerste items toegevoegd |
