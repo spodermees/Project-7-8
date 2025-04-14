@@ -7,7 +7,7 @@ const std::string USERNAME = "Hidde";  // Set your MQTT username
 const std::string PASSWORD = "AMIDH";  // Set your MQTT password
 const std::string TOPIC = "test/mqtt";
 
-const int QOS = 1;
+const int QOS = 0;
 const int TIMEOUT = 10000;
 
 class Callback : public virtual mqtt::callback {
