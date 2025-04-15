@@ -41,7 +41,7 @@ cd WiringPi
 Daarna moet je de code compilen. Ga naar de zelfde directory als de cpp file en voer het volgende command in de terminal.
 
 ```cmd
-g++ -o sensor-module sensor-module.cpp -lpaho-mqttpp3 -lpaho-mqtt3a -lpaho-mqtt3c -lwiringPi -pthread
+g++ -std=c++11 -I ~/websocketpp -o sensor-module sensor-module.cpp -lpaho-mqttpp3 -lpaho-mqtt3a -lpaho-mqtt3c -lwiringPi -pthread -lboost_system -lpthread
 ```
 Om de file te runnen voer je `sudo ./sensor-module` uit. De naam van het begin bestand is sensor-module.cpp. indien er een andere naam is zal je deze in de commands moeten veranderen.
 
