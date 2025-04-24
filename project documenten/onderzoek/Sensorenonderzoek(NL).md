@@ -1,14 +1,12 @@
-# Mees zijn gedeelte
+# Hoe beïnvloed de spreiding van de bundel van de sensor de metingen
 
-## Hoe beïnvloed de spreiding van de bundel van de sensor de metingen
-
-### Wat is een bundel
+## Wat is een bundel
 
 De bundel is een algemene term die wordt gebruikt voor de uitgezonden en/of ontvangen staling die wordt gebruikt om een meting te doen.
 Dit kan een lichtbundel, infrarood of zelfs een röntgenbundel zijn.
 Sensoren die dit gebruiken, gebruiken het om objecten en afstanden te meten. Door onderbrekingen en verandering waar te nemen.
 
-### Wat is een bundeldiameter
+## Wat is een bundeldiameter
 
 De bundeldiameter (ook wel spotgroote genoemd) is de breedte van de straal die een sensor gebruikt om objecten te detecteren. Een kleinere bundeldiameter maakt makkelijker/mogelijk om individuele objecten te onderscheiden, terwijl een grotere bundeldiameter ervoor kan zorgen dat meerdere objecten als één geheel worden waargenomen.
 
@@ -21,7 +19,7 @@ Dit is de afstand waarop de bundel het 'scherpst' is
 - Detectieresolutie(Detection resolution)
 Hoe nauwkeurig de sensor objecten van elkaar kan onderscheiden
 
-### Hoe beïnvloed de bundeldiameter de metingen
+## Hoe beïnvloed de bundeldiameter de metingen
 
 Er zijn meerdere manieren waarop de bundel/ bundeldiameter de metingen beïnvloed, waar rekening mee moet worden gehouden voor de uiteindelijke sensoren op be boot.
 Aangezien de termen grote- en kleine bundel worden gebruikt, wordt er met kleine bundel 1-5mm bedoeld en wordt er met een grote bundel 10-50mm bedoeld.
@@ -60,7 +58,15 @@ Aangezien de termen grote- en kleine bundel worden gebruikt, wordt er met kleine
 
 - Grote bundel: Een bredere bundel kan gemakkelijker meebewegen met objecten die zich over een groter gebied bewegen, maar kan tegelijkertijd minder nauwkeurig zijn in het volgen van specifieke bewegingen.
 
-### Conclusie
+## Conclusie
 
 Na het kijken, naar alle mogelijke manieren waarop de bundeldiameter de metingen beïnvloed en die 'tegen de eisen aan te leggen'.
 Is de keuze gemaakt om een zo klein mogelijke bundeldiameter te hanteren, waar mogelijk is.
+
+## Bronvermelding
+
+Barakovic, M., Girard, G., Schiavi, S., Romascano, D., Descoteaux, M., Granziera, C., Jones, D. K., Innocenti, G. M., Thiran, J.-P., & Daducci, A. (n.d.). Bundle-specific axon diameter index as a new contrast to differentiate white matter tracts.
+
+Zubia, G., Zubia, J., Amorebieta, J., Aldabaldetreku, G., & Durana, G. (n.d.). A new method to design trifurcated optical fiber displacement sensors.
+
+Hasch, J., Topak, E., Schnabel, R., Zwick, T., Weigel, R., & Waldschmidt, C. (n.d.). Millimeter-wave technology for automotive radar sensors in the 77 GHz frequency band.

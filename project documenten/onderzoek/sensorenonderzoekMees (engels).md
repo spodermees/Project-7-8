@@ -65,3 +65,11 @@ Since the terms small beam and large beam are used, in this context, a small bea
 ## Conclusion
 
 After analyzing all the ways beam diameter affects measurements and comparing these factors against the requirements, the decision was made to use the smallest possible beam diameter wherever feasible.
+
+## Sources
+
+Barakovic, M., Girard, G., Schiavi, S., Romascano, D., Descoteaux, M., Granziera, C., Jones, D. K., Innocenti, G. M., Thiran, J.-P., & Daducci, A. (n.d.). Bundle-specific axon diameter index as a new contrast to differentiate white matter tracts.
+
+Zubia, G., Zubia, J., Amorebieta, J., Aldabaldetreku, G., & Durana, G. (n.d.). A new method to design trifurcated optical fiber displacement sensors.
+
+Hasch, J., Topak, E., Schnabel, R., Zwick, T., Weigel, R., & Waldschmidt, C. (n.d.). Millimeter-wave technology for automotive radar sensors in the 77 GHz frequency band.
