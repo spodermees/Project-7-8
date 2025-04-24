@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0" version="26.0.15" pages="2">
+  <diagram name="Pagina-1" id="qFearktRjeKvnndSzIBL">
+    <mxGraphModel dx="2076" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YcItzyGdblQU25OCelVD-1" value="&lt;span style=&quot;font-size: 20px; text-align: center;&quot;&gt;Autonoom manoeuvreren in de haven&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#F8CECC,#A92D2D);strokeColor=light-dark(#B85450,#000000);align=right;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="30" y="10" width="780" height="780" as="geometry" />
+        </mxCell>
+        <mxCell id="42i5ZHpm-NgenvzDqOp7-6" value="ONZE MODULE/&lt;div&gt;SCOPE&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="260" width="400" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Obt4Z3SpJCEwaZEej8mF-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Obt4Z3SpJCEwaZEej8mF-1" target="Obt4Z3SpJCEwaZEej8mF-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="350" />
+              <mxPoint x="530" y="395" />
+              <mxPoint x="430" y="395" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uxeFMRpbuUt3Mv8OOtYu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Obt4Z3SpJCEwaZEej8mF-1" target="Obt4Z3SpJCEwaZEej8mF-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Obt4Z3SpJCEwaZEej8mF-1" value="Afstand tot &#39;object&#39; en snelheid van het schip bepalen" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uxeFMRpbuUt3Mv8OOtYu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Obt4Z3SpJCEwaZEej8mF-2" target="Obt4Z3SpJCEwaZEej8mF-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42i5ZHpm-NgenvzDqOp7-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Obt4Z3SpJCEwaZEej8mF-2" target="42i5ZHpm-NgenvzDqOp7-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Obt4Z3SpJCEwaZEej8mF-2" value="afstand/snelheid beweging bepalen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NDKF3qLzQyn6t6_QRidI-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Obt4Z3SpJCEwaZEej8mF-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NDKF3qLzQyn6t6_QRidI-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Obt4Z3SpJCEwaZEej8mF-4" target="NDKF3qLzQyn6t6_QRidI-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Obt4Z3SpJCEwaZEej8mF-4" value="sensorwaarde aflezen" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Obt4Z3SpJCEwaZEej8mF-5" value="sensordata via MQTT naar de broker sturen" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="550" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="42i5ZHpm-NgenvzDqOp7-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N3v0zMwWnYbhCPJ4LR8I-1" target="Obt4Z3SpJCEwaZEej8mF-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="230" />
+              <mxPoint x="530" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="42i5ZHpm-NgenvzDqOp7-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N3v0zMwWnYbhCPJ4LR8I-1" target="N3v0zMwWnYbhCPJ4LR8I-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="230" />
+              <mxPoint x="160" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N3v0zMwWnYbhCPJ4LR8I-1" value="Autonoom aanmeren" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N3v0zMwWnYbhCPJ4LR8I-4" value="Buiten onze scope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="42i5ZHpm-NgenvzDqOp7-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="42i5ZHpm-NgenvzDqOp7-1" target="N3v0zMwWnYbhCPJ4LR8I-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42i5ZHpm-NgenvzDqOp7-1" value="Buiten onze scope&amp;nbsp;&lt;br&gt;Mobility etc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="42i5ZHpm-NgenvzDqOp7-3" value="snelheid/afstand berekenen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NDKF3qLzQyn6t6_QRidI-5" value="sensorwaarde weergeven op een interface (fysiek schermpje)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="119K500mM2Mwnb-SQbbN" name="Pagina-2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
