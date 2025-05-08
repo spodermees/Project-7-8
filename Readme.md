@@ -4,3 +4,24 @@ Dit project is een project waarin word gewerkt aan het autonoom manouvreren in d
 
 ## Contact gegevens opdrachtgever
 Geert.mosterdijk@sens2sea.com 
+
+
+# TODO
+- '.deprecated' moet nog weg
+- documentatie
+    - 'aantekeningen.md' netjes maken
+    - 'opdrachtgever.md' netjes maken
+    - 'docs.md' invullen/maken
+    - onderzoeken vertalen
+    - onderzoek Olaf (expirimenteel)
+    - 'Testrapport.md' invullen
+    - gebruikersacceptatietest maken
+- psp
+    - arduino software
+    - behuizing
+- demovideo
+- promotie flyer
+
+individueel
+- reflectie
+- evaluatie opdrachtgever
