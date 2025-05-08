@@ -15,6 +15,7 @@ Geert.mosterdijk@sens2sea.com
     - onderzoeken vertalen
     - onderzoek Olaf (expirimenteel)
     - 'Testrapport.md' invullen
+    - gebruikersacceptatietest maken
 - psp
     - arduino software
     - behuizing
