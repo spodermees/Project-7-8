@@ -20,13 +20,13 @@ Dit is opdrachtgever van het bedrijf Sens2Sea, Hij heeft grote impact met betrek
 
 De projectgroep is niet veel aanraking gekomen met deze stakeholder. Als collega van Geert Mosterdijk heeft hij nog steeds groot belang of het project soepel verloopt.
 
-### Sponsors
-
-Zijn er niet
-
 ### Experts
 
 Onze expert(s) is Jan, hij is wat jonger persoon die veel in aanraking komt met Geert en Peter. Hij begeleidt ook andere schoolprojecten en kunnen daarom ook bij hem terecht voor technische vragen en project vragen. Zijn impact is hierdoor ook hoog, maar zijn belang is minder dan die van Peter en Geert.
+
+### Sponsors
+
+Zijn er niet
 
 ### Hogeschool Rotterdam
 
