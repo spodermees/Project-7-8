@@ -47,3 +47,7 @@ MQTT is het protocol dan wij moeten gaan gebruiken binnen dit project, daarom is
 
 - Parikh, D. (2022). Raspberry Pi and MQTT Essentials : a Complete Guide to Helping You Build Innovative Full-Scale Prototype Projects Using Raspberry Pi and MQTT Protocol. Packt Publishing, Limited. https://www.oreilly.com/library/view/-/9781803244488/
 
+
+
+## Git test
+hoi ik hoop dat dit werkt
