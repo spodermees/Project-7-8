@@ -1,14 +1,12 @@
-# Mees zijn gedeelte
+# Hoe beïnvloed de spreiding van de bundel van de sensor de metingen
 
-## Hoe beïnvloed de spreiding van de bundel van de sensor de metingen
-
-### Wat is een bundel
+## Wat is een bundel
 
 De bundel is een algemene term die wordt gebruikt voor de uitgezonden en/of ontvangen staling die wordt gebruikt om een meting te doen.
 Dit kan een lichtbundel, infrarood of zelfs een röntgenbundel zijn.
 Sensoren die dit gebruiken, gebruiken het om objecten en afstanden te meten. Door onderbrekingen en verandering waar te nemen.
 
-### Wat is een bundeldiameter
+## Wat is een bundeldiameter
 
 De bundeldiameter (ook wel spotgroote genoemd) is de breedte van de straal die een sensor gebruikt om objecten te detecteren. Een kleinere bundeldiameter maakt makkelijker/mogelijk om individuele objecten te onderscheiden, terwijl een grotere bundeldiameter ervoor kan zorgen dat meerdere objecten als één geheel worden waargenomen.
 
@@ -21,7 +19,7 @@ Dit is de afstand waarop de bundel het 'scherpst' is
 - Detectieresolutie(Detection resolution)
 Hoe nauwkeurig de sensor objecten van elkaar kan onderscheiden
 
-### Hoe beïnvloed de bundeldiameter de metingen
+## Hoe beïnvloed de bundeldiameter de metingen
 
 Er zijn meerdere manieren waarop de bundel/ bundeldiameter de metingen beïnvloed, waar rekening mee moet worden gehouden voor de uiteindelijke sensoren op be boot.
 Aangezien de termen grote- en kleine bundel worden gebruikt, wordt er met kleine bundel 1-5mm bedoeld en wordt er met een grote bundel 10-50mm bedoeld.
