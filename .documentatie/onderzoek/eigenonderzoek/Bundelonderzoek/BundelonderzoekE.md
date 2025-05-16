@@ -70,3 +70,9 @@ Because the terms are going to be 'thrown around'quite loosly here, when there i
 ## Conclusion
 
 After considering all the possible ways in which beam diameter can affect measurements and aligning these with the requirements, the decision has been made to use the smallest possible beam diameter wherever feasible.
+
+## Sources
+
+Zubia, G., Zubia, J., Amorebieta, J., Aldabaldetreku, G., & Durana, G. (z.j.). A new method to design trifurcated optical fiber displacement sensors. IEEE.
+
+Hasch, J., Topak, E., Schnabel, R., Zwick, T., Weigel, R., & Waldschmidt, C. (z.j.). Millimeter-wave technology for automotive radar sensors in the 77 GHz frequency band. IEEE.
