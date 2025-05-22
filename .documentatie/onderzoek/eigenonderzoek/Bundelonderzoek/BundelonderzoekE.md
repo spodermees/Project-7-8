@@ -1,5 +1,14 @@
 # How does *bundle spreading* influence the readings of a sensor?
 
+
+![alt text](<../../../../.images/ChatGPT Image May 22, 2025, 12_06_36 PM (1).png>)
+
+Name: Mees van der Waal
+Studentnumber: 1052159
+Teachers: Anne de Gier, Alex Slaa
+Date: 08/06/2025
+First opportunity
+
 ## Summary
 
 This research focuses on the influence of bundle spreading on sensor readings within the context of autonomous sailing in harbors. The main objective is to determine how the diameter of the sensor's beam (the "bundle") affects its accuracy and reliability. The study uses literature research to explore how beam divergence, focal distance, and detection resolution are influenced by bundle diameter. The key conclusion is that a smaller beam diameter improves measurement resolution and accuracy, making it more suitable for precise object detection, particularly in controlled environments like an indoor pool used for testing.
