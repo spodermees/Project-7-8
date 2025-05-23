@@ -12,11 +12,11 @@ Geert.mosterdijk@sens2sea.com
     - 'aantekeningen.md' netjes maken
     - 'opdrachtgever.md' netjes maken
     - 'docs.md' invullen/maken
-    - onderzoeken vertalen
+    - onderzoeken vertalen /
     - onderzoek Olaf (expirimenteel)
     - 'Testrapport.md' invullen
     - gebruikersacceptatietest maken
-- psp
+    - psp
     - arduino software
     - behuizing
 - demovideo
