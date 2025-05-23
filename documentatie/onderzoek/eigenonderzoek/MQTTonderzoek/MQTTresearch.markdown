@@ -6,6 +6,8 @@
 - educator: Anne de Gier & Alexander Slaa
 - Date: 15-5-2025
 - Submission: feedbackmoment
+- project: AMIDH
+- Vak: Project 7/8
 
 # Executive Summary
 
