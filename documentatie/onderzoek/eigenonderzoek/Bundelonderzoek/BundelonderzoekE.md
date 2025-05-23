@@ -1,6 +1,5 @@
 # How does *bundle spreading* influence the readings of a sensor?
 
-
 ![alt text](<../../../../images/ChatGPT Image May 22, 2025, 12_06_36 PM (1).png>)
 
 Name: Mees van der Waal
