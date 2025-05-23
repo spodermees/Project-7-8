@@ -22,7 +22,7 @@ Geert.mosterdijk@sens2sea.com
     - robuustheids analyse
     - requirement analyse
     - storypoint toekennen aan de user stories
-    - burndown chart
+    - burndown chart /
     - handleiding
     - flowchart
     - elektrisch schema
