@@ -26,6 +26,7 @@ Geert.mosterdijk@sens2sea.com
     - handleiding
     - flowchart
     - elektrisch schema
+    - jira bijwerken
 - demovideo
 - promotie flyer
 
