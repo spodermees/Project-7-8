@@ -20,6 +20,7 @@ Geert.mosterdijk@sens2sea.com
     - arduino software
     - behuizing
     - robuustheids analyse
+    - requirement analyse
 - demovideo
 - promotie flyer
 
