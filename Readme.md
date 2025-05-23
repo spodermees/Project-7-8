@@ -24,6 +24,8 @@ Geert.mosterdijk@sens2sea.com
     - storypoint toekennen aan de user stories
     - burndown chart
     - handleiding
+    - flowchart
+    - elektrisch schema
 - demovideo
 - promotie flyer
 
