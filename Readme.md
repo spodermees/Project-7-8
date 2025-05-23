@@ -21,6 +21,9 @@ Geert.mosterdijk@sens2sea.com
     - behuizing
     - robuustheids analyse
     - requirement analyse
+    - storypoint toekennen aan de user stories
+    - burndown chart
+    - handleiding
 - demovideo
 - promotie flyer
 
