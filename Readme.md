@@ -11,14 +11,22 @@ Geert.mosterdijk@sens2sea.com
 - documentatie
     - 'aantekeningen.md' netjes maken
     - 'opdrachtgever.md' netjes maken
-    - 'docs.md' invullen/maken
-    - onderzoeken vertalen
+    - 'docs.md' invullen/maken /
+    - onderzoeken vertalen /
     - onderzoek Olaf (expirimenteel)
     - 'Testrapport.md' invullen
     - gebruikersacceptatietest maken
-- psp
+    - psp
     - arduino software
     - behuizing
+    - robuustheids analyse
+    - requirement analyse
+    - storypoint toekennen aan de user stories
+    - burndown chart /
+    - handleiding
+    - flowchart
+    - elektrisch schema
+    - jira bijwerken
 - demovideo
 - promotie flyer
 
