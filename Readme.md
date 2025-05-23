@@ -19,6 +19,7 @@ Geert.mosterdijk@sens2sea.com
     - psp
     - arduino software
     - behuizing
+    - robuustheids analyse
 - demovideo
 - promotie flyer
 
