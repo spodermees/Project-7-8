@@ -11,7 +11,7 @@ Geert.mosterdijk@sens2sea.com
 - documentatie
     - 'aantekeningen.md' netjes maken
     - 'opdrachtgever.md' netjes maken
-    - 'docs.md' invullen/maken
+    - 'docs.md' invullen/maken /
     - onderzoeken vertalen /
     - onderzoek Olaf (expirimenteel)
     - 'Testrapport.md' invullen
