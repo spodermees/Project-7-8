@@ -79,7 +79,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
     - 'Testrapport.md' invullen
     - gebruikersacceptatietest maken
     - psp
-    - arduino software
+    - arduino software/
     - behuizing
     - robuustheids analyse
     - requirement analyse
