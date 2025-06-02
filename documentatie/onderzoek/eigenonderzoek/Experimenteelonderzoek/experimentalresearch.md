@@ -27,12 +27,20 @@ Currently docking ships in a harbour is done by a captain and his crew. This pro
 
 To reduce those costs, Geert Mosterdijk envisions a system where multiple sensors are placed around the ship. Those sensors will send realtime information to a central unit. This unit wil controle the engines accordingly to the data. 
 
-<in een vorig onderzoek vanuit het project is er een sensor gekozen>
+A separate paper within the project has provided the necessary information supporting the selection of the XE125 sensor, which will be experimentally tested in this research for its accuracy and performance over a 20-meter range.
+
 
 ### Research question
-Does the sensor satisfy the accuracy that the project demands?
+To what extent does the XE125 distance sensor achieve a measurement accuracy of 1 cm across distances up to 20 meters under controlled conditions?
+
 
 ### Research setup
+
+The XE125 distance sensor was conected to a raspberry pi 5 for data acquisition. The sensor was mounted on a table at a height of ...... meters, aligned perpendicular to a flat surface. The surface is a wooden plate with a thickness of 0.0..... meters. The experiment was conducted indoors under stable lighting conditions.
+
+Distances from 0.5 meters to 20 meters were marked at 0.5 meter intervals using a measuring tape. For each distance 3 measurements were recorded to evaluate consistency. The sensor's output was compared to the actual and noted in a table. The data was logged via the console of the raspberry pi via a ssh connection.
+
+For fine movement close to a surface extra distances ware included. those are from 0.05 meters to 0.5 meters with intervals of 0.05 meters.
 
 a measuring tape was rolled out on the floor. The sensor is placed on a table above the ground at the 0 point. There is a big plate of wood that is used to block the line of sight.
 
@@ -46,8 +54,7 @@ a measuring tape was rolled out on the floor. The sensor is placed on a table ab
     - Circuit: See figure A to build the circuit.
 2. Measuring tape
     - Description: A 20 meter measuring tape.
-- Components:
-    - 20 meter measuring tape.
+
 
 ## Acuracy of the radar wave sensor
 The aim of this experiment is to verify the accuracy of the XE125 sensor.
