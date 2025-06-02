@@ -15,7 +15,7 @@ Alle modules zullen met elkaar verbonden zijn in een MQTT netwerk zodat alle dat
 ### Data format
 Het versturen van data vanaf de sensor modules gebeurt in SI eenheden distance in cm en speed in m/s. Deze worden verstuurd naar het volgende topic:
 
-``module/sensordata``
+``sensor/data``
 
 In het volgende format:
 ```
@@ -31,7 +31,7 @@ In het volgende format:
 ### Commando format
 Om de verschillende sensor modules aan of uit te zetten zal er via MQTT een commando gestuurd worden op het volgende topic:
 
-``module/action``
+``sensor1/action``
 
 In het volgende format:
 ```

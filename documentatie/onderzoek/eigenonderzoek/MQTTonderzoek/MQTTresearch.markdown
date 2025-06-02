@@ -43,7 +43,7 @@ To understand how MQTT can be applied in our maritime prototype, it is important
 
 MQTT (Message Queuing Telemetry Transport) was developed in 1999 by IBM for use in remote oil pipelines with unreliable connections. It is a lightweight messaging protocol designed for constrained devices and low-bandwidth, high-latency networks. It uses a **publish/subscribe** model, where clients send messages to a **broker**, which then forwards those messages to other clients subscribed to specific **topics**.
 
-![mqqtilustratie](./../../../../.images/mqttilustratie.png)
+![mqqtilustratie](./../../../../images/mqttilustratie.png)
 `Picture: “Raspberry Pi and MQTT Essentials”` 
 
 This architecture decouples senders and receivers, making the system modular, scalable, and suitable for real-time distributed systems like ours (MQTT.org, n.d.).
