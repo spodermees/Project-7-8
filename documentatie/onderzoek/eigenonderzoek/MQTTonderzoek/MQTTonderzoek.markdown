@@ -6,7 +6,7 @@ Binnen het project “Autonoom manoeuvreren in de haven” zijn er door de opdra
 ## Wat is MQTT?
 MQTT staat voor “Message Queuing Telemetry Transport”, het is een communicatie protocol dat veel wordt gebruikt in de IoT. De reden daarvoor is omdat het op een erg laag niveau werkt en weinig kracht vraagt van de client. MQTT werkt met subscribers, publishers en een broker, die laatste kan worden gezien als het centrale punt waar alle data naartoe wordt gestuurd door de publishers en waar al die data weer verder wordt verzonden naar de juiste subscribers.
 
-![mqqtilustratie](./../../../../.images/mqttilustratie.png)
+![mqqtilustratie](./../../../../images/mqttilustratie.png)
 `Foto: “Raspberru Pi and MQTT Essentials”` 
  
 In een systeem kunnen er meerdere publishers zijn die data willen verzenden naar andere apparaten, dit doen ze door de data te publishen onder een bepaald topic, bijvoorbeeld “temperatuur”. Deze data wordt dan verzonden naar de broker die dit binnen krijgt en weer doorgestuurt naar alle subscribers. Subscribers zijn alle apparaten die de data willen ontvangen, ze kunnen zich daarvoor “abboneren” op een bepaalde topic, in dit geval de temperatuur. Wanneer een apparaat is geabboneerd op “temperatuur” zal alle data onder die topic daarheen worden verstuurd.

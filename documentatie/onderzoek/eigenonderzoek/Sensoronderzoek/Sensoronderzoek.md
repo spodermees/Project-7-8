@@ -13,10 +13,10 @@ De sensoren die voldoen aan de criteria van de deelvraag zullen worden vergeleke
 ## Resultaten
 
 Hieronder volgt een tabel waarin verschillende sensoren worden vergeleken en gewogen op basis van de resistentie tegen omgevingsfactoren, de grootte van de bundeldiameter en de prijs. Een grotere resistentie tegen omgevingsfactoren, een kleinere bundeldiameter en een lagere prijs resulteren in een hogere score. De radar sensor heeft de hoogste som van alle scores.
-![plaatje](./../../../../.images/soortsensorimage.png)
+![plaatje](./../../../../images/soortsensorimage.png)
 
 Hieronder volgt een tabel waarin meerdere radar sensoren worden vergeleken en gewogen op basis van hun bereik, nauwkeurigheid, prijs en bundeldiameter. Een groter bereik, een hogere nauwkeurigheid, een lagere prijs en een kleinere bundeldiameter resulteren in een hogere score. De XM125 radar sensor heeft de hoogste som van alle scores.
-![plaatje](./../../../../.images/soortradarimage.png)
+![plaatje](./../../../../images/soortradarimage.png)
 
 ## Conclusie/advies
 Uit het literatuuronderzoek en de afwegingen is gebleken dat de XM125 radar sensor het meest geschikt is voor het prototype. Er wordt aangeraden deze te gebruiken voor het huidige prototype maar over te gaan naar een TI variant radar sensor bij verdere ontwikkeling. Dit komt doordat de TI variant beter scoort op alle criteria behalve de prijs. Als de prijs bij verdere ontwikkeling een lagere weging heeft zal de TI variant hoger scoren en dus de betere keus zijn. Voor nu wordt de XM125 aangeraden.
@@ -26,7 +26,7 @@ Bundeldiameter- De bundeldiameter is de breedte van de straal die een sensor geb
 
 ## Bijlage 
 
-[sensorafwegingen](./Sensoronderzoekafwegingen.xlsx)
+[sensorafwegingen](/Sensoronderzoekafwegingen.xlsx)
 
 ## Bronnen
 Van der Waal, M. (2025, 21 maart). Bundelonderzoek. Geraadpleegd van[bundelonderzoek](./../Bundelonderzoek/Bundelonderzoek.md)

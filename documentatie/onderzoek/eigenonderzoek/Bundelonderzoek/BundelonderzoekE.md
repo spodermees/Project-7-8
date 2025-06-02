@@ -16,7 +16,7 @@ This research focuses on the influence of bundle spreading on sensor readings wi
 
 ### Background
 
-Project 7/8 is centered on autonomous sailing, specifically focused on "Autonomous Docking in the Harbor". The goal is to automate the docking process of ships to improve safety and reduce the manual effort required by sailors and harbor personnel. This research is part of a broader initiative aimed at enhancing sensor accuracy for small-scale autonomous boats tested in indoor pools.
+Project 7/8 is centered on autonomous sailing, specifically focused on "Autonomous Docking in the Harbor". The goal is to automate the docking process of ships to improve safety and reduce the manual effort required by sailors and harbor personnel. The company Sens2Sea and the product owner: "Geert Mosterdijk", are working on this 'problem. Together with Sens2Sea, Geert Mosterdijk and the Hogeschool Rotterdam, this project is full motion. This research is part of a broader initiative aimed at enhancing sensor accuracy for small-scale autonomous boats tested in indoor pools.
 
 ### Problem Statement
 
@@ -32,11 +32,11 @@ The desired outcome is to determine the optimal bundle diameter for sensors used
 
 ### Research Question
 
-#### Main Research Question:
+#### Main Research Question
 
 How does bundle spreading influence the readings of a sensor?
 
-#### Sub-questions:
+#### Sub-questions
 
 What is a bundle and how is it used in sensors?
 
@@ -118,13 +118,16 @@ Detection Resolution: Determines how well the sensor can distinguish between clo
 
 ## Conclusion and Recommendation
 
-### Summary:
+### Conclusion
+
 This research set out to understand how bundle diameter affects sensor readings. The study concluded that smaller bundle diameters provide better measurement resolution, but are more susceptible to noise and environmental disturbances.
 
-### Answer to Main Question:
+### Answer to Main Question
+
 Bundle spreading significantly influences sensor readings, primarily affecting resolution, signal strength, and susceptibility to environmental noise.
 
-### Recommendation:
+### Recommendation
+
 Wherever feasible, opt for sensors with the smallest possible beam diameter for environments where precision is more critical than range—such as in indoor pool-based docking tests. This setup minimizes measurement errors and improves object detection reliability.
 
 ## Sources
@@ -152,4 +155,3 @@ Appendix A: Raw data from literature sources.
 Appendix B: Sensor specification sheets.
 
 Appendix C: Comparative tables of sensor performance.
-
