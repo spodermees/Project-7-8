@@ -32,11 +32,11 @@ The desired outcome is to determine the optimal bundle diameter for sensors used
 
 ### Research Question
 
-#### Main Research Question:
+#### Main Research Question
 
 How does bundle spreading influence the readings of a sensor?
 
-#### Sub-questions:
+#### Sub-questions
 
 What is a bundle and how is it used in sensors?
 
@@ -118,13 +118,16 @@ Detection Resolution: Determines how well the sensor can distinguish between clo
 
 ## Conclusion and Recommendation
 
-### Summary:
+### Conclusion
+
 This research set out to understand how bundle diameter affects sensor readings. The study concluded that smaller bundle diameters provide better measurement resolution, but are more susceptible to noise and environmental disturbances.
 
-### Answer to Main Question:
+### Answer to Main Question
+
 Bundle spreading significantly influences sensor readings, primarily affecting resolution, signal strength, and susceptibility to environmental noise.
 
-### Recommendation:
+### Recommendation
+
 Wherever feasible, opt for sensors with the smallest possible beam diameter for environments where precision is more critical than range—such as in indoor pool-based docking tests. This setup minimizes measurement errors and improves object detection reliability.
 
 ## Sources
@@ -152,4 +155,3 @@ Appendix A: Raw data from literature sources.
 Appendix B: Sensor specification sheets.
 
 Appendix C: Comparative tables of sensor performance.
-
