@@ -23,18 +23,6 @@
 </thead>
 <tbody>
 <tr>
-<td>Projectgenoten komen de afspraken niet na</td>
-<td>4</td>
-<td>4</td>
-<td style="background-color: red">16</td>
-<td>Samenwerkingsovereenkomst maken en ondertekenen</td>
-<td>Iedereen het samenwerkinsovereenkomst laten tekenen</td>
-<td>2</td>
-<td>4</td>
-<td style="background-color: orange">8</td>
-<td>Ja, iedereen heeft het document getekend</td>
-</tr>
-<tr>
 <td>Sensoren raken kapot</td>
 <td>3</td>
 <td>3</td>
@@ -70,6 +58,55 @@
 <td style="background-color: orange">9</td>
 <td> nog niet van toepassing</td>
 </tr>
+<tr>
+<td>Test omgeving is niet beschikbaar op RDM</td>
+<td>2</td>
+<td>2</td>
+<td style="background-color: green">4</td>
+<td>Niet te voorkomen, wel kan er nagedacht worden of de functionaliteit op een andere manier te testen is</td>
+<td>Ver van te voren reserveren/ afspreken met het RDM om te kunnen testen, of kijken of dezelfde functionaliteit ook op een andere manier te testen is</td>
+<td>1</td>
+<td>2</td>
+<td style="background-color: green">2</td>
+<td>Er is ver van te voren geboekt om te testen en er is nagedacht over een andere test waar dat mogelijk is</td>
+</tr>
+<tr>
+<td>Data corruptie tijdens of na test(en)</td>
+<td>2</td>
+<td>4</td>
+<td style="background-color: orange">8</td>
+<td>Zorg dat er regelmatig back-ups van de data wordt gemaakt</td>
+<td>Er worden back-ups gemaakt van de data</td>
+<td>1</td>
+<td>3</td>
+<td style="background-color:green">3</td>
+<td>Er worden regelmatig backups gemaakt van de gemete data</td>
+</tr>
+<tr>
+<td>Softwarecrash tijdens test</td>
+<td>4</td>
+<td>3</td>
+<td style="background-color: orange">12</td>
+<td>Code opdelen in modules en voorzien van foutafhandeling (try/except), code tijdig testen</td>
+<td>Unit tests schrijven, loggen van fouten, watchdog gebruiken</td>
+<td>1</td>
+<td>3</td>
+<td style="background-color: green">3</td>
+<td>De belangrijkste code bevat nu try/except en foutmeldingen worden gelogd</td>
+</tr>
+<tr>
+<td>Stroomvoorziening faalt tijdens test</td>
+<td>5</td>
+<td>2</td>
+<td style="background-color: orange">10</td>
+<td>Stroomvoorziening goed testen, extra accu meenemen, spanningsval monitoren</td>
+<td>Gebruik maken van powerbank of UPS en voeding van tevoren testen</td>
+<td>1</td>
+<td>2</td>
+<td style="background-color: green">2</td>
+<td>Powerbank is aangeschaft en wordt gebruikt tijdens tests</td>
+</tr>
+
 </tbody>
 <!-- changelog -->
 <table>
@@ -100,5 +137,10 @@
 <td>3</td>
 <td>27-3-2025</td>
 <td>Weer extra risico's toegevoegd</td>
+</tr>
+<tr>
+<td>4</td>
+<td>02-06-2025</td>
+<td>Na feedback van de 50% opleverset zijn er risico's weg gehaald en toegevoegd</td>
 </tr>
 </tbody>
