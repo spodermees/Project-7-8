@@ -16,7 +16,7 @@ This research focuses on the influence of bundle spreading on sensor readings wi
 
 ### Background
 
-Project 7/8 is centered on autonomous sailing, specifically focused on "Autonomous Docking in the Harbor". The goal is to automate the docking process of ships to improve safety and reduce the manual effort required by sailors and harbor personnel. This research is part of a broader initiative aimed at enhancing sensor accuracy for small-scale autonomous boats tested in indoor pools.
+Project 7/8 is centered on autonomous sailing, specifically focused on "Autonomous Docking in the Harbor". The goal is to automate the docking process of ships to improve safety and reduce the manual effort required by sailors and harbor personnel. The company Sens2Sea and the product owner: "Geert Mosterdijk", are working on this 'problem. Together with Sens2Sea, Geert Mosterdijk and the Hogeschool Rotterdam, this project is full motion. This research is part of a broader initiative aimed at enhancing sensor accuracy for small-scale autonomous boats tested in indoor pools.
 
 ### Problem Statement
 
