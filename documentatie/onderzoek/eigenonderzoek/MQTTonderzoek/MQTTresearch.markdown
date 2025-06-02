@@ -1,4 +1,4 @@
-![mqqtilustratie](./../../../../.images/hogeschool-rotterdam.png)
+![mqqtilustratie](./../../../../images/hogeschool-rotterdam.png)
 
 # MQTT used in project 'Autonoom Manoeuvreren In De Haven'
 - Name: Hidde Gerritsen
