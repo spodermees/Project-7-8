@@ -9,20 +9,19 @@ from RPLCD.i2c import CharLCD
 import time
 
 # MQTT Broker details
-broker = "172.20.10.3"   # Replace with your broker
-port = 1883
-username = "Hidde"     # Replace with actual username
-password = "3332ks"     # Replace with actual password
-topic = "test/chat"
+broker = "172.20.10.3"   # <- Plaats hier het ip van de broker
+port = 1883             # <- Plaats hier de poort
+username = "Hidde"     # <- gebruikersnaam
+password = "3332ks"     # <- wachtwoord
+topic = "test/chat"     # <- topic
 
 print("Opening sensor....")
-sensorClient = a121.Client.open(serial_port="/dev/ttyUSB0")
+sensorClient = a121.Client.open(serial_port="/dev/ttyUSB0")     # <- Als jouw usb poort anders is dan moet je het hier veranderen.
 sensor_config = a121.SensorConfig()
 print("Sensor opened successfully.")
 
 print("connecting to MQTT broker...")
 mqttClient = mqtt.Client()
-mqttClient.connect(broker, port, 60)
 mqttClient.username_pw_set(username, password)
 print("Connected to MQTT broker successfully.")
 
@@ -92,4 +91,3 @@ except KeyboardInterrupt:
     print("Session interrupted by user.")
     sensorClient.stop_session()
     sensorClient.close()
-
