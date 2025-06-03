@@ -123,15 +123,7 @@ These criteria were selected based on the goals of the prototype and supported b
 # References
 
 
-MQTT.org. (n.d.). *What is MQTT?* Retrieved May 15, 2025, from https://mqtt.org/faq/
-
-IBM Developer. (n.d.). Understanding MQTT. Retrieved May 15, 2025, from https://developer.ibm.com/articles/iot-mqtt-why-good-for-iot/
-
-Naik, N. (2017). Choice of effective messaging protocols for IoT systems: MQTT, CoAP, AMQP and HTTP. Proceedings of the IEEE International Systems Engineering Symposium (ISSE), 1–7. https://pure.port.ac.uk/ws/portalfiles/portal/12197128/IoT_Messaging_Protocols_Naik.pdf
-
-Fortune Business Insights. (2024). Cargo Shipping Market Size, Share & COVID-19 Impact Analysis, By Cargo Type (Dry Bulk Cargo, Liquid Bulk Cargo, General Cargo, and Container Cargo), By End-Use Industry (Food, Manufacturing, Oil & Ores, Electrical & Electronics, and Others), and Regional Forecast, 2024–2032. https://www.fortunebusinessinsights.com/cargo-shipping-market-102045
-
-HiveMQ. (n.d.). MQTT Essentials: A lightweight IoT protocol. Retrieved May 15, 2025, from https://www.hivemq.com/mqtt-essentials/
+c
 
 # Appendix
 
