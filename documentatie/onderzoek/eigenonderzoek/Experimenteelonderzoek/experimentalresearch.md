@@ -21,9 +21,9 @@ Educator: A.M. de Gier, A.P.A. Slaa
 ## Introduction:
 This report is written for the Project Autonoom manoeuvreren in de haven. For this project is a sensor required that can detect the quay from a ship.
 
-The project is led by Geert Mosterdijk, He is an employee at **PK Marine**. This company specifies in radar and maritime measurement technology.
+The project is led by Geert Mosterdijk, an employee of PK Marine, a company specializing in radar and maritime measurement technologies.
 
-Currently docking ships in a harbour is done by a captain and his crew. This process is suported by a few sensors an board of the ship. This method is not inefficient and could have human error. This could lead to excessive throttle use, which is costly. The manual docking approach can also increase operational costs due to manual labour.
+Currently, ship docking in harbours is performed manually by a captain and crew, with limited support from onboard sensors. This approach is prone to human error, which can lead to inefficient throttle use and increased fuel consumption. Additionally, the reliance on manual labour contributes to higher operational costs.
 
 To reduce those costs, Geert Mosterdijk envisions a system where multiple sensors are placed around the ship. Those sensors will send realtime information to a central unit. This unit wil controle the engines accordingly to the data. 
 
@@ -36,76 +36,63 @@ To what extent does the XE125 distance sensor achieve a measurement accuracy of 
 
 ### Research setup
 
-The XE125 distance sensor was conected to a raspberry pi 5 for data acquisition. The sensor was mounted on a table at a height of ...... meters, aligned perpendicular to a flat surface. The surface is a wooden plate with a thickness of 0.0..... meters. The experiment was conducted indoors under stable lighting conditions.
+The XE125 distance sensor was connected to a Raspberry Pi 5 via USB-C for data acquisition. The sensor was mounted on a stable platform at a height of 1.0 meter, aligned perpendicular to a flat wooden surface. The wooden plate, measuring 0.02 meters in thickness, was chosen to ensure consistent and stable reflectivity. 
 
-Distances from 0.5 meters to 20 meters were marked at 0.5 meter intervals using a measuring tape. For each distance 3 measurements were recorded to evaluate consistency. The sensor's output was compared to the actual and noted in a table. The data was logged via the console of the raspberry pi via a ssh connection.
+Distances from 0.5 meters to 20 meters were marked at 1-meter intervals using a calibrated measuring tape. For each distance, three measurements were recorded to evaluate the consistency of the sensor. The sensor's output was compared to the actual distance, recorded, and noted in a data table. Data was logged through the Raspberry Pi console via an SSH connection.
 
-For fine movement close to a surface extra distances ware included. those are from 0.05 meters to 0.5 meters with intervals of 0.05 meters.
-
-a measuring tape was rolled out on the floor. The sensor is placed on a table above the ground at the 0 point. There is a big plate of wood that is used to block the line of sight.
+To assess sensor accuracy at shorter ranges, additional measurements were taken from 0.05 meters to 0.45 meters, with intervals of 0.10 meters.
 
 ### Measurement instruments
 1. Sensor module.
     - Description: A XE125 sensor that connects via a Raspberry pi with a LCD Screen.
 - Components:
     - Raspberry pi 5
-    - XE125
-    - LCD Screen
-    - Circuit: See figure A to build the circuit.
+    - XE125 (without extra lens)
 2. Measuring tape
     - Description: A 20 meter measuring tape.
 
 
-## Acuracy of the radar wave sensor
-The aim of this experiment is to verify the accuracy of the XE125 sensor.
-
-
 ## Setup Instructions:
 1. Measuring tape:
-    1. Stretch the measuring tape on the floor. 
+    1. Unroll and stretch the measuring tape along a flat surface, ensuring it remains straigt and flat.
 2. Sensor module:
-    1. Connect the raspberry pi to the XE125 sensor with the usb cable.
-    2. Connect the LCD screen with the raspberry pi according to the circuit schematic specifications. 
-    3. Place the radar sensor facing the tail of the measuring tape. Make shore that the 0 point of the measuring tape lines up with the radar sensor. 
+    1. Connect the raspberry pi to the XE125 sensor with the USB-C cable.
+    2. Position the radar sensor at the start of the measuring tape, ensure the sensor 0-point is aligned with the 0-meter mark on the tape. 
 
 ## Data Analysis
-1. Compare the distance on the measuring tape with the reading on the LCD screen.
+The sensor's reading will be compared with the actual distances indicated on the measuring tape. The average error wil be calculated for each distance.
 
 ## Test Procedure
-The table 
 
-|Test number|Distance (measuring tape)| Distance (reading sensor)|
-|-|-|-|
-|1| 1 | |
-|2| | |
-|3| | |
-|4| | |
-|5| | |
-|6| | |
-|7| | |
-|8| | |
-|9| | |
-|10| | |
-|11| | |
-|12| | |
-|13| | |
-|14| | |
-|15| | |
-|16| | |
-|17| | |
-|18| | |
-|19| | |
-|20| | |
-|21| | |
-|22| | |
-|23| | |
-|24| | |
-|25| | |
-|26| | |
-|27| | |
-|28| | |
-|29| | |
-|30| | |
+|Test number|Distance (m) (measuring tape)| Distance 1 (m) (reading sensor) | Distance 2 (m) (reading sensor) | Distance 3 (m) (reading sensor) | Average Error (m) |
+|-|-|-|-|-|
+|1| 0.05 | |
+|2| 0.15 | |
+|3| 0.25 | |
+|4| 0.35 | |
+|5| 0.45 | |
+|6| 0.50 | |
+|7| 1.00 | |
+|8| 2.00 | |
+|9| 3.00 | |
+|10| 4.00 | |
+|11| 5.00 | |
+|12| 6.00 | |
+|13| 7.00 | |
+|14| 8.00 | |
+|15| 9.00 | |
+|16| 10.00 | |
+|17| 11.00 | |
+|18| 12.00 | |
+|19| 13.00 | |
+|20| 14.00 | |
+|21| 15.00 | |
+|22| 16.00 | |
+|23| 17.00 | |
+|24| 18.00 | |
+|25| 19.00 | |
+|26| 20.00| |
+
 
 
 Figure A

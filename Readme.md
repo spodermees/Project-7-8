@@ -58,8 +58,13 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 
 - Code, hier is de code te vinden die wordt gebruikt voor het eindproduct
 
->Met terminal: cd src
->Zonder terminal src
+>Met Terminal: cd src
+>Zonder Terminal src
+
+- Aantekeningen dit zijn aantekeningen van belangrijke begrippen of dingen die we moesten onthouden, dit is voor het gemiddelde persoon niet belangrijk
+
+>Met Terminal cd documentatie\aantekeningen
+>Zonder Terminal documentatie -> aantekeningen
 
 ## Contributors
 
@@ -71,26 +76,26 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 # TODO
 - '.deprecated' moet nog weg
 - documentatie
-    - 'aantekeningen.md' netjes maken
-    - 'opdrachtgever.md' netjes maken
+    - 'aantekeningen.md' netjes maken/
+    - 'opdrachtgever.md' netjes maken/
     - 'docs.md' invullen/maken /
     - onderzoeken vertalen /
     - onderzoek Olaf (expirimenteel)
     - 'Testrapport.md' invullen
-    - gebruikersacceptatietest maken
+    - gebruikersacceptatietest maken /
     - psp
     - arduino software/
-    - behuizing
-    - robuustheids analyse
-    - requirement analyse
+    - behuizing (mee bezig)
+    - robuustheids analyse (mee bezig)
+    - requirement analyse (mee bezig)
     - storypoint toekennen aan de user stories/
     - burndown chart /
     - handleiding
     - flowchart
-    - elektrisch schema
+    - elektrisch schema /
     - jira bijwerken
 - demovideo
-- promotie flyer
+- promotie flyer (mee bezig)
 
 individueel
 - reflectie
