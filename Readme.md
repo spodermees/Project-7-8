@@ -15,20 +15,7 @@ Project 7/8 staat helemaal in het teken van autonoom manouvreren, of in ieder ge
 
 ## Instalatie
 
-Voor dit project zijn verschillende dingen nodig om de testopstelling na te beleven, hieronder vallen vershillende lybraries, compilers en software. Hier staan ze ff allemaal op lijste met het commando om het uit te voeren.
-
-### Compilers
-
-Dit project wordt gerund op een raspberry pi 5, die python code draait. Hieronder is de download link voor python, download de laatste versie om het project uit te voeren.
-
->[Download Python](https://www.python.org/downloads/)
-
-### Libraries
-
-### Programma's
-
-De sensoor moet 'geflasht' worden met bepaalda 'data' om gebruikt te kunnen worden. Hieronder is de link om de software te downloaden om de sesnor te 'flashen'
->[Download flash software](Voeg link toe)
+Voor dit project zijn verschillende dingen nodig om de testopstelling na te beleven. Deze vind je in [setup](documentatie/projectdocumentatie/RaspberryPiSetup.md).
 
 ## Features
 
@@ -78,13 +65,11 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 - documentatie
     - 'aantekeningen.md' netjes maken/
     - 'opdrachtgever.md' netjes maken/
-    - 'docs.md' invullen/maken /
     - onderzoeken vertalen /
     - onderzoek Olaf (expirimenteel)
     - 'Testrapport.md' invullen
     - gebruikersacceptatietest maken /
     - psp
-    - arduino software/
     - behuizing (mee bezig)
     - robuustheids analyse (mee bezig)
     - requirement analyse (mee bezig)
@@ -92,7 +77,6 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
     - burndown chart /
     - handleiding
     - flowchart
-    - elektrisch schema /
     - jira bijwerken
 - demovideo
 - promotie flyer (mee bezig)
