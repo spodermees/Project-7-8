@@ -63,13 +63,21 @@ def on_connect(client, userdata, flags, rc):
         print("Connected successfully!")
     else:
         print(f"Failed to connect, return code {rc}")
+        lcd.write_string(f"MQTT ERROR: {rc}")
 
 
 
 
 try: 
+    try:
+        initSensor()
+    except Exception as e:
+        print(f"Error starting radar session: {e}")
+        lcd.clear()
+        lcd.write_string(f"XE125 ERROR: {e}")
+        sensorClient.close()
+        exit(1)
     initMQTT()
-    initSensor()
     print("Sensor and MQTT client initialized successfully.")
     while True:
         # Get one frame of data
@@ -91,3 +99,5 @@ except KeyboardInterrupt:
     print("Session interrupted by user.")
     sensorClient.stop_session()
     sensorClient.close()
+    mqttClient.loop_stop()
+    mqttClient.disconnect()

@@ -10,7 +10,7 @@
 
 ## Hardware
 ### LCD
-er zijn 4 aansluiting bij het LCD scherm. Deze zijn: VCC, GND, SCL, SDA. Zoek indien nodig de pinout voor jouw model op.
+Er zijn 4 aansluiting bij het LCD scherm. Deze zijn: VCC, GND, SCL, SDA. Zoek indien nodig de pinout voor jouw model op.
 1. Sluit de 5V van de raspberry aan op de VCC van de LCD.
 2. Sluit de GND van de raspberry aan op de GND van de LCD.
 3. Sluit de SCL van de raspberry aan op de SCL van de LCD.
@@ -188,13 +188,21 @@ def on_connect(client, userdata, flags, rc):
         print("Connected successfully!")
     else:
         print(f"Failed to connect, return code {rc}")
+        lcd.write_string(f"MQTT ERROR: {rc}")
 
 
 
 
 try: 
+    try:
+        initSensor()
+    except Exception as e:
+        print(f"Error starting radar session: {e}")
+        lcd.clear()
+        lcd.write_string(f"XE125 ERROR: {e}")
+        sensorClient.close()
+        exit(1)
     initMQTT()
-    initSensor()
     print("Sensor and MQTT client initialized successfully.")
     while True:
         # Get one frame of data
@@ -216,4 +224,7 @@ except KeyboardInterrupt:
     print("Session interrupted by user.")
     sensorClient.stop_session()
     sensorClient.close()
+    client.loop_stop()
+    client.disconnect()
+
 ```
