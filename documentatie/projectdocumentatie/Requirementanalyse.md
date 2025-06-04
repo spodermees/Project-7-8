@@ -273,5 +273,5 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
 | Versie |Datum|Changelog|
 |---|---|---|
 |1|11-03-2025|Eerste opzet gemaakt|
-|2|27-05-2025|Na feedback bestand omgegooid en eerste requirements netjes uitgewerkt|
+|2|27-05-2025|Na overleg |
 |3|4-06-2025|Alle requirements uitgewerkt|
