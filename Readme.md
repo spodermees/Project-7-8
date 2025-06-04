@@ -72,7 +72,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
     - psp
     - behuizing (mee bezig)
     - robuustheids analyse (mee bezig)
-    - requirement analyse (mee bezig)
+    - requirement analyse /
     - storypoint toekennen aan de user stories/
     - burndown chart /
     - handleiding
