@@ -64,21 +64,20 @@ The sensor's reading will be compared with the actual distances indicated on the
 
 ## Test Procedure
 
-|Test number|Distance (m) (measuring tape)| Distance 1 (m) (reading sensor) | Distance 2 (m) (reading sensor) | Distance 3 (m) (reading sensor) | Average Error (m) |
-|-|-|-|-|-|
-|1| 0.05 | |
-|2| 0.15 | |
-|3| 0.25 | |
-|4| 0.35 | |
-|5| 0.45 | |
-|6| 0.50 | |
-|7| 1.00 | |
-|8| 2.00 | |
-|9| 3.00 | |
-|10| 4.00 | |
-|11| 5.00 | |
-|12| 6.00 | |
-|13| 7.00 | |
+|Test number|Distance (m) (measuring tape)| Distance 1 (m) (reading sensor) | Average Error (m) |
+|-|-|-|-|
+|1| 0.10 | 0.3 |
+|2| 0.20 | 0.2 |
+|3| 0.30 | 0.1 |
+|4| 0.40 | 0.3 |
+|5| 0.50 | 0.3 |
+|6| 1.00 | 0.9 |
+|7| 2.00 |  |
+|8| 3.00 | |
+|9| 4.00 | |
+|10| 5.00 | |
+|11| 6.00 | |
+|12| 7.00 | |
 |14| 8.00 | |
 |15| 9.00 | |
 |16| 10.00 | |

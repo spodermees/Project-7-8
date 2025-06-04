@@ -12,10 +12,10 @@ print("Client opened successfully.")
 # Set up sensor config correctly
 sensor_config = a121.SensorConfig()
 sensor_config.profile = a121.Profile.PROFILE_3
-sensor_config.step_length = 2
-sensor_config.num_points = 100
+sensor_config.step_length = 1      # Maximale resolutie (5 mm per stap)
+sensor_config.num_points = 600     # 3 meter bereik
 sensor_config.hwaas = 16
-sensor_config.sweeps_per_frame = 8
+sensor_config.sweeps_per_frame = 6 # Maximaal toegestaan bij deze instellingen
 
 client.setup_session(sensor_config)
 
