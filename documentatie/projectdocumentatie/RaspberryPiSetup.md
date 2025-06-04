@@ -7,8 +7,17 @@
 - 1x I2C LCD Screen
 - 1x Raspberry Pi 5 (of Raspberry Pi 4) met Raspbian OS (64 bit) + ethernet kabel en power supply
 - 1x XE125 Radar sensor + usb-a -> usb-c kabel
+- 12x 3x6mm schroeven
+- Behuizing (Zie eerste stap)
 
 ## Hardware
+### Behuizing
+1. Print de behuizing uit met een 3d printer (zie behuizing.obj)
+2. Installeer het lcd scherm, de raspberry pi en de radar sensor zoals op de foto
+
+
+# HIER MOET EEN FOTO KOMEN!!!
+
 ### LCD
 Er zijn 4 aansluiting bij het LCD scherm. Deze zijn: VCC, GND, SCL, SDA. Zoek indien nodig de pinout voor jouw model op.
 1. Sluit de 5V van de raspberry aan op de VCC van de LCD.
