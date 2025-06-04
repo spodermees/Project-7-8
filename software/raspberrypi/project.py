@@ -1,93 +1,127 @@
-# sensor
 import numpy as np
 from acconeer.exptool import a121
-# mqtt
 import paho.mqtt.client as mqtt
-# lcd
 from RPLCD.i2c import CharLCD
-# other
+from flask import Flask, render_template_string
+from flask_socketio import SocketIO
 import time
+import threading
 
-# MQTT Broker details
-broker = "172.20.10.3"   # <- Plaats hier het ip van de broker
-port = 1883             # <- Plaats hier de poort
-username = "Hidde"     # <- gebruikersnaam
-password = "3332ks"     # <- wachtwoord
-topic = "test/chat"     # <- topic
+checkSensor = True
 
-print("Opening sensor....")
-sensorClient = a121.Client.open(serial_port="/dev/ttyUSB0")     # <- Als jouw usb poort anders is dan moet je het hier veranderen.
-sensor_config = a121.SensorConfig()
-print("Sensor opened successfully.")
+# MQTT details
+broker = "172.20.10.3"  # Replace with your MQTT broker IP
+port = 1883             # Replace with your MQTT broker port
+username = "Hidde"      # Replace with your MQTT username
+password = "3332ks"     # Replace with your MQTT password
+topic = "test/chat"     # Replace with your MQTT topic
 
-print("connecting to MQTT broker...")
-mqttClient = mqtt.Client()
-mqttClient.username_pw_set(username, password)
-print("Connected to MQTT broker successfully.")
+# Flask setup
+app = Flask(__name__)
+socketio = SocketIO(app)
 
-print("Setting up LCD Screen...")
+# LCD setup
 lcd = CharLCD(i2c_expander='PCF8574', address=0x27, port=1,
               cols=16, rows=2, dotsize=8,
               charmap='A00', auto_linebreaks=True)
 lcd.clear()
-print("LCD Screen setup complete.")
+
+# Sensor setup
+sensorClient = a121.Client.open(serial_port="/dev/ttyUSB0")
+sensor_config = a121.SensorConfig()
+
+def on_message(sourceClient, userdata, message):
+    payload = message.payload.decode()
+    if(message.topic == topic and payload == "STOP"):
+        lcd.write_string("Stopping sensor")
+        checkSensor = False
+        return
+    if(message.topic == topic and payload == "START"):
+        lcd.write_string("Starting sensor")
+        checkSensor = True
+        return
+    print(f"[MQTT] Topic: {message.topic}, Message: {payload}")
+
 
 
 def initSensor():
-    print("Initializing sensor...")
-    # Set up sensor config correctly
     sensor_config.profile = a121.Profile.PROFILE_3
-    sensor_config.step_length = 2  # 1–255 (adjust based on desired resolution)
-    sensor_config.num_points = 100  # number of distance points (adjust as needed)
+    sensor_config.step_length = 2
+    sensor_config.num_points = 100
     sensor_config.sweeps_per_frame = 8
     sensor_config.hwaas = 16
     sensorClient.setup_session(sensor_config)
-    print("Session configured successfully.")
     sensorClient.start_session()
-    
-    
+
+# MQTT setup
+mqttClient = mqtt.Client()
+mqttClient.username_pw_set(username, password)
+
 def initMQTT():
-    print("Initializing MQTT client...")
-    # Connect to broker
     mqttClient.connect(broker, port, 60)
-
-    # Start the network loop in a separate thread
+    mqttClient.on_message = on_message
     mqttClient.loop_start()
-    print("MQTT client initialized successfully.")
 
+@app.route('/')
+def index():
+    return render_template_string("""
+        <!DOCTYPE html>
+        <html>
+            <head>
+            <title>Live Sensor Distance</title>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"></script>
+            </head>
+            <body style="font-family:sans-serif;">
+            <h1>Live Distance Reading</h1>
+            <p id="distance">Waiting for data...</p>
+            <script>
+                const socket = io();
+                socket.on('distance', data => {
+                    document.getElementById('distance').innerText = `Distance: ${data} m`;
+                });
+            </script>
+            </body>
+        </html>
+    """)
 
+def sensor_loop():
+    try:
+        initSensor()
+    except Exception as e:
+        lcd.write_string(f"XE125 ERROR: {e}")
+        sensorClient.close()
+        return
 
-# Optional: define callback for successful connection
-def on_connect(client, userdata, flags, rc):
-    if rc == 0:
-        print("Connected successfully!")
-    else:
-        print(f"Failed to connect, return code {rc}")
-
-
-
-
-try: 
     initMQTT()
-    initSensor()
-    print("Sensor and MQTT client initialized successfully.")
-    while True:
-        # Get one frame of data
-        result = sensorClient.get_next()
-        frame = result.frame  # shape: (sweeps_per_frame, num_points)
-        averaged = np.mean(frame, axis=0)
+    try:
+        while True:
+            if(not checkSensor):
+                lcd.write_string("Sensor stopped")
+                time.sleep(1)
+                continue
+            result = sensorClient.get_next()
+            frame = result.frame
+            averaged = np.mean(frame, axis=0)
+            peak_idx = np.argmax(averaged)
+            step_m = sensor_config.step_length * 0.005
+            distance_m = peak_idx * step_m
 
-        peak_idx = np.argmax(averaged)
+            lcd.clear()
+            lcd.write_string(f"Distance: {distance_m:.2f} m")
+            mqttClient.publish(topic, f"Distance: {distance_m:.2f} m")
+            socketio.emit('distance', f"{distance_m:.2f}")
+            time.sleep(0.1)
+    except Exception as e:
+        sensorClient.stop_session()
+        sensorClient.close()
+        mqttClient.loop_stop()
+        mqttClient.disconnect()
 
-        step_m = sensor_config.step_length * 0.005
-        distance_m = peak_idx * step_m
+def start_sensor_thread():
+    thread = threading.Thread(target=sensor_loop)
+    thread.daemon = True
+    thread.start()
 
-        print(f"Measured distance: {distance_m:.2f} m")
-        lcd.clear()
-        lcd.write_string(f"Distance: {distance_m:.2f} m")
-        mqttClient.publish(topic, f"Distance: {distance_m:.2f} m")
-        time.sleep(0.1)
-except KeyboardInterrupt:
-    print("Session interrupted by user.")
-    sensorClient.stop_session()
-    sensorClient.close()
+if __name__ == '__main__':
+    start_sensor_thread()
+    socketio.run(app, host='0.0.0.0', port=5000)
