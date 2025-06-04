@@ -36,63 +36,76 @@ To what extent does the XE125 distance sensor achieve a measurement accuracy of 
 
 ### Research setup
 
-The XE125 distance sensor was connected to a Raspberry Pi 5 via USB-C for data acquisition. The sensor was mounted on a stable platform at a height of 1.0 meter, aligned perpendicular to a flat wooden surface. The wooden plate, measuring 0.02 meters in thickness, was chosen to ensure consistent and stable reflectivity. 
+The XE125 distance sensor was connected to a Laptop with the acconeer-python-exploration tool via USB-C for data acquisition. The sensor was mounted on a stable platform at a height of 1.1 meter, aligned perpendicular to a aluminium surface. The aluminium plate, measuring 0.001 meters in thickness, was chosen to ensure consistent and stable reflectivity. 
 
-Distances from 0.5 meters to 20 meters were marked at 1-meter intervals using a calibrated measuring tape. For each distance, three measurements were recorded to evaluate the consistency of the sensor. The sensor's output was compared to the actual distance, recorded, and noted in a data table. Data was logged through the Raspberry Pi console via an SSH connection.
+Distances from 1 meter to 20 meters were marked at 1-meter intervals using a calibrated measuring tape. For each distance, a measurement was recorded to evaluate the consistency of the sensor. The sensor's output was compared to the actual distance, recorded, and noted in a data table. Data was logged through the acconeer exploration tool.
 
-To assess sensor accuracy at shorter ranges, additional measurements were taken from 0.05 meters to 0.45 meters, with intervals of 0.10 meters.
+To assess sensor accuracy at shorter ranges, additional measurements were taken from 0.10 meters to 1 meter, with intervals of 0.10 meters.
 
 ### Measurement instruments
-1. Sensor module.
-    - Description: A XE125 sensor that connects via a Raspberry pi with a LCD Screen.
+1. XE125 Radar sensor
+    - Description: A XE125 sensor that to a laptop via usb-c.
 - Components:
-    - Raspberry pi 5
-    - XE125 (without extra lens)
+    - XE125
+    - LH132 Lens kit
 2. Measuring tape
     - Description: A 20 meter measuring tape.
-
 
 ## Setup Instructions:
 1. Measuring tape:
     1. Unroll and stretch the measuring tape along a flat surface, ensuring it remains straigt and flat.
 2. Sensor module:
-    1. Connect the raspberry pi to the XE125 sensor with the USB-C cable.
-    2. Position the radar sensor at the start of the measuring tape, ensure the sensor 0-point is aligned with the 0-meter mark on the tape. 
+    1. Plug the XE125 sensor in the laptop with usb-c cable.
 
 ## Data Analysis
-The sensor's reading will be compared with the actual distances indicated on the measuring tape. The average error wil be calculated for each distance.
+1. Compare the distance measured with the measuring tape and the distance with the sensor.
+2. Calculate the average difference between the measuring tape and the sensor.
 
-## Test Procedure
+## Test Setup
+The software has some settings. The folowing settings ware used.
+```json
+{
+  "start_m": 0.25,
+  "end_m": 3.0,
+  "max_step_length": null,
+  "max_profile": "PROFILE_5",
+  "close_range_leakage_cancellation": false,
+  "signal_quality": 15.0,
+  "threshold_method": "CFAR",
+  "peaksorting_method": "STRONGEST",
+  "reflector_shape": "GENERIC",
+  "num_frames_in_recorded_threshold": 100,
+  "fixed_threshold_value": 100.0,
+  "fixed_strength_threshold_value": 0.0,
+  "threshold_sensitivity": 0.5,
+  "update_rate": 50.0
+}
+```
+Note that the end_m is 3 meters. This means that the sensor can measure until 3 meters. The range for this configuration cannot be set higher.
 
-|Test number|Distance (m) (measuring tape)| Distance 1 (m) (reading sensor) | Average Error (m) |
+
+## Test
+
+|Test number|Distance (m) (measuring tape)| Distance (m) (reading sensor) | Average Error (m) |
 |-|-|-|-|
-|1| 0.10 | 0.3 |
-|2| 0.20 | 0.2 |
-|3| 0.30 | 0.1 |
-|4| 0.40 | 0.3 |
-|5| 0.50 | 0.3 |
-|6| 1.00 | 0.9 |
-|7| 2.00 |  |
-|8| 3.00 | |
-|9| 4.00 | |
-|10| 5.00 | |
-|11| 6.00 | |
-|12| 7.00 | |
-|14| 8.00 | |
-|15| 9.00 | |
-|16| 10.00 | |
-|17| 11.00 | |
-|18| 12.00 | |
-|19| 13.00 | |
-|20| 14.00 | |
-|21| 15.00 | |
-|22| 16.00 | |
-|23| 17.00 | |
-|24| 18.00 | |
-|25| 19.00 | |
-|26| 20.00| |
+|1| 0.10 | 0.10 | +0.00 |
+|2| 0.20 | 0.19 | -0.01 |
+|3| 0.30 | 0.31 | +0.01 |
+|4| 0.40 | 0.42 | +0.02 |
+|5| 0.50 | 0.49 | -0.01 |
+|6| 0.60 | 0.61 | +0.01 |
+|7| 0.70 | 0.70 | +0.00 |
+|8| 0.80 | 0.79 | -0.01 |
+|9| 0.90 | 0.90 | +0.00 |
+|10| 1.00 | 1.01 | +0.01 |
+|11| 1.50 | 1.49 | -0.01 |
+|12| 2.00 | 2.02 | +0.02 |
+|13| 2.50 | 2.49 | -0.01 |
+|13| 3.00 | 3.00 | +0.00 |
+|14| 3.50 | Not able to measure | - |
 
 
+## Results
+The data shows that the sensor is very accurate until the object is out of range. The measurements have margin of error of aproximately +-0.02 meters due to the aluminum plate sometimes not being perfectly straigt, or the measuring tape not always being perfectly straigt or flat.
 
-Figure A
-circuit !!!
+## Conclusion
