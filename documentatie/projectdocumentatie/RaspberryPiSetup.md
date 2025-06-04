@@ -80,7 +80,7 @@ Nu je je venv hebt geactiveerd kun je dingen met pip instaleren. We beginnen met
 pip install --upgrade acconeer-exptool[algo]
 ```
 
-Nu we de tool hebben kunnen we de setup aanroepen.
+Nu we de tool hebben kunnen we de setup aanroepen. Je word gevraagd voor welk platform. Kies Linux.
 ```bash
 python3 -m acconeer.exptool.setup
 ```
