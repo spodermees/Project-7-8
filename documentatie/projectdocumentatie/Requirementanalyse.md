@@ -39,7 +39,7 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
   Het systeem moet in staat zijn de afstand tot de kade te meten met een nauwkeurigheid van ±1 cm, tot op minimaal 20 meter afstand.
 
 * **Categorie**:
-  *Functionele eis* + *Kwaliteitseis*
+  *Functionele eis* 
 
 * **Analyse**:
 
@@ -51,7 +51,6 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
 
     * Lidar biedt deze nauwkeurigheid, maar is kostbaar (> €1000).
     * Radar is betaalbaarder, maar typisch minder nauwkeurig (±5 cm).
-    * Ultrasoon heeft onvoldoende bereik en is sterk afhankelijk van omgeving.
 
   * **Testprotocol**:
 
@@ -99,7 +98,7 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
   Alle elektronische componenten dienen te worden geplaatst in een waterdichte behuizing met minimaal IP67-classificatie.
 
 * **Categorie**:
-  *Kwaliteitseis* + *Restrictie*
+  *Kwaliteitseis* 
 
 * **Analyse**:
 
@@ -236,7 +235,7 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
   De centrale verwerkingscomponent van het systeem
 
 * **Categorie**:
-  *Functionele eis* + *Restrictie*
+  *Functionele eis* 
 
 * **Analyse**:
 
