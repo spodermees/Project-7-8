@@ -80,6 +80,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
     - jira bijwerken
 - demovideo
 - promotie flyer (mee bezig)
+- usecase met context, opdrachtomschrijving en het probleem
 
 individueel
 - reflectie
