@@ -105,6 +105,11 @@ Ook voor de LCD Screen hebben we een library nodig.
 pip install RPLCD
 ```
 
+Voor de websocket hebben we ook een library nodig.
+```bash
+pip install flask flask-socketio eventlet
+```
+
 **Optional**
 Als je de sensor firmware wilt updaten heb kun je de volgende commands uitvoeren. (LET OP: Hier heb je wel een acconeer account voor nodig) En volg de instructies die worden gegeven.
 ```bash
@@ -121,6 +126,11 @@ Als de code niet werkt doordat jouw user geen machtigingen heeft moet je de mach
 sudo usermod -a -G dialout $(whoami)
 sudo reboot
 ```
+
+De testcode staat bij [code](../../software/raspberrypi/testradar.py).
+
+
+Om het hele systeem te testen is er ook een broker nodig. Je verbind met de broker door het IP address, port, gebruikersnaam en wachtwoord aan te passen naar de gegevens van jouw broker. Voor nu staat de gebruikersnaam en het wachtwoord erin voor de broker die is meegeleverd ([broker](../../software/broker/)).
 
 ```py
 # sensor
@@ -157,7 +167,7 @@ lcd = CharLCD(i2c_expander='PCF8574', address=0x27, port=1,
 lcd.clear()
 print("LCD Screen setup complete.")
 
-
+# Initialize the sensor with the desired configuration
 def initSensor():
     print("Initializing sensor...")
     # Set up sensor config correctly
@@ -169,8 +179,8 @@ def initSensor():
     sensorClient.setup_session(sensor_config)
     print("Session configured successfully.")
     sensorClient.start_session()
-    
-    
+
+# initialize MQTT client
 def initMQTT():
     print("Initializing MQTT client...")
     # Connect to broker
@@ -180,8 +190,6 @@ def initMQTT():
     mqttClient.loop_start()
     print("MQTT client initialized successfully.")
 
-
-
 # Optional: define callback for successful connection
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
@@ -189,9 +197,6 @@ def on_connect(client, userdata, flags, rc):
     else:
         print(f"Failed to connect, return code {rc}")
         lcd.write_string(f"MQTT ERROR: {rc}")
-
-
-
 
 try: 
     try:
@@ -224,7 +229,6 @@ except KeyboardInterrupt:
     print("Session interrupted by user.")
     sensorClient.stop_session()
     sensorClient.close()
-    client.loop_stop()
-    client.disconnect()
-
+    mqttClient.loop_stop()
+    mqttClient.disconnect()
 ```
