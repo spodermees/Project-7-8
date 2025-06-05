@@ -1,33 +1,40 @@
-# Autonoom manoeuvreren in de haven
+# Autonoom Manoeuvreren In De Haven
 
 ## Inhoudsopgave
 
 - Beschrijving
+- Werking
 - Installatie
-- Gebruik
-- Features
 - Belangrijke documenten & navigatie
 - Contributers
 
 ## Beschrijving
 
-Project 7/8 staat helemaal in het teken van autonoom manouvreren, of in ieder geval dit project van Project 7/8. Samen met Sens2Sea en Geet mosterdijk, wordt er gekeken naar hoe het aanmeren en wegvaren veiliger en efficiënter kan door behulp van verschillende sensoren en actuatoren. In dit project wordt er onderzoek gedaan naar verschillende sensoren en het gewenste communicatie protocool: "MQTT". De scope van dit project is gericht op de sensoren niet actuatoren, dat is voor een vervolg project hier van. Alle testen wordenn gedaan op schaal in het RDM op een schaal model van een boot.
+Project 7/8 staat helemaal in het teken van autonoom manouvreren, of in ieder geval dit project van Project 7/8. Samen met Sens2Sea en Geet mosterdijk, wordt er gekeken naar hoe het aanmeren en wegvaren veiliger en efficiënter kan door behulp van verschillende sensoren en actuatoren. In dit project wordt er onderzoek gedaan naar verschillende sensoren en het gewenste communicatie protocool: "MQTT" in combinatie met SDI. De scope van dit project is gericht op de sensoren niet actuatoren, dat is voor een vervolg project hier van. Alle testen wordenn gedaan op schaal in het RDM op een schaal model van een boot.
 
-## Instalatie
 
-Voor dit project zijn verschillende dingen nodig om de testopstelling na te beleven. Deze vind je in [setup](documentatie/projectdocumentatie/RaspberryPiSetup.md).
+## Werking
 
-## Features
+Het prototype bestaat uit meerdere elektronische onderdelen en en een behuizing, hier volgt een beschrijving van wat elk onderdeel precies doet en waarom er voor deze gekozen is. In de [architectuurontwerp](documentatie/diagrammen/Architectuur.pdf) en de [interne architectuurontwerp](documentatie/diagrammen/InterneArchitectuur.pdf) is visueel gemaakt hoe de onderdelen verbonden zijn.
 
-Verschillende features die belangrijk zijn van de sensoor en behuizing zijn:
+#### Microcontroller 
+In dit project was er een controller nodig die het prototype aanstuurt. Zo wordt deze gebruikt voor het ophalen van de afstand van de radarsensor om deze vervolgens door te sturen naar het lcd scherm en de MQTT broker. Er is gekozen voor een Raspberry PI 5 omdat de ondersteuning met de Radar sensor hier het beste mee is en omdat deze het meest robuust is in een omgeving zoals op een schip
 
-- Waterdicht
-- Afstand meten
+#### Radar
+Het onderdeel wat de binnen het prototype de afstand meet is de XM125 evaluation board met daarop de A121 radar sensor. Waarom er voor deze is gekozen is terug te lezen in het [sensor onderzoek](./documentatie/onderzoek/eigenonderzoek/Sensoronderzoek/Sensoronderzoek.md)
 
-Features die nog in de 'making' zijn:
+#### LCD scherm
+Om de data real-time te laten zien aan mensen die met de module aan het werk zijn is er een LCD scherm ingebouwd, deze laat de exacte afstand zien die de radar meet.
 
-- Snelheid meten
-- Actuatoren aansturen
+#### MQTT
+Om het hele project te laten voldoen aan de standaarden zoals beschreven in de [SDI docs](./documentatie/projectdocumentatie/SDIdocs) is er onderzoek gedaan naar [MQTT](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Hieruit is gebleken waarom MQTT een passende oplossing is om te gebruiken binnen dit project. De microcontroller stuurt alle data door naar de MQTT broker zodat hiermee vervolgens kan worden gerekend om het schip autonoom te laten aanmeren
+
+
+## Installatie
+
+Voor dit project zijn verschillende dingen nodig om de testopstelling na te beleven. Deze vind je in [handleiding](documentatie/projectdocumentatie/handleiding.md).
+
+
 
 ## Belangrijke documentatie & navigatie
 
@@ -38,7 +45,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 >Met terminal: cd documentatie\onderzoek\eigenonderzoek
 >Zonder terminal: documentatie -> onderzoek -> eigenonderzoek
 
-- Projectdocumentatie, hier is alle documentatie te vinden die de projectdoelen aantonen zoals risico-inventarisatie en Stakeholder-analyse
+- Projectdocumentatie, hier is alle documentatie te vinden die de projectdoelen aantonen zoals risico-inventarisatie en Stakeholder-analyse. In de [handleiding](documentatie/projectdocumentatie/handleiding.md) is er ook nog dieper ingegaan op de onderdelen
 
 >Met Terminal cd documentatie\projectdocumentatie
 >Zonder Terminal documentatie- > projectdocumentatie
@@ -61,6 +68,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 - Mees van der Waal (1052159)
 
 # TODO
+- TODO weghalen
 - '.deprecated' moet nog weg
 - documentatie
     - onderzoek Olaf (expirimenteel)
