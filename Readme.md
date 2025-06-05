@@ -63,23 +63,14 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 # TODO
 - '.deprecated' moet nog weg
 - documentatie
-    - 'aantekeningen.md' netjes maken/
-    - 'opdrachtgever.md' netjes maken/
-    - onderzoeken vertalen /
     - onderzoek Olaf (expirimenteel)
     - 'Testrapport.md' invullen
     - gebruikersacceptatietest maken /
-    - psp
-    - behuizing (mee bezig)
-    - robuustheids analyse (mee bezig)
-    - requirement analyse /
-    - storypoint toekennen aan de user stories/
     - burndown chart /
     - handleiding
     - flowchart
     - jira bijwerken
 - demovideo
-- promotie flyer (mee bezig)
 - usecase met context, opdrachtomschrijving en het probleem
 
 individueel
