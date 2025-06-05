@@ -1,43 +1,42 @@
 import numpy as np
-from acconeer.exptool import a121
 import time
+from acconeer.exptool import a121
+from acconeer.exptool.algo import distance
 
-
-print("Starting Acconeer A121 radar session...")
-
+# Create and connect the client
 client = a121.Client.open(serial_port="/dev/ttyUSB0")
-
 print("Client opened successfully.")
 
-# Set up sensor config correctly
-sensor_config = a121.SensorConfig()
-sensor_config.profile = a121.Profile.PROFILE_3
-sensor_config.step_length = 1      # Maximale resolutie (5 mm per stap)
-sensor_config.num_points = 600     # 3 meter bereik
-sensor_config.hwaas = 16
-sensor_config.sweeps_per_frame = 6 # Maximaal toegestaan bij deze instellingen
+# Create distance detector and config
+detector_config = distance.DetectorConfig(
+    start_m=0.25,
+    end_m=3.0,
+    max_profile=a121.Profile.PROFILE_5,
+    threshold_method=distance.ThresholdMethod.CFAR,
+    peaksorting_method=distance.PeakSortingMethod.STRONGEST,
+    threshold_sensitivity=0.5,
+    update_rate=50.0,  # in Hz
+)
 
-client.setup_session(sensor_config)
+detector = distance.Detector(client=client, detector_config=detector_config)
+metadata = detector.setup()
+print("Distance detector configured successfully.")
 
-print("Session configured successfully.")
+# Start session
+detector.start()
+print("Session started.")
 
-client.start_session()
-try: 
+try:
     while True:
-        # Get one frame of data
-        result = client.get_next()
-        frame = result.frame  # shape: (sweeps_per_frame, num_points)
-        averaged = np.mean(frame, axis=0)
-
-        peak_idx = np.argmax(averaged)
-
-        step_m = sensor_config.step_length * 0.005
-        distance_m = peak_idx * step_m
-
-        print(f"Measured distance: {distance_m:.2f} m")
-        time.sleep(0.1)
+        result = detector.get_next()
+        if result is not None and result.peaks:
+            for i, peak in enumerate(result.peaks):
+                print(f"Peak {i+1}: {peak:.2f} m")
+        else:
+            print("No peaks detected.")
+        time.sleep(0.02)  # Match update_rate ~50Hz
 except KeyboardInterrupt:
-    print("Session interrupted by user.")
-    client.stop_session()
+    print("Session interrupted.")
+    detector.stop()
     client.close()
-
+    print("Session stopped and client closed.")
