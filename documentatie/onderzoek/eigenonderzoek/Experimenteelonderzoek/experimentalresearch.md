@@ -37,8 +37,11 @@ A separate paper within the project has provided the necessary information suppo
 
 ## Theoretical Framework
 
+Radar technology has long time played a crusial role in maritime navigation. Ships have radars that are optimized for long-range object detection. This is primarily used for collision avoidance and situational awareness. These systems provide reliable detection of large objects at distances. However, autonomous docking requires short range measurements to navigate confined envirements such as harbours.
 
-in 
+For such close range applications, compact and high-resolution radar sensors - originally developed for the automotive industry - are increasingly being considerd. In automotive systems, milimeter-wave radar has been proven effective for object detection, lane keeping and parking assistance. These systems operate on the 60-77 GHz frequency range. This provides spatial resolution and reliability in rain, fog or dust, where optical sensors may fail. [1] [2]
+
+The Acconeer XE125 sensor uses pulsed coherent radar (PCR) technology, offering centimeter-level accuracy and a small hardware footprint. Such features make it a promising candidate for autonomous docking systems in the maritime sector, where similar environmental challenges and spatial constraints exist [3]
 
 
 
@@ -56,7 +59,7 @@ To assess sensor accuracy at shorter ranges, additional measurements were taken 
 
 ### Measurement Instruments
 1. XE125 Radar sensor
-    - Description: A XE125 sensor that to a laptop via usb-c.
+    - Description: A XE125 [3] sensor that to a laptop via usb-c.
 - Components:
     - XE125
     - LH132 Lens kit
@@ -74,25 +77,8 @@ To assess sensor accuracy at shorter ranges, additional measurements were taken 
 2. Calculate the average difference between the measuring tape and the sensor.
 
 ## Test Setup
-The sensor software was configured with the following settings.
-```json
-{
-  "start_m": 0.25,
-  "end_m": 3.0,
-  "max_step_length": null,
-  "max_profile": "PROFILE_5",
-  "close_range_leakage_cancellation": false,
-  "signal_quality": 15.0,
-  "threshold_method": "CFAR",
-  "peaksorting_method": "STRONGEST",
-  "reflector_shape": "GENERIC",
-  "num_frames_in_recorded_threshold": 100,
-  "fixed_threshold_value": 100.0,
-  "fixed_strength_threshold_value": 0.0,
-  "threshold_sensitivity": 0.5,
-  "update_rate": 50.0
-}
-```
+The sensor software was configured with the following settings. [Appendix A]
+
 Note: The `end_m` parameter was set to 3 meters in the Acconeer software. This limits the sensor's measurement range to 3 meters during testing. The restriction was due to a software limitation. Testing beyond 3 meters may require different settings in the software.
 
 
@@ -125,3 +111,31 @@ The XE125 radar sensor demonstrated high accuracy in short-range distances up to
 
 Within the tested range, the sensor provided reliable and consistent data, making it a strong candidate for intergration into autonomous control systems
 The sensor provided within the tested range reliable and consistant data, making it a strong candidate for intergration into autonomous control systems.
+
+
+
+## Sources
+[1] J. Hasch, E. Topak, R. Schnabel, T. Zwick, R. Weigel, and C. Waldschmidt, “Millimeter-Wave Technology for Automotive Radar Sensors in the 77 GHz Frequency Band,” IEEE Transactions on Microwave Theory and Techniques, vol. 60, no. 3, pp. 845–860, Mar. 2012. doi: 10.1109/TMTT.2011.2175687.
+[2] S. Yarkan and H. Arslan, “On the Use of Radar and Communication Systems for Intelligent Transportation,” IEEE Transactions on Intelligent Transportation Systems, vol. 8, no. 4, pp. 620–628, Dec. 2007.
+[3] Acconeer AB, “XE125 Radar Sensor Datasheet,” 2024. [Online]. Available: https://www.acconeer.com/products/xe125/
+
+## Appendix
+[A]
+```json
+{
+  "start_m": 0.25,
+  "end_m": 3.0,
+  "max_step_length": null,
+  "max_profile": "PROFILE_5",
+  "close_range_leakage_cancellation": false,
+  "signal_quality": 15.0,
+  "threshold_method": "CFAR",
+  "peaksorting_method": "STRONGEST",
+  "reflector_shape": "GENERIC",
+  "num_frames_in_recorded_threshold": 100,
+  "fixed_threshold_value": 100.0,
+  "fixed_strength_threshold_value": 0.0,
+  "threshold_sensitivity": 0.5,
+  "update_rate": 50.0
+}
+```

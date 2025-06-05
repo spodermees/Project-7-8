@@ -65,7 +65,6 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 - documentatie
     - onderzoek Olaf (expirimenteel)
     - 'Testrapport.md' invullen
-    - gebruikersacceptatietest maken /
     - burndown chart /
     - handleiding
     - flowchart
