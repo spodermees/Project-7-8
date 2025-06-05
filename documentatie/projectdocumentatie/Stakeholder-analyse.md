@@ -1,6 +1,6 @@
 # Stakeholder-analyse
 
-![Stakeholder Analyse](./../../.images/ScreenshotStakeHolderAnalyse.png)
+![Stakeholder Analyse](./../../images/StakeholderAnalyse.png)
 
 Voor dit project is er in de eerste week een 'StakeholderAnalyse Diagram' gemaakt (Zoals hier boven te zien is). 
 Zoals de naam van dit document ook zegt is het een analyse en niet alleen een 'Diagram'. Dus in dit document worden alle stakeholders op een rijtje gezet met wie ze zijn en welk 'impact' ze hebben op het project.
