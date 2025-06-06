@@ -45,7 +45,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 >Met terminal: cd documentatie\onderzoek\eigenonderzoek
 >Zonder terminal: documentatie -> onderzoek -> eigenonderzoek
 
-- Projectdocumentatie, hier is alle documentatie te vinden die de projectdoelen aantonen zoals risico-inventarisatie en Stakeholder-analyse. In de [handleiding](documentatie/projectdocumentatie/handleiding.md) is er ook nog dieper ingegaan op de onderdelen
+- Projectdocumentatie, hier is alle documentatie te vinden die de projectdoelen aantonen zoals risico-inventarisatie en Stakeholder-analyse. In de [handleiding](documentatie/projectdocumentatie/handleiding.md) is er ook nog dieper ingegaan op hoe je het systeem in elkaar zet.
 
 >Met Terminal cd documentatie\projectdocumentatie
 >Zonder Terminal documentatie- > projectdocumentatie
