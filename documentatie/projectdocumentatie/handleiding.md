@@ -16,7 +16,7 @@
 2. Installeer het lcd scherm, de raspberry pi en de radar sensor zoals op de foto
 
 
-# HIER MOET EEN FOTO KOMEN!!!
+![Indeling](./../../images/Indeling.JPG)
 
 ### LCD
 Er zijn 4 aansluiting bij het LCD scherm. Deze zijn: VCC, GND, SCL, SDA. Zoek indien nodig de pinout voor jouw model op.
@@ -29,6 +29,8 @@ Als de raspberry power krijgt dan zal de backscreen van de LCD aan gaan.
 
 ### XE125 Sensor
 De XE125 sluit je aan met een usb kabel. Doe de kant met usb-a in de raspberry in 1 van de 4 poorten. Doe de andere kant in de usb-c poort van de XE125.
+
+Zie hiervoor ook het [elektrisch schema](../diagrammen/ElektrischSchema.pdf).
 
 ## Raspberry Pi setup
 ### Systeem

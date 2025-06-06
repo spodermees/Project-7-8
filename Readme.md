@@ -10,7 +10,7 @@
 
 ## Beschrijving
 
-Project 7/8 staat helemaal in het teken van autonoom manouvreren, of in ieder geval dit project van Project 7/8. Samen met Sens2Sea en Geet mosterdijk, wordt er gekeken naar hoe het aanmeren en wegvaren veiliger en efficiënter kan door behulp van verschillende sensoren en actuatoren. Op dit moment zijn de enige toepassingen hiervan niet open source, en lastig en duur te onderhouden. In dit project wordt er onderzoek gedaan naar verschillende sensoren en het gewenste communicatie protocool: "MQTT" in combinatie met SDI. De scope van dit project is gericht op de sensoren niet actuatoren, dat is voor een vervolg project hier van. Alle testen wordenn gedaan op schaal in het RDM op een schaal model van een boot.
+Project 7/8 staat helemaal in het teken van autonoom manouvreren, of in ieder geval dit project van Project 7/8. Samen met Sens2Sea en Geet mosterdijk, wordt er gekeken naar hoe het aanmeren en wegvaren veiliger en efficiënter kan door behulp van verschillende sensoren en actuatoren. Op dit moment zijn de enige toepassingen hiervan niet open source, en lastig en duur te onderhouden. In dit project wordt er onderzoek gedaan naar verschillende sensoren en het gewenste communicatie protocool: "MQTT" in combinatie met SDI. De scope van dit project is gericht op de sensoren niet actuatoren, dat is voor een vervolg project hier van. Voor een volledige uitleg en demo kunt u de demovideo kijken
 
 
 ## Werking
