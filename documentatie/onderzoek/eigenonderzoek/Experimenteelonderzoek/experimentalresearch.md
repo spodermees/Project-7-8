@@ -17,9 +17,9 @@ Educator: A.M. de Gier, A.P.A. Slaa
 ## Executive Summary
 This report presents a short-range distance measurement test using the XE125 sensor as part of the project Autonoom Manoeuveren in de Haven. The project's goal is to explore the feasibility of automating ship docking using sensor data.
 
-under controlled conditions, the XE125 radar sensor was tested for measurement accuracy over distances ranging from 0.10 to 3.00 meters, using a reflective aluminium surface as the target. The sensor's readings ware comared to the reference measurments taken with a measuring tape.
+Under controlled conditions, the XE125 radar sensor was tested for measurement accuracy over distances ranging from 0.10 to 3.00 meters, using a reflective aluminium surface as the target. The sensor's readings were compared to the reference measurements taken with a measuring tape.
 
-The experiment showed that the sensor consistently achieved an average accuracy within 0.02 meters. This confirms its potential for close-range maritime applications. However, due to the current software limitations, measurements beyond 3 meters were not possible and need further investigation. But the XE125 sensor shows a promise as a reliable sensor for autonomous docking systems.
+The experiment showed that the sensor consistently achieved an average accuracy within 0.02 meters. This confirms its potential for close-range maritime applications. However, due to the current software limitations, measurements beyond 3 meters was not possible and need further investigation. But the XE125 sensor shows a promise as a reliable sensor for autonomous docking systems.
 
 
 
@@ -30,20 +30,16 @@ The project is led by Geert Mosterdijk, an employee of PK Marine, a company spec
 
 Currently, ship docking in harbours is performed manually by a captain and crew, with limited support from onboard sensors. This approach is prone to human error, which can lead to inefficient throttle use and increased fuel consumption. Additionally, the reliance on manual labour contributes to higher operational costs.
 
-To reduce those costs, Geert Mosterdijk envisions a system where multiple sensors are placed around the ship. Those sensors will send realtime information to a central unit. This unit will control the engines based on the data received. 
+To reduce those costs, Geert Mosterdijk envisions a system where multiple sensors are placed around the ship. These sensors will send real time information to a central unit. This unit will control the engines based on the data received. 
 
-A separate paper within the project has provided the necessary information supporting the selection of the XE125 sensor, which will be experimentally tested in this research for its accuracy and performance over a 20-meter range.
+A separate paper within the project has provided the necessary information supporting the selection of the XE125 sensor, which will be experimentally tested in this research for its accuracy and performance over a 20-meter range. [1]
 
 
 ## Theoretical Framework
 
-Radar technology has long time played a crusial role in maritime navigation. Ships have radars that are optimized for long-range object detection. This is primarily used for collision avoidance and situational awareness. These systems provide reliable detection of large objects at distances. However, autonomous docking requires short range measurements to navigate confined envirements such as harbours.
+Radar technology has long time played a crucial role in maritime navigation. Ships have radars that are optimized for long-range object detection. This is primarily used for collision avoidance and situational awareness. These systems provide reliable detection of large objects at distances. However, autonomous docking requires short range measurements to navigate confined environments such as harbours.
 
-For such close range applications, compact and high-resolution radar sensors - originally developed for the automotive industry - are increasingly being considerd. In automotive systems, milimeter-wave radar has been proven effective for object detection, lane keeping and parking assistance. These systems operate on the 60-77 GHz frequency range. This provides spatial resolution and reliability in rain, fog or dust, where optical sensors may fail. [1] [2]
-
-The Acconeer XE125 sensor uses pulsed coherent radar (PCR) technology, offering centimeter-level accuracy and a small hardware footprint. Such features make it a promising candidate for autonomous docking systems in the maritime sector, where similar environmental challenges and spatial constraints exist [3]
-
-
+The Acconeer XE125 sensor uses pulsed coherent radar (PCR) technology, offering centimeter-level accuracy and a small hardware footprint. Such features make it a promising candidate for autonomous docking systems in the maritime sector, where similar environmental challenges and spatial constraints exists. [2]
 
 ### Research Question
 To what extent does the XE125 distance sensor achieve a measurement accuracy of 1 cm across distances up to 20 meters under controlled conditions?
@@ -51,9 +47,9 @@ To what extent does the XE125 distance sensor achieve a measurement accuracy of 
 
 ### Research Setup
 
-The XE125 distance sensor was connected to a Laptop with the acconeer-python-exploration tool via USB-C for data acquisition. The sensor was mounted on a stable platform at a height of 1.1 meter, aligned perpendicular to a aluminium surface. The aluminium plate, 1 mm thick, was selected to ensure consistent and stable reflectivity. 
+The XE125 distance sensor was connected to a Laptop with the acconeer-python-exploration tool via USB-C for data acquisition. The sensor was mounted on a stable platform at a height of 1.1 meters, aligned perpendicular to a aluminium surface. The aluminium plate, 1 mm thick, was selected to ensure consistent and stable reflectivity. 
 
-Distances from 1 meter to 20 meters were marked at 1-meter intervals using a measuring tape. For each distance, a measurement was recorded to evaluate the consistency of the sensor. The sensor's output was compared to the actual distance, recorded, and noted in a data table. Data was logged through the acconeer exploration tool.
+Distances from 1 meter to 20 meters were marked at 1-meter intervals using a measuring tape. For each distance, a measurement was recorded to evaluate the consistency of the sensor. The sensor's output was compared to the actual distance, recorded, and noted in a data table. Data was logged through the Acconeer exploration tool.
 
 To assess sensor accuracy at shorter ranges, additional measurements were taken from 0.10 meters to 1 meter, with intervals of 0.10 meters.
 
@@ -73,7 +69,7 @@ To assess sensor accuracy at shorter ranges, additional measurements were taken 
     1. Plug the XE125 sensor in the laptop with usb-c cable.
 
 ## Data Analysis
-1. Compare the distance measured with the measuring tape and the distance with the sensor.
+1. Compare the distance measured from the measuring tape with the distance measured from the sensor.
 2. Calculate the average difference between the measuring tape and the sensor.
 
 ## Test Setup
@@ -84,7 +80,7 @@ Note: The `end_m` parameter was set to 3 meters in the Acconeer software. This l
 
 ## Test
 
-|Test number|Distance (m) (measuring tape)| Distance (m) (reading sensor) | Average Error (m) |
+|Test number|Distance (m) (measuring tape) | Distance (m) (reading sensor) | Average Error (m) |
 |-|-|-|-|
 |1| 0.10 | 0.10 | +0.00 |
 |2| 0.20 | 0.19 | -0.01 |
@@ -104,20 +100,17 @@ Note: The `end_m` parameter was set to 3 meters in the Acconeer software. This l
 
 
 ## Results
-The data shows that the sensor is very accurate until the object is out of range. The measurements have margin of error of approximately +-0.02 meters due to the aluminum plate sometimes not being perfectly straight, or the measuring tape not always being perfectly straight or flat.
+The data shows that the sensor is very accurate until the object is out of range. The measurements have a margin of error of approximately +-0.02 meters due to the aluminum plate sometimes not being perfectly straight, or the measuring tape not always being perfectly straight or flat.
 
 ## Conclusion
 The XE125 radar sensor demonstrated high accuracy in short-range distances up to 3 meters, with a maximum deviation of +-0.02 meters. These results suggest the sensor is well-suited for close-range applications such as ship docking in a harbour. Although the sensor is theoretically capable for longer distances, the current software setup restricted the measurements beyond 3 meters. Future tests should explore the sensor's full range capabilities. 
 
-Within the tested range, the sensor provided reliable and consistent data, making it a strong candidate for intergration into autonomous control systems
-The sensor provided within the tested range reliable and consistant data, making it a strong candidate for intergration into autonomous control systems.
-
+Within the tested range, the sensor provided reliable and consistent data, making it a strong candidate for integration into autonomous control systems.
 
 
 ## Sources
-[1] J. Hasch, E. Topak, R. Schnabel, T. Zwick, R. Weigel, and C. Waldschmidt, “Millimeter-Wave Technology for Automotive Radar Sensors in the 77 GHz Frequency Band,” IEEE Transactions on Microwave Theory and Techniques, vol. 60, no. 3, pp. 845–860, Mar. 2012. doi: 10.1109/TMTT.2011.2175687.
-[2] S. Yarkan and H. Arslan, “On the Use of Radar and Communication Systems for Intelligent Transportation,” IEEE Transactions on Intelligent Transportation Systems, vol. 8, no. 4, pp. 620–628, Dec. 2007.
-[3] Acconeer AB, “XE125 Radar Sensor Datasheet,” 2024. [Online]. Available: https://www.acconeer.com/products/xe125/
+[1] Bashair, H. (2025). SensorResearch. Available: [sensor](./../Sensoronderzoek/SensorResearch.pdf)
+[2] Acconeer AB, “XE125 Radar Sensor Datasheet,” 2024. [Online]. Available: https://www.acconeer.com/products/xe125/
 
 ## Appendix
 [A]
