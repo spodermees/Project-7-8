@@ -24,11 +24,10 @@ Deze gebruikersacceptatietest heeft als doel om vast te stellen of het systeem v
 
 | Nr. | Testonderdeel                      | Verwachte uitkomst                                       | Resultaat | Opmerkingen                           |
 |-----|------------------------------------|----------------------------------------------------------|-----------|----------------------------------------|
-| 1   | Sensor meet afstand                | Sensor geeft binnen 1 seconde correcte afstand weer      | ✅ / ❌    |                                        |
-| 2   | Data-overdracht via MQTT           | Data wordt realtime verzonden en ontvangen zonder fout   | ✅ / ❌    |                                        |
-| 3   | Behuizing houdt sensor droog       | Geen vochtsporen na test in natte omgeving               | ✅ / ❌    |                   |
-| 4   | Gebruiksgemak software             | Interface is duidelijk en zonder uitleg bruikbaar        | ✅ / ❌    |                                        |
-| 5   | Logging van fouten werkt correct   | Fout wordt gelogd bij onderbreking van verbinding        | ✅ / ❌    |                                        |
+| 1   | Sensor meet afstand                | Sensor geeft binnen 1 seconde correcte afstand weer      | ❌    | Hij geeft wel een afstand weer binnen 1 seconde maar niet heel accuraat. |
+| 2   | Data-overdracht via MQTT           | Data wordt realtime verzonden en ontvangen zonder fout   | ✅ |  Word goed, zonder fouten verstuurt via mqtt |
+| 3   | Behuizing houdt sensor droog       | Geen vochtsporen na test in natte omgeving               | ❌ | Het prototype is op dit moment gemaakt van hout. Waardoor het water gemakklijk naar binnen kan komen|
+| 4   | Logging van fouten werkt correct   | Fout wordt gelogd bij onderbreking van verbinding        | ✅  | De code geeft errors wanneer er systemen niet werken. Deze zijn door monteurs te zien op het LCD scherm |
 
 ---
 
@@ -43,10 +42,8 @@ Deze gebruikersacceptatietest heeft als doel om vast te stellen of het systeem v
 
 Op basis van de testresultaten en feedback kan geconcludeerd worden dat het systeem:
 
-- [ ] **Geaccepteerd** is door de opdrachtgever
-- [ ] **Nog aanpassingen** nodig heeft op de volgende punten:
-  - ...
-  - ...
+- **Geaccepteerd** is door de opdrachtgever.
+- **Geen** aanpassingen meer nodig heeft.
 
 ---
 

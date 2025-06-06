@@ -69,11 +69,12 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 
 # TODO
 - TODO weghalen
-- '.deprecated' moet nog weg
 - documentatie
     - burndown chart /
     - flowchart
     - jira bijwerken
+    - bundel onderzoek -> pdf
+    - sensor onderzoek
 
 individueel
 - reflectie (Hidde check)
