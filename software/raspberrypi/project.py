@@ -14,7 +14,7 @@ broker = "172.20.10.3"  # Replace with your MQTT broker IP
 port = 1883             # Replace with your MQTT broker port
 username = "Hidde"      # Replace with your MQTT username
 password = "3332ks"     # Replace with your MQTT password
-topic = "test/chat"     # Replace with your MQTT topic
+topic = "sensor/data"     # Replace with your MQTT topic
 
 # Flask setup
 app = Flask(__name__)
@@ -32,11 +32,11 @@ sensor_config = a121.SensorConfig()
 
 def on_message(sourceClient, userdata, message):
     payload = message.payload.decode()
-    if(message.topic == topic and payload == "STOP"):
+    if(message.topic == "sensor1/action" and payload == "STOP"):
         lcd.write_string("Stopping sensor")
         checkSensor = False
         return
-    if(message.topic == topic and payload == "START"):
+    if(message.topic == "sensor1/action" and payload == "START"):
         lcd.write_string("Starting sensor")
         checkSensor = True
         return
@@ -114,7 +114,7 @@ def sensor_loop():
 
             lcd.clear()
             lcd.write_string(f"Distance: {distance_m:.2f} m")
-            mqttClient.publish(topic, f"Distance: {distance_m:.2f} m")
+            mqttClient.publish(topic, f"Distance: {distance_m:.2f}")
             socketio.emit('distance', f"{distance_m:.2f}")
             time.sleep(0.1)
     except Exception as e:

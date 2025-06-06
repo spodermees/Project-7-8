@@ -13,19 +13,15 @@ Om ervoor te zorgen dat alle modules makkelijk te installeren, onderhouden of ve
 Alle modules zullen met elkaar verbonden zijn in een MQTT netwerk zodat alle data overal beschikbaar is. Het zal voor 2 doelen gebruikt worden, voor het versturen van data vanaf de sensor modules en voor het aansturen van de sensor modules vanuit de controller
 
 ### Data format
-Het versturen van data vanaf de sensor modules gebeurt in SI eenheden distance in cm en speed in m/s. Deze worden verstuurd naar het volgende topic:
+Het versturen van data vanaf de sensor modules gebeurt in SI eenheden. Het gaat hier om de afstand in meter. Deze worden verstuurd naar het volgende topic:
 
 ``sensor/data``
 
 In het volgende format:
 ```
-{
-	"sensor": 1,
-	"data": {
-		"distance": 45,
-		"speed": 10
-	}
-}
+
+"Distance: <afstand in meter>"
+
 ```
 
 ### Commando format
@@ -33,14 +29,12 @@ Om de verschillende sensor modules aan of uit te zetten zal er via MQTT een comm
 
 ``sensor1/action``
 
-In het volgende format:
+Om te stoppen:
 ```
-{
-	"action": 1
-}
+STOP
 ```
-Hierbij geldt:
 
-``0`` = uit
-
-``1`` = aan
+Om te starten:
+```
+START
+```
