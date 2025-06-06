@@ -15,7 +15,7 @@ Project 7/8 staat helemaal in het teken van autonoom manouvreren, of in ieder ge
 
 ## Werking
 
-Het prototype bestaat uit meerdere elektronische onderdelen en en een behuizing, hier volgt een beschrijving van wat elk onderdeel precies doet en waarom er voor deze gekozen is. In de [architectuurontwerp](documentatie/diagrammen/Architectuur.pdf) en de [interne architectuurontwerp](documentatie/diagrammen/InterneArchitectuur.pdf) is visueel gemaakt hoe de onderdelen verbonden zijn.
+Het prototype bestaat uit meerdere elektronische onderdelen en en een behuizing, hier volgt een beschrijving van wat elk onderdeel precies doet en waarom er voor deze gekozen is. In de [architectuurontwerp](documentatie/diagrammen/Architectuur.png) en de [interne architectuurontwerp](documentatie/diagrammen/InterneArchitectuur.png) is visueel gemaakt hoe de onderdelen verbonden zijn.
 
 #### Microcontroller 
 In dit project was er een controller nodig die het prototype aanstuurt. Zo wordt deze gebruikt voor het ophalen van de afstand van de radarsensor om deze vervolgens door te sturen naar het lcd scherm en de MQTT broker. Er is gekozen voor een Raspberry PI 5 omdat de ondersteuning met de Radar sensor hier het beste mee is en omdat deze het meest robuust is in een omgeving zoals op een schip
@@ -77,7 +77,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
     - flowchart
     - jira bijwerken
 - demovideo
-- usecase met context, opdrachtomschrijving en het probleem
+- usecase met context, opdrachtomschrijving en het probleem --> demovideo
 
 individueel
 - reflectie
