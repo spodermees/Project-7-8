@@ -52,13 +52,12 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 
 - Code, hier is de code te vinden die wordt gebruikt voor het eindproduct
 
->Met Terminal: cd src
->Zonder Terminal src
+>Met Terminal: `cd software/raspberrypi/project/py`
+>Zonder Terminal [code](./software/raspberrypi/project.py)
 
-- Aantekeningen dit zijn aantekeningen van belangrijke begrippen of dingen die we moesten onthouden, dit is voor het gemiddelde persoon niet belangrijk
+Om de broker te runnen kun je naar [broker](./software/broker/docker-compose.yml). of `cd software/broker/`. Je kunt de broker aanzetten als je docker hebt met het command `docker-compose up -d --build` en uitzetten met `docker compose down`.
 
->Met Terminal cd documentatie\aantekeningen
->Zonder Terminal documentatie -> aantekeningen
+De username van de broker is `Hidde` en het wachtwoord is `3332ks`
 
 ## Contributors
 
@@ -74,7 +73,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
     - flowchart
     - jira bijwerken
     - bundel onderzoek -> pdf
-    - sensor onderzoek
+    - sensor onderzoek -> verander ook de verwijzing in Readme.md onder het kopje Radar
 
 individueel
 - reflectie (Hidde check)
