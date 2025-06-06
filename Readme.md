@@ -71,9 +71,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 - TODO weghalen
 - '.deprecated' moet nog weg
 - documentatie
-    - onderzoek Olaf (expirimenteel)
     - 'Testrapport.md' invullen
-    - gebruikersacceptatietest maken /
     - burndown chart /
     - handleiding
     - flowchart

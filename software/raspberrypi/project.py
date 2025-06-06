@@ -61,6 +61,7 @@ def initMQTT():
     mqttClient.connect(broker, port, 60)
     mqttClient.on_message = on_message
     mqttClient.loop_start()
+    mqttClient.subscribe(topic)
 
 @app.route('/')
 def index():
@@ -77,6 +78,7 @@ def index():
             <script>
                 const socket = io();
                 socket.on('distance', data => {
+                    console.log("adsf");
                     document.getElementById('distance').innerText = `Distance: ${data} m`;
                 });
             </script>
@@ -102,7 +104,11 @@ def sensor_loop():
             result = sensorClient.get_next()
             frame = result.frame
             averaged = np.mean(frame, axis=0)
-            peak_idx = np.argmax(averaged)
+            smoothed = np.convolve(averaged, np.ones(5)/5, mode='same')
+            smoothed = smoothed - np.min(smoothed)
+            threshold = np.max(smoothed) * 0.5
+            smoothed[smoothed < threshold] = 0
+            peak_idx = np.argmax(smoothed)
             step_m = sensor_config.step_length * 0.005
             distance_m = peak_idx * step_m
 

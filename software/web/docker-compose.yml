@@ -1,7 +1,0 @@
-services:
-  webpage:
-    image: nginx:latest
-    ports:
-      - "80:80"
-    volumes:
-      - ./webpage:/usr/share/nginx/html
