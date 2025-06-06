@@ -71,14 +71,10 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 - TODO weghalen
 - '.deprecated' moet nog weg
 - documentatie
-    - 'Testrapport.md' invullen
     - burndown chart /
-    - handleiding
     - flowchart
     - jira bijwerken
-- demovideo
-- usecase met context, opdrachtomschrijving en het probleem --> demovideo
 
 individueel
-- reflectie
+- reflectie (Hidde check)
 - evaluatie opdrachtgever
