@@ -48,5 +48,5 @@ Op basis van de testresultaten en feedback kan geconcludeerd worden dat het syst
 ---
 
 **Versie**: 1.0  
-**Datum**: 5 juni 2025  
+**Datum**: 6 juni 2025  
 **Auteur**: Projectgroep 7/8 – Autonoom Manoeuvreren
