@@ -78,4 +78,3 @@ De username van de broker is `Hidde` en het wachtwoord is `3332ks`
 
 individueel
 - reflectie (Hidde check)
-- evaluatie opdrachtgever
