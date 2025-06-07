@@ -69,6 +69,7 @@ De username van de broker is `Hidde` en het wachtwoord is `3332ks`
 # TODO
 - TODO weghalen
 - documentatie
+    - Testrapport (Hwayda?)
     - burndown chart /
     - flowchart
     - jira bijwerken
