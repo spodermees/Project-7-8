@@ -59,6 +59,8 @@ Om de broker te runnen kun je naar [broker](./software/broker/docker-compose.yml
 
 De gebruikersnaam van de broker is `Hidde` en het wachtwoord is `3332ks`
 
+Als je de handleiding hebt gevolgd kun je als je de venv met `source venv/bin/activate` aan hebt gezet, het python bestand activeren met `python3 bestandsnaam.py`
+
 ## Contributors
 
 - Hwayda Bashair (1049850)
@@ -69,9 +71,6 @@ De gebruikersnaam van de broker is `Hidde` en het wachtwoord is `3332ks`
 # TODO
 - TODO weghalen
 - documentatie
-    - Testrapport (Hwayda?)
-    - burndown chart /
-    - jira bijwerken
     - sensor onderzoek -> verander ook de verwijzing in Readme.md onder het kopje Radar
 
 individueel
