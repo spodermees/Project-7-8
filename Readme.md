@@ -34,6 +34,16 @@ Om het hele project te laten voldoen aan de standaarden zoals beschreven in de [
 
 Voor dit project zijn verschillende dingen nodig om de testopstelling na te beleven. Deze vind je in [handleiding](documentatie/projectdocumentatie/handleiding.md).
 
+- Code, hier is de code te vinden die wordt gebruikt voor het eindproduct
+
+>Met Terminal: `cd software/raspberrypi/project/py`
+>Zonder Terminal [code](./software/raspberrypi/project.py)
+
+Om de broker te runnen kun je naar [broker](./software/broker/docker-compose.yml). of `cd software/broker/`. Je kunt de broker aanzetten als je docker hebt met het command `docker-compose up -d --build` en uitzetten met `docker compose down`.
+
+De gebruikersnaam van de broker is `Hidde` en het wachtwoord is `3332ks`
+
+Als je de handleiding hebt gevolgd kun je als je de venv met `source venv/bin/activate` aan hebt gezet, het python bestand activeren met `python3 bestandsnaam.py`
 
 
 ## Belangrijke documentatie & navigatie
@@ -50,16 +60,6 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 >Met Terminal cd documentatie\projectdocumentatie
 >Zonder Terminal documentatie- > projectdocumentatie
 
-- Code, hier is de code te vinden die wordt gebruikt voor het eindproduct
-
->Met Terminal: `cd software/raspberrypi/project/py`
->Zonder Terminal [code](./software/raspberrypi/project.py)
-
-Om de broker te runnen kun je naar [broker](./software/broker/docker-compose.yml). of `cd software/broker/`. Je kunt de broker aanzetten als je docker hebt met het command `docker-compose up -d --build` en uitzetten met `docker compose down`.
-
-De gebruikersnaam van de broker is `Hidde` en het wachtwoord is `3332ks`
-
-Als je de handleiding hebt gevolgd kun je als je de venv met `source venv/bin/activate` aan hebt gezet, het python bestand activeren met `python3 bestandsnaam.py`
 
 ## Contributors
 
@@ -67,8 +67,3 @@ Als je de handleiding hebt gevolgd kun je als je de venv met `source venv/bin/ac
 - Hidde Gerritsen (1079142)
 - Olaf Goudriaan (1071349)
 - Mees van der Waal (1052159)
-
-# TODO
-- TODO weghalen
-- documentatie
-    - sensor onderzoek -> verander ook de verwijzing in Readme.md onder het kopje Radar
