@@ -57,7 +57,7 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 
 Om de broker te runnen kun je naar [broker](./software/broker/docker-compose.yml). of `cd software/broker/`. Je kunt de broker aanzetten als je docker hebt met het command `docker-compose up -d --build` en uitzetten met `docker compose down`.
 
-De username van de broker is `Hidde` en het wachtwoord is `3332ks`
+De gebruikersnaam van de broker is `Hidde` en het wachtwoord is `3332ks`
 
 ## Contributors
 
