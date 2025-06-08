@@ -111,7 +111,7 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
 
     * Warmteafvoer binnen de behuizing
     * Moeilijke toegang voor onderhoud of herprogrammering
-    * Senser interventie
+    * Sensor interventie
 
 ---
 
