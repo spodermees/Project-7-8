@@ -72,6 +72,3 @@ Als je de handleiding hebt gevolgd kun je als je de venv met `source venv/bin/ac
 - TODO weghalen
 - documentatie
     - sensor onderzoek -> verander ook de verwijzing in Readme.md onder het kopje Radar
-
-individueel
-- reflectie (Hidde check)
