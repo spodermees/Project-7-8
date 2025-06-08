@@ -73,7 +73,6 @@ De username van de broker is `Hidde` en het wachtwoord is `3332ks`
     - burndown chart /
     - flowchart
     - jira bijwerken
-    - bundel onderzoek -> pdf
     - sensor onderzoek -> verander ook de verwijzing in Readme.md onder het kopje Radar
 
 individueel
