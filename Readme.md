@@ -21,13 +21,13 @@ Het prototype bestaat uit meerdere elektronische onderdelen en en een behuizing,
 In dit project was er een controller nodig die het prototype aanstuurt. Zo wordt deze gebruikt voor het ophalen van de afstand van de radarsensor om deze vervolgens door te sturen naar het lcd scherm en de MQTT broker. Er is gekozen voor een Raspberry PI 5 omdat de ondersteuning met de Radar sensor hier het beste mee is en omdat deze het meest robuust is in een omgeving zoals op een schip
 
 #### Radar
-Het onderdeel wat de binnen het prototype de afstand meet is de XM125 evaluation board met daarop de A121 radar sensor. Waarom er voor deze is gekozen is terug te lezen in het [sensor onderzoek](./documentatie/onderzoek/eigenonderzoek/Sensoronderzoek/Sensoronderzoek.md)
+Het onderdeel wat de binnen het prototype de afstand meet is de XM125 evaluation board met daarop de A121 radar sensor. Waarom er voor deze is gekozen is terug te lezen in het [sensor onderzoek](./documentatie/onderzoek/eigenonderzoek/Sensoronderzoek/SensorResearch.pdf)
 
 #### LCD scherm
 Om de data real-time te laten zien aan mensen die met de module aan het werk zijn is er een LCD scherm ingebouwd, deze laat de exacte afstand zien die de radar meet.
 
 #### MQTT
-Om het hele project te laten voldoen aan de standaarden zoals beschreven in de [SDI docs](./documentatie/projectdocumentatie/SDIdocs) is er onderzoek gedaan naar [MQTT](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Hieruit is gebleken waarom MQTT een passende oplossing is om te gebruiken binnen dit project. De microcontroller stuurt alle data door naar de MQTT broker zodat hiermee vervolgens kan worden gerekend om het schip autonoom te laten aanmeren
+Om het hele project te laten voldoen aan de standaarden zoals beschreven in de [SDI docs](./documentatie/projectdocumentatie/SDIdocs.md) is er onderzoek gedaan naar [MQTT](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Hieruit is gebleken waarom MQTT een passende oplossing is om te gebruiken binnen dit project. De microcontroller stuurt alle data door naar de MQTT broker zodat hiermee vervolgens kan worden gerekend om het schip autonoom te laten aanmeren
 
 
 ## Installatie
@@ -67,3 +67,6 @@ Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevo
 - Hidde Gerritsen (1079142)
 - Olaf Goudriaan (1071349)
 - Mees van der Waal (1052159)
+
+
+© https://github.com/spodermees/Project-7-8
