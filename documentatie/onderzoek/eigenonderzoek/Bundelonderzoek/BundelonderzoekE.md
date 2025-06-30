@@ -8,150 +8,161 @@ Teachers: Anne de Gier, Alex Slaa
 Date: 08/06/2025
 First opportunity
 
-## Summary
+## 1. Summary
 
-This research focuses on the influence of bundle spreading on sensor readings within the context of autonomous sailing in harbors. The main objective is to determine how the diameter of the sensor's beam (the "bundle") affects its accuracy and reliability. The study uses literature research to explore how beam divergence, focal distance, and detection resolution are influenced by bundle diameter. The key conclusion is that a smaller beam diameter improves measurement resolution and accuracy, making it more suitable for precise object detection, particularly in controlled environments like an indoor pool used for testing.
+This research investigates the influence of bundle spreading on sensor readings, specifically within the context of autonomous docking in indoor pools. The study explores how the diameter of a sensor's beam, or "bundle," impacts accuracy and resolution. The findings indicate that a smaller beam diameter improves measurement precision but may introduce higher sensitivity to noise. This study is supported by literature from optical fiber and radar sensing domains.
 
-## Introduction
+---
 
-### Background
+## 2. Introduction
 
-Project 7/8 is centered on autonomous sailing, specifically focused on "Autonomous Docking in the Harbor". The goal is to automate the docking process of ships to improve safety and reduce the manual effort required by sailors and harbor personnel. The company Sens2Sea and the product owner: "Geert Mosterdijk", are working on this 'problem. Together with Sens2Sea, Geert Mosterdijk and the Hogeschool Rotterdam, this project is full motion. This research is part of a broader initiative aimed at enhancing sensor accuracy for small-scale autonomous boats tested in indoor pools.
+### 2.1 Background
 
-### Problem Statement
+Project 7/8 aims to automate the docking process of small autonomous boats to improve efficiency and safety. Collaborators include Sens2Sea, Geert Mosterdijk, and the Hogeschool Rotterdam. A core challenge in this domain is optimizing the configuration of sensors used to detect obstacles and guide docking maneuvers.
 
-In the current setup, various sensors are used to detect obstacles and measure distances during docking maneuvers. However, the effectiveness of these sensors is highly dependent on the characteristics of the emitted and received beam, commonly referred to as the "bundle". A key issue is that improper bundle configuration can lead to inaccurate or noisy readings, making autonomous docking less reliable.
+### 2.2 Problem Statement
 
-### Importance
+Sensor effectiveness in docking scenarios is significantly influenced by beam properties. Improper bundle configurations can yield inaccurate readings, risking unsafe docking operations.
 
-The target audience includes engineers and developers working on autonomous marine systems. Accurate sensor readings are critical to avoiding collisions and ensuring safe, reliable docking. This issue affects all stakeholders involved in maritime automation, and solving it is essential to advancing the state of autonomous navigation technologies.
+### 2.3 Research Goal
 
-### Research Goal
+To determine the optimal bundle diameter for sensors operating in small-scale controlled environments.
 
-The desired outcome is to determine the optimal bundle diameter for sensors used in indoor pool environments where precision is prioritized over range.
-
-### Research Question
-
-#### Main Research Question
+### 2.4 Main Research Question
 
 How does bundle spreading influence the readings of a sensor?
 
-#### Sub-questions
+### 2.5 Sub-questions
 
-What is a bundle and how is it used in sensors?
+1. What is a bundle and how is it used in sensors?  
+2. How does bundle diameter affect sensor performance?  
+3. What are the effects of beam divergence, focal distance, and detection resolution on measurements?  
+4. How do different bundle diameters perform under conditions like noise, motion, and signal strength?
 
-What is bundle diameter and how does it affect sensor performance?
+---
 
-What are the effects of beam divergence, focal distance, and detection resolution on measurements?
+## 3. Theoretical Framework
 
-How do different bundle diameters perform under various conditions such as noise, motion, and signal strength?
+Literature confirms that bundle geometry plays a pivotal role in sensing accuracy. Zubia et al. (2024) outline that trifurcated optical fiber displacement sensors use beam geometry to balance sensitivity and range. The method they propose allows optimization of fiber bundle dimensions based on sensitivity, range, and beam divergence [7]. Similarly, Hasch et al. (2012) argue that radar systems benefit from narrower beams for precision, especially in short-range scenarios like parking assistance [8].
 
-## Theoretical Framework
+---
 
-The concept of bundle spreading is not new and has been widely studied in the fields of optical and radar sensing. These principles are commonly applied in industries such as automotive radar and medical imaging.
+## 4. Terminology
 
-Various commercial sensors exist that offer configurable beam widths. However, they are often generalized and not optimized for specific applications such as autonomous harbor docking. Literature indicates that beam diameter affects critical parameters like detection resolution and noise sensitivity, but comprehensive guidelines for choosing the right diameter in a maritime context are lacking.
+- **Bundle**: Emitted or received light/radiation for sensing.  
+- **Bundle Diameter**: Width of the beam used in detection.  
+- **Beam Divergence**: Degree of beam spread over distance.  
+- **Focal Distance**: Point where the beam converges most.  
+- **Detection Resolution**: Ability to distinguish close objects.
 
-## What is bundle?
+---
 
-The bundle is a wide used term for the light or radiation that is send out and/ or recieved to take a measurement.
-This can be a bundle of light, Infrared or even X-rays.
-Sensors that use this, use to detect oposing object and to measure distances between them and said object.
-They do this by observing interruptions and changes around them
+## 5. Methodology
 
-Definitions:
+A literature study was conducted using IEEE articles and sensor design papers. Two key sources include:
 
-Bundle: The light or radiation emitted or received by a sensor for the purpose of measurement.
+- Zubia et al. (2024), which presents equations to compute beam structure and responsivity in trifurcated optical sensors [7].  
+- Hasch et al. (2012), discussing automotive radar sensor design principles for optimal angular and distance resolution [8].  
 
-Bundle Diameter: The width of the beam used to detect objects.
+Comparative analysis was applied across six criteria: resolution, sharpness, signal strength, range, noise interference, and motion sensitivity.
 
-Beam Divergence: How much the beam spreads over a distance.
+---
 
-Focal Distance: The point where the beam is most focused.
+## 6. Results
 
-Detection Resolution: The sensor's ability to distinguish between multiple opposing objects.
+### 6.1 Bundle Function
 
-## Methodology
+Bundles refer to the light or radiation beams that detect object presence or distance. These may be optical, infrared, or radar-based, depending on the sensor type.
 
-This study was conducted using literature research. Sources include IEEE articles and sensor datasheets. The goal was to identify the effects of different bundle diameters on sensor performance.
+### 6.2 Bundle Diameter Effects
 
-Approach:
+- **Small Bundles (1-5 mm)**: High resolution, prone to noise and misalignment.  
+- **Large Bundles (10-50 mm)**: Lower resolution, better tolerance to environmental noise.
 
-Literature review of academic papers and technical documentation.
+### 6.3 Influencing Parameters
 
-Comparative analysis of beam behavior under varying conditions.
+- **Beam Divergence**: Increases with larger diameters, reducing precision [7].  
+- **Focal Distance**: Determines optimal detection range and focus [7].  
+- **Detection Resolution**: Smaller diameters improve object distinction [8].
 
-Tabulation of the effects of bundle diameter based on six evaluation criteria: resolution, sharpness, signal strength, range, noise interference, and motion sensitivity.
+### 6.4 Performance Comparison
 
-## Results
+| Criterion           | Small Bundle (1-5 mm)     | Large Bundle (10-50 mm)     |
+|--------------------|----------------------------|------------------------------|
+| Resolution         | High                       | Low                          |
+| Sharpness          | High, alignment-sensitive  | Low, misalignment-tolerant   |
+| Signal Strength    | High, localized            | Lower, diffused              |
+| Measuring Range    | Short, precise             | Broad, less precise          |
+| Noise Interference | High                       | Low                          |
+| Motion Sensitivity | High                       | Lower                        |
 
-### What is a bundle and how is it used in sensors?
+---
 
-The bundle refers to the light or radiation that is emitted and/or received by sensors to detect objects or measure distances. This can be visible light, infrared, or other forms of electromagnetic radiation. Sensors analyze interruptions and changes in the bundle to detect objects and determine distances.
+## 7. Conclusion and Recommendation
 
-### What is bundle diameter and how does it affect sensor performance?
+### 7.1 Conclusion
 
-The bundle diameter is the width of the emitted or received beam. It significantly influences the resolution, reliability, and sensitivity of the sensor:
+Beam diameter directly affects sensor reading quality. Narrow bundles enhance precision but at the cost of increased sensitivity to environmental factors.
 
-Small Bundle (1-5 mm): High resolution, more sensitive to disturbances.
+### 7.2 Recommendation
 
-Large Bundle (10-50 mm): Lower resolution, but more robust to noise and misalignment.
+Use narrow bundles in controlled environments requiring high precision, such as indoor testing pools. Broader beams are better suited for unpredictable, noisy outdoor environments.
 
-### What are the effects of beam divergence, focal distance, and detection resolution on measurements?
+---
 
-Beam Divergence: Larger divergence can cause the beam to detect multiple objects as one.
+## 8. References
 
-Focal Distance: The point where the beam is most focused, affecting how clearly it can detect objects at various distances.
+[7] Zubia, G., Zubia, J., Amorebieta, J., Aldabaldetreku, G., & Durana, G. (2024). *A New Method to Design Trifurcated Optical Fiber Displacement Sensors*. IEEE Sensors Journal, 24(2).  
+[8] Hasch, J., Topak, E., Schnabel, R., Zwick, T., Weigel, R., & Waldschmidt, C. (2012). *Millimeter-Wave Technology for Automotive Radar Sensors in the 77 GHz Frequency Band*. IEEE Transactions on Microwave Theory and Techniques, 60(3), 845-860.
 
-Detection Resolution: Determines how well the sensor can distinguish between closely spaced objects. Higher resolution is achieved with smaller bundle diameters.
+---
 
-### How do different bundle diameters perform under various conditions such as noise, motion, and signal strength?
+## 9. Appendices
 
-|Criterion|Small Bundle (1-5 mm)|Large Bundle (10-50 mm)|
-|---|---|---|
-|Resolution|High|Low|
-|Sharpness|High, but alignment-sensitive|Low, tolerant to misalignment|
-|Signal Strength|High, localized|Low, spread|
-|Measuring Range|Narrow, precise|Broad, imprecise|
-|Interference/Noise|High sensitivity|Low sensitivity|
-|Motion Sensitivity|Difficult for fast objects|Easier, less precise|
+### Appendix A: Extracted Equations from Optical Sensor Models
 
-## Conclusion and Recommendation
+From Zubia et al. (2024), the responsivity of a trifurcated optical fiber displacement sensor is expressed as:
 
-### Conclusion
+η(z) = sinh(A₂ / z²tan²θ₀) / sinh(A₁ / z²tan²θ₀) × exp[-q / z²]
 
-This research set out to understand how bundle diameter affects sensor readings. The study concluded that smaller bundle diameters provide better measurement resolution, but are more susceptible to noise and environmental disturbances.
+yaml
+Altijd details weergeven
 
-### Answer to Main Question
+Kopiëren
 
-Bundle spreading significantly influences sensor readings, primarily affecting resolution, signal strength, and susceptibility to environmental noise.
+Where:  
+- `A₁ = ρ₁∆ρ₁` and `A₂ = ρ₂∆ρ₂` represent structural constants,  
+- `θ₀` is the maximum acceptance angle,  
+- `z` is the distance, and  
+- `q` is a proportionality constant related to attenuation.
 
-### Recommendation
+These parameters help determine optimal focal zones and the influence of divergence.
 
-Wherever feasible, opt for sensors with the smallest possible beam diameter for environments where precision is more critical than range—such as in indoor pool-based docking tests. This setup minimizes measurement errors and improves object detection reliability.
+---
 
-## Sources
+### Appendix B: Radar Sensor Specifications
 
-Zubia, G., Zubia, J., Amorebieta, J., Aldabaldetreku, G., & Durana, G. (z.j.). A new method to design trifurcated optical fiber displacement sensors. IEEE.
+Summarized from Hasch et al. (2012):
 
-Hasch, J., Topak, E., Schnabel, R., Zwick, T., Weigel, R., & Waldschmidt, C. (z.j.). Millimeter-wave technology for automotive radar sensors in the 77 GHz frequency band. IEEE.
+| Parameter              | Value                            |
+|------------------------|----------------------------------|
+| Frequency Band         | 76–81 GHz                        |
+| Range Resolution       | ~4 cm                            |
+| Angular Resolution     | ~1–5 degrees                     |
+| Sensor Type            | FMCW (Frequency Modulated CW)   |
+| Max Detection Range    | Up to 250 meters                 |
+| Technology             | SiGe-based RFIC                 |
+| Use Case               | Automotive radar (e.g., ACC)     |
 
-## Glossary
+---
 
-Beam Divergence: The widening of the beam over distance.
+### Appendix C: Evaluation Table for Beam Configurations
 
-Bundle: The emitted or received light or radiation.
-
-Bundle Diameter: The width of the beam.
-
-Detection Resolution: Ability to distinguish close objects.
-
-Focal Distance: The distance at which the beam is most focused.
-
-## Appendices
-
-Appendix A: Raw data from literature sources.
-
-Appendix B: Sensor specification sheets.
-
-Appendix C: Comparative tables of sensor performance.
+| Criterion           | Small Bundle (1–5 mm)     | Large Bundle (10–50 mm)     | Remarks                                      |
+|--------------------|----------------------------|------------------------------|----------------------------------------------|
+| Resolution         | High                       | Low                          | Smaller bundles resolve details better       |
+| Sharpness          | High, alignment-sensitive  | Low, misalignment-tolerant   | Precise but fragile alignment needed         |
+| Signal Strength    | High, localized            | Lower, diffused              | Narrow beam gives strong localized signal    |
+| Measuring Range    | Short, precise             | Broad, less precise          | Wide beams cover more, with less clarity     |
+| Noise Interference | High                       | Low                          | Wide beams average out fluctuations          |
+| Motion Sensitivity | High                       | Lower                        | Narrow beams pick up fine changes            |
