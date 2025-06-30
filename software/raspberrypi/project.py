@@ -30,6 +30,7 @@ lcd.clear()
 sensorClient = a121.Client.open(serial_port="/dev/ttyUSB0")
 sensor_config = a121.SensorConfig()
 
+# mqtt message handler for stopping and starting
 def on_message(sourceClient, userdata, message):
     payload = message.payload.decode()
     if(message.topic == "sensor1/action" and payload == "STOP"):
@@ -43,7 +44,7 @@ def on_message(sourceClient, userdata, message):
     print(f"[MQTT] Topic: {message.topic}, Message: {payload}")
 
 
-
+# sensor setup
 def initSensor():
     sensor_config.profile = a121.Profile.PROFILE_3
     sensor_config.step_length = 2
@@ -128,6 +129,8 @@ def start_sensor_thread():
     thread.daemon = True
     thread.start()
 
+
+#begin
 if __name__ == '__main__':
     start_sensor_thread()
     socketio.run(app, host='0.0.0.0', port=5000)

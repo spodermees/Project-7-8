@@ -92,10 +92,10 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
 
 ---
 
-### 3. Waterdichte behuizing
+### 3. Behuizing
 
 * **Beschrijving**:
-  Alle elektronische componenten dienen te worden geplaatst in een waterdichte behuizing met minimaal IP67-classificatie.
+  Alle elektronische componenten dienen in een behuizing geplaatst te worden waarin zij vast zitten.
 
 * **Categorie**:
   *Kwaliteitseis* 
@@ -104,18 +104,14 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
 
   * **Behuizingsopties**:
 
-    * 3D-geprinte ABS-behuizing met afdichtrubbers
-    * Industriële standaardbehuizing met certificering
-
-  * **Testmethode**:
-
-    * Onderdompeling gedurende 30 minuten op 1 meter diepte
-    * 8 uur stofkamertest
+    * 3D-geprinte behuizing
+    * Houten behuizing
 
   * **Risico’s**:
 
     * Warmteafvoer binnen de behuizing
     * Moeilijke toegang voor onderhoud of herprogrammering
+    * Sensor interventie
 
 ---
 

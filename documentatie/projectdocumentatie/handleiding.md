@@ -89,6 +89,7 @@ Als je venv wilt deaciveren type je `deactivate`.
 Nu je je venv hebt geactiveerd kun je dingen met pip instaleren. We beginnen met de SDK van Acconeer te installeren.
 ```bash
 pip install --upgrade acconeer-exptool[algo]
+pip install smbus2
 ```
 
 Nu we de tool hebben kunnen we de setup aanroepen. Je word gevraagd voor welk platform. Kies Linux.
@@ -138,7 +139,7 @@ sudo usermod -a -G dialout $(whoami)
 sudo reboot
 ```
 
-De testcode staat bij [code](../../software/raspberrypi/testradar.py).
+De testcode staat bij [code](../../software/raspberrypi/project.py).
 
 
 Om het hele systeem te testen is er ook een broker nodig. Je verbind met de broker door het IP address, port, gebruikersnaam en wachtwoord aan te passen naar de gegevens van jouw broker. Voor nu staat de gebruikersnaam en het wachtwoord erin voor de broker die is meegeleverd ([broker](../../software/broker/)).
@@ -201,7 +202,7 @@ def initSensor():
 
 # MQTT setup
 mqttClient = mqtt.Client()
-mqttClient.username_pw_set(username, password)
+mqttClient.username_pw_set(username, password)      # If you dont have a password on your broker you can remove this line
 
 def initMQTT():
     mqttClient.connect(broker, port, 60)
