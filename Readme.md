@@ -1,71 +1,41 @@
-# Autonoom Manoeuvreren In De Haven
+# Autonoom Manouevreren In De Haven
+"Autonoom Manoeuvreren In De Haven" is een project opgestart door *Geert Mosterdijk*, mede-eigenaar van het bedrijf Sens2Sea. Zij zijn gespecialiseerd in maritieme radar- en meetsystemen en hebben de wens om Schepen autonoom te laten aanmeren in de haven. Zij zien dit voor zich door een systeem te maken voor op schepen waarbij er verschillende sensor- en aandrijfmodules zijn, deze werken vervolgens nauw samen om ervoor te zorgen dat de aandrijfmodules het schip autonoom naar de kade kunnen voortbewegen. 
 
-## Inhoudsopgave
+## Probleem
+Het autonoom aanmeren van schepen lijkt iets wat anno 2025 allang mogelijk moet zijn, kijk bijvoorbeeld naar de zelf-rijdende auto's. Echter is dit door de vele verschillende omstandigheden waar je mee te maken hebt op een schip nog niet toegepast, denk hierbij aan weersomstandigheden, stroming of de getijde. 
 
-- Beschrijving
-- Werking
-- Installatie
-- Belangrijke documenten & navigatie
-- Contributers
+Er bestaan reeds sensormodules voor op schepen die het al mogelijk maken de afstand tot de kade te meten. Deze zijn echter lastig/duur te onderhouden, in bezit van grote bedrijven en niet open source. Door hier zelf een variant op te ontwikkelen die al deze problemen tackled, hoopt Geert dat de scheepvaart in de toekomst efficienter en duurzamer zal zijn
 
-## Beschrijving
+## Impact
+Doordat huidige systemen niet open-source zijn, is onderhoud of reparatie alleen uit te voeren door de producent. Dit brengt veel kosten, onnodige wachttijden of ongewenst afval met zich mee. Door het creeeren van een module die juist makkelijk te onderhouden is, zorg je ervoor dat er altijd iemand op een schip aanwezig is die in staat is om dit uit te voeren. Dit kan bedrijven veel geld en tijd schelen.
 
-Project 7/8 staat helemaal in het teken van autonoom manouvreren, of in ieder geval dit project van Project 7/8. Samen met Sens2Sea en Geert mosterdijk, wordt er gekeken naar hoe het aanmeren en wegvaren veiliger en efficiënter kan door behulp van verschillende sensoren en actuatoren. Op dit moment zijn de enige toepassingen hiervan niet open source, en lastig en duur te onderhouden. In dit project wordt er onderzoek gedaan naar verschillende sensoren en het gewenste communicatie protocool: "MQTT" in combinatie met SDI. De scope van dit project is gericht op de sensoren niet actuatoren, dat is voor een vervolg project hier van. Voor een volledige uitleg en demo kunt u de [demovideo](./demovideo.mp4) kijken
+Helaas zijn mensen niet perfect en maken deze soms wel eens foutjes, wanneer je deze factor weg laat bij het aanmeren van schepen, zullen fouten minder snel voorkomen en zal de energie van de motoren op veel efficientere wijze worden ingezet. Dit kan, in zo'n enorme economie als de scheepvaart, al veel CO2 uitstoot besparen en dus een enorme impact hebben op het klimaat.
 
-## Werking
+## Context
+Dit project 7/8 zal zich focussen op het ontwikkelen van de Sensormodules die de taak hebben om de afstand tot de kade te meten en deze door te sturen naar de MQTT broker. Vanaf daar kan deze data verwerkt worden en de motoren aangestuurd worden. In de onderstaande afbeelding zie hoe dit er uit zal zien, waarbij alle groene onderdelen binnen de scope van dit project zijn.
 
-Het prototype bestaat uit meerdere elektronische onderdelen en en een behuizing, hier volgt een beschrijving van wat elk onderdeel precies doet en waarom er voor deze gekozen is. In de [architectuurontwerp](documentatie/diagrammen/Architectuur.png) en de [interne architectuurontwerp](documentatie/diagrammen/InterneArchitectuur.png) is visueel gemaakt hoe de onderdelen verbonden zijn.
-
-#### Microcontroller 
-In dit project was er een controller nodig die het prototype aanstuurt. Zo wordt deze gebruikt voor het ophalen van de afstand van de radarsensor om deze vervolgens door te sturen naar het lcd scherm en de MQTT broker. Er is gekozen voor een Raspberry PI 5 omdat de ondersteuning met de Radar sensor hier het beste mee is en omdat deze het meest robuust is in een omgeving zoals op een schip
-
-#### Radar
-Het onderdeel wat de binnen het prototype de afstand meet is de XM125 evaluation board met daarop de A121 radar sensor. Waarom er voor deze is gekozen is terug te lezen in het [sensor onderzoek](./documentatie/onderzoek/eigenonderzoek/Sensoronderzoek/SensorResearch.pdf)
-
-#### LCD scherm
-Om de data real-time te laten zien aan mensen die met de module aan het werk zijn is er een LCD scherm ingebouwd, deze laat de exacte afstand zien die de radar meet.
-
-#### MQTT
-Om het hele project te laten voldoen aan de standaarden zoals beschreven in de [SDI docs](./documentatie/projectdocumentatie/SDIdocs.md) is er onderzoek gedaan naar [MQTT](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Hieruit is gebleken waarom MQTT een passende oplossing is om te gebruiken binnen dit project. De microcontroller stuurt alle data door naar de MQTT broker zodat hiermee vervolgens kan worden gerekend om het schip autonoom te laten aanmeren
+![Indeling](./documentatie/diagrammen/Architectuur.png)
+*Afbeelding: scope project*
 
 
-## Installatie
+## Opdracht
+Vanuit de opdrachtgever zijn er verschillende requirements opgesteld, deze zijn allemaal uitgebreid beschreven in de [requirement analyse](./documentatie/projectdocumentatie/Requirementanalyse.md). Hieronder staan de belangrijkste punten nog onder elkaar met hoe die zijn aangepakt:
 
-Voor dit project zijn verschillende dingen nodig om de testopstelling na te beleven. Deze vind je in [handleiding](documentatie/projectdocumentatie/handleiding.md).
+* #### Het moet nauwkeurig afstanden tot objecten kunnen meten: 
+    Voor het meten van de afstand tot de kade of andere objecten is er een sensor nodig, daarom is er onderzoek gedaan naar welke het beste zou passen binnen dit project, zie [hier](./documentatie/onderzoek/eigenonderzoek/Sensoronderzoek/SensorResearch.pdf). In dit verslag worden alle requirements uitgebreid meegenomen. Uit de conclusie is gebleken dat de XM125 radar sensor het meest geschikt is voor dit project, echter is de theorie niet altijd zoals de praktijk. Om die reden is er een [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf) gedaan om er zeker van te zijn dat de gekozen sensor zowel nu als in de toekomst op correcte wijze de afstand kan meten
 
-- Code, hier is de code te vinden die wordt gebruikt voor het eindproduct.
+* #### Het moet de bewegingssnelheid kunnen bepalen
 
->Met Terminal: `cd software/raspberrypi/project/py`
->Zonder Terminal [code](./software/raspberrypi/project.py)
+* #### Het ontwerp moet waterdicht en robuust zijn
+* #### Het moet voldoen aan de SDI-standaarden
+* #### Het moet alle data via MQTT versturen
+    Aangezien MQTT een veel gebruikte oplossing is voor communicatie tussen verschillende microcontrollers is er een eis dat dit gebruikt wordt in het project. Om ervoor te zorgen dat alle functionaliteiten tot het uiterste benut worden is er onderzoek naar gedaan, zie [hier](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Uit de resultaten van dit onderzoek blijkt dat dit communcatieprotocol een goede basis is voor als het eindproductn van dit project straks op grotere schaal zal worden toegepast
 
-Om de broker te runnen kun je naar [broker](./software/broker/docker-compose.yml). of `cd software/broker/`. Je kunt de broker aanzetten als je docker hebt met het command `docker-compose up -d --build` en uitzetten met `docker compose down`.
-
-De gebruikersnaam van de broker is `Hidde` en het wachtwoord is `3332ks`.
-
-Als je de handleiding hebt gevolgd kun je als je de venv met `source venv/bin/activate` aan hebt gezet, het python bestand activeren met `python3 bestandsnaam.py`
-
-
-## Belangrijke documentatie & navigatie
-
-Er zijn voor dit project wat belangrijke documenten gemaakt/ onderzoeken uitgevoerd, hieronder staan ze op een lijstje en waar ze te vinden zijn.
-
-- Onderzoeken, in dit project onderzoeken gedaan naar sensoren en communicatie protocollen die zijn allemaal in dit mapje te vinden.
-
->Met terminal: cd documentatie\onderzoek\eigenonderzoek
->Zonder terminal: documentatie -> onderzoek -> eigenonderzoek
-
-- Projectdocumentatie, hier is alle documentatie te vinden die de projectdoelen aantonen zoals risico-inventarisatie en Stakeholder-analyse. In de [handleiding](documentatie/projectdocumentatie/handleiding.md) is er ook nog dieper ingegaan op hoe je het systeem in elkaar zet.
-
->Met Terminal cd documentatie\projectdocumentatie
->Zonder Terminal documentatie- > projectdocumentatie
+* #### Het systeem moet op afstand bedienbaar zijn via een gebruikersinterface
 
 
-## Contributors
+## Onderzoeken
 
-- Hwayda Bashair (1049850)
-- Hidde Gerritsen (1079142)
-- Olaf Goudriaan (1071349)
-- Mees van der Waal (1052159)
+## Conclusie 
 
-
-© https://github.com/spodermees/Project-7-8
+## Advies
