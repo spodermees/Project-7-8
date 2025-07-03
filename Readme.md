@@ -29,13 +29,23 @@ Vanuit de opdrachtgever zijn er verschillende requirements opgesteld, deze zijn 
 * #### Het ontwerp moet waterdicht en robuust zijn
 * #### Het moet voldoen aan de SDI-standaarden
 * #### Het moet alle data via MQTT versturen
-    Aangezien MQTT een veel gebruikte oplossing is voor communicatie tussen verschillende microcontrollers is er een eis dat dit gebruikt wordt in het project. Om ervoor te zorgen dat alle functionaliteiten tot het uiterste benut worden is er onderzoek naar gedaan, zie [hier](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Uit de resultaten van dit onderzoek blijkt dat dit communcatieprotocol een goede basis is voor als het eindproductn van dit project straks op grotere schaal zal worden toegepast
+    Aangezien MQTT een veel gebruikte oplossing is voor communicatie tussen verschillende microcontrollers is er een eis dat dit gebruikt wordt in het project. Om ervoor te zorgen dat alle functionaliteiten tot het uiterste benut worden is er onderzoek naar gedaan, zie [hier](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Uit de resultaten van dit onderzoek blijkt dat dit communcatieprotocol een goede basis is voor als het eindproducten van dit project straks op grotere schaal zal worden toegepast
 
 * #### Het systeem moet op afstand bedienbaar zijn via een gebruikersinterface
 
 
-## Gebruik
-Zie [Handleiding](./documentatie/projectdocumentatie/handleiding.md)
+## Het prototype
+Er is als eindproduct van dit project een prototype ontworpen die de gestelde requirements kan laten zien, deze wordt gedomonstreerd in de [demo video](./demovideo.mp4).
+
+Voor het gebruiken of namaken van het prototype verwijzen we je naar de  [handleiding](./documentatie/projectdocumentatie/handleiding.md), hierin is volledig beschreven hoe het prototype gebouwd is met eventuele visuele 
+beschrijvingen.
+
+Een lijst van overige bestanden die de werking/bouw van het prototype kunnen verhelderen:
+- [Architectuur diagram](./documentatie/diagrammen/Architectuur.png)
+- [Interne Achitectuur diagram](./documentatie/diagrammen/InterneArchitectuur.png)
+- [Flowchart code](./documentatie/diagrammen/Flowchart.pdf)
+- [Elektrisch schema](./documentatie/diagrammen/ElektrischSchema.pdf)
+
 
 ## Conclusie 
 conclusie

@@ -18,6 +18,10 @@ Onderstaand vind u de handleiding die het prototype in zijn volledigheid uitlegt
 - Behuizing (Zie eerste stap)
 
 ## Hardware
+
+Hier vindt je een [Interne Achitectuur diagram](./../diagrammen/InterneArchitectuur.png) die weergeeft hoe de hardware intern met elkaar verbonden is, verder in deze handleiding volgt een stap voor stap uitleg
+
+
 ### Behuizing
 1. Print de behuizing uit met een 3d printer (zie behuizing.obj)
 2. Installeer het lcd scherm, de raspberry pi en de radar sensor zoals op de foto

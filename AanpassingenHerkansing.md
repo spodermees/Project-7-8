@@ -1,8 +1,8 @@
 # Aanpassingen opleverset t.o.v. eerste inlevermoment
-### AF:
+### DONE:
 
 ### TODO:
 - Readme aanpassen
-- GebruikersAcceptatieTest
+- GebruikersAcceptatieTest aanpassen
 - Individuele Verslagen
-- Inleiding handleiding (en evt andere documenten?)
+- Context geven aan verslagen/bestanden.
