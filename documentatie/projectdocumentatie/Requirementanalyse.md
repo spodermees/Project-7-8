@@ -9,7 +9,7 @@
 
 ## Context
 
-Het project *“Manoeuvreren in de Haven”* is een samenwerking tussen de Hogeschool Rotterdam en Sens2Sea met als doel autonome navigatie te ontwikkelen voor schepen, specifiek gericht op het veilig manoeuvreren in havengebieden.
+"Autonoom Manoeuvreren In De Haven" is een project opgestart door Geert Mosterdijk, mede-eigenaar van het bedrijf Sens2Sea. Zij zijn gespecialiseerd in maritieme radar- en meetsystemen en hebben de wens om Schepen autonoom te laten aanmeren in de haven. Zij zien dit voor zich door een systeem te maken voor op schepen waarbij er verschillende sensor- en aandrijfmodules zijn, deze werken vervolgens nauw samen om ervoor te zorgen dat de aandrijfmodules het schip autonoom naar de kade kunnen voortbewegen.
 
 ## Opdrachtomschrijving
 

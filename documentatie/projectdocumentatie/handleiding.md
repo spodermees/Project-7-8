@@ -1,4 +1,11 @@
-# Setup van de Raspberry Pi
+# Handleiding Autonoom Manoeuvreren In De Haven
+
+## Inleiding
+
+"Autonoom Manoeuvreren In De Haven" is een project opgestart door Geert Mosterdijk, mede-eigenaar van het bedrijf Sens2Sea. Zij zijn gespecialiseerd in maritieme radar- en meetsystemen en hebben de wens om Schepen autonoom te laten aanmeren in de haven. Zij zien dit voor zich door een systeem te maken voor op schepen waarbij er verschillende sensor- en aandrijfmodules zijn, deze werken vervolgens nauw samen om ervoor te zorgen dat de aandrijfmodules het schip autonoom naar de kade kunnen voortbewegen.
+
+Als resultaat van dit project is er een prototype ontworpen die de basisprincipes van een sensormodule kan demonstreren.
+Onderstaand vind u de handleiding die het prototype in zijn volledigheid uitlegt, deze kan gebruikt om hem te reconstrueren of om te begrijpen hoe die in elkaar zit.
 
 **NOTE: In deze setup guide verwachten we dat je kennis hebt over hoe je de Raspberry Pi moet flashen en erin moet komen met ssh.**
 

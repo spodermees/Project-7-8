@@ -1,5 +1,10 @@
 # Gebruikersacceptatietest – Autonoom Manoeuvreren in de Haven
 
+## Inleiding
+
+"Autonoom Manoeuvreren In De Haven" is een project opgestart door Geert Mosterdijk, mede-eigenaar van het bedrijf Sens2Sea. Zij zijn gespecialiseerd in maritieme radar- en meetsystemen en hebben de wens om Schepen autonoom te laten aanmeren in de haven. Zij zien dit voor zich door een systeem te maken voor op schepen waarbij er verschillende sensor- en aandrijfmodules zijn, deze werken vervolgens nauw samen om ervoor te zorgen dat de aandrijfmodules het schip autonoom naar de kade kunnen voortbewegen.
+Uit dit project is een prototype ontstaan die ontworpen is aan de hand van verschillende requirements, enkele belangrijke requirements zijn getest met gebruikers om tot het beste eindresultaat te komen.
+
 ## Doel van de test
 
 Het doel van deze gebruikersacceptatietest is om vast te stellen of het prototypesysteem voor autonoom manoeuvreren voldoet aan de functionele eisen van de opdrachtgever. De nadruk ligt op de juistheid van de sensormetingen, betrouwbaarheid van data-overdracht via MQTT en foutafhandeling via logging.
@@ -79,4 +84,4 @@ Op basis van de testresultaten en feedback kan geconcludeerd worden dat het syst
 |---|---|---|
 |1|02-06-2025|Gebruikersacceptatie test opgesteld voor de eindmarkt|
 |2|05-06-2025/ 06-06-2025|Geberuikersacceptatie test ingevult na het horen van de feedback gegeven op de eindmarkt|
-|3|30-06-2025|Gebruikersacceptatie test veranderd op feedback van de opleverset|
+|3|30-06-2025|Gebruikersacceptatie test veranderd na feedback van de opleverset|

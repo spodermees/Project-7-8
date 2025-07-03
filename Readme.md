@@ -34,8 +34,11 @@ Vanuit de opdrachtgever zijn er verschillende requirements opgesteld, deze zijn 
 * #### Het systeem moet op afstand bedienbaar zijn via een gebruikersinterface
 
 
-## Onderzoeken
+## Gebruik
+Zie [Handleiding](./documentatie/projectdocumentatie/handleiding.md)
 
 ## Conclusie 
+conclusie
 
 ## Advies
+advies
