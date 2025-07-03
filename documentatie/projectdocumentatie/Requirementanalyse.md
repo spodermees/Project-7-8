@@ -19,6 +19,7 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
 * Het moet de bewegingssnelheid kunnen bepalen
 * Het ontwerp moet waterdicht en robuust zijn
 * Het moet voldoen aan de SDI-standaarden
+* Het moet alle data via MQTT versturen
 * Het systeem moet op afstand bedienbaar zijn via een gebruikersinterface
 
 ## Analyse

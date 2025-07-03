@@ -12,14 +12,30 @@ Doordat huidige systemen niet open-source zijn, is onderhoud of reparatie alleen
 Helaas zijn mensen niet perfect en maken deze soms wel eens foutjes, wanneer je deze factor weg laat bij het aanmeren van schepen, zullen fouten minder snel voorkomen en zal de energie van de motoren op veel efficientere wijze worden ingezet. Dit kan, in zo'n enorme economie als de scheepvaart, al veel CO2 uitstoot besparen en dus een enorme impact hebben op het klimaat.
 
 ## Context
-Dit project 7/8 zal zich focussen op het ontwikkelen van de Sensormodules die de taak hebben om de afstand tot de kade te meten en deze door te sturen naar de MQTT broker. Vanaf daar kan deze data verwerkt worden en de motoren aangestuurd worden. 
+Dit project 7/8 zal zich focussen op het ontwikkelen van de Sensormodules die de taak hebben om de afstand tot de kade te meten en deze door te sturen naar de MQTT broker. Vanaf daar kan deze data verwerkt worden en de motoren aangestuurd worden. In de onderstaande afbeelding zie hoe dit er uit zal zien, waarbij alle groene onderdelen binnen de scope van dit project zijn.
 
 ![Indeling](./documentatie/diagrammen/Architectuur.png)
+*Afbeelding: scope project*
 
 
 ## Opdracht
-(Moeten we alle eisen opnoemen of alleen de belangrijkste? Ff morgen aan Alex vragen)
+Vanuit de opdrachtgever zijn er verschillende requirements opgesteld, deze zijn allemaal uitgebreid beschreven in de [requirement analyse](./documentatie/projectdocumentatie/Requirementanalyse.md). Hieronder staan de belangrijkste punten nog onder elkaar met hoe die zijn aangepakt:
+
+* #### Het moet nauwkeurig afstanden tot objecten kunnen meten: 
+    Voor het meten van de afstand tot de kade of andere objecten is er een sensor nodig, daarom is er onderzoek gedaan naar welke het beste zou passen binnen dit project, zie [hier](./documentatie/onderzoek/eigenonderzoek/Sensoronderzoek/SensorResearch.pdf). In dit verslag worden alle requirements uitgebreid meegenomen. Uit de conclusie is gebleken dat de XM125 radar sensor het meest geschikt is voor dit project, echter is de theorie niet altijd zoals de praktijk. Om die reden is er een [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf) gedaan om er zeker van te zijn dat de gekozen sensor zowel nu als in de toekomst op correcte wijze de afstand kan meten
+
+* #### Het moet de bewegingssnelheid kunnen bepalen
+
+* #### Het ontwerp moet waterdicht en robuust zijn
+* #### Het moet voldoen aan de SDI-standaarden
+* #### Het moet alle data via MQTT versturen
+    Aangezien MQTT een veel gebruikte oplossing is voor communicatie tussen verschillende microcontrollers is er een eis dat dit gebruikt wordt in het project. Om ervoor te zorgen dat alle functionaliteiten tot het uiterste benut worden is er onderzoek naar gedaan, zie [hier](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Uit de resultaten van dit onderzoek blijkt dat dit communcatieprotocol een goede basis is voor als het eindproductn van dit project straks op grotere schaal zal worden toegepast
+
+* #### Het systeem moet op afstand bedienbaar zijn via een gebruikersinterface
+
+
 ## Onderzoeken
+
 ## Conclusie 
 
 ## Advies
