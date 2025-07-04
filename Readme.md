@@ -23,7 +23,7 @@ Vanuit de opdrachtgever zijn er verschillende requirements opgesteld, deze zijn 
 
 * #### Het moet nauwkeurig afstanden tot objecten kunnen meten: 
     Voor het meten van de afstand tot de kade of andere objecten is er een sensor nodig, daarom is er onderzoek gedaan naar welke het beste zou passen binnen dit project, zie [hier](./documentatie/onderzoek/eigenonderzoek/Sensoronderzoek/SensorResearch.pdf). In dit verslag worden alle requirements uitgebreid meegenomen. Uit de conclusie is gebleken dat de XM125 radar sensor het meest geschikt is voor dit project, echter is de theorie niet altijd zoals de praktijk. Om die reden is er een [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf) gedaan om er zeker van te zijn dat de gekozen sensor zowel nu als in de toekomst op correcte wijze de afstand kan meten
-
+Voor het detecteren van de kade of verschillende objecten met de sensor, moet er worden gekeken naar iets genaamd een [bundel](./documentatie/onderzoek/eigenonderzoek/Bundelonderzoek/BundelonderzoekE.md). In dit literatuur onderzoek wordt er gekeken naar wat de bundel op een sensor is en hoe het 'readings' beïnvloed. Uit het onderzoek is gebleken dat waar het binnen de andere requirements valt we een zo'n klein mogelijke bundel willen hebben en hierop hebben we keuze kunnen maken voor een sensor.
 * #### Het moet de bewegingssnelheid kunnen bepalen
 
 * #### Het ontwerp moet waterdicht en robuust zijn
@@ -45,7 +45,6 @@ Een lijst van overige bestanden die de werking/bouw van het prototype kunnen ver
 - [Interne Achitectuur diagram](./documentatie/diagrammen/InterneArchitectuur.png)
 - [Flowchart code](./documentatie/diagrammen/Flowchart.pdf)
 - [Elektrisch schema](./documentatie/diagrammen/ElektrischSchema.pdf)
-
 
 ## Conclusie 
 conclusie
