@@ -13,6 +13,7 @@ First opportunity
 This research investigates the influence of bundle spreading on sensor readings, specifically within the context of autonomous docking in indoor pools. The study explores how the diameter of a sensor's beam, or "bundle," impacts accuracy and resolution. The findings indicate that a smaller beam diameter improves measurement precision but may introduce higher sensitivity to noise. This study is supported by literature from optical fiber and radar sensing domains.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## 2. Introduction
 
@@ -43,7 +44,8 @@ How does bundle spreading influence the readings of a sensor?
 
 ## 3. Theoretical Framework
 
-Literature confirms that bundle geometry plays a pivotal role in sensing accuracy. Zubia et al. (2024) outline that trifurcated optical fiber displacement sensors use beam geometry to balance sensitivity and range. The method they propose allows optimization of fiber bundle dimensions based on sensitivity, range, and beam divergence [7]. Similarly, Hasch et al. (2012) argue that radar systems benefit from narrower beams for precision, especially in short-range scenarios like parking assistance [8].
+Literature confirms that bundle geometry plays a pivotal role in sensing accuracy. Zubia et al. (2024) outline that trifurcated optical fiber displacement sensors use beam geometry to balance sensitivity and range. The method they propose allows optimization of fiber bundle dimensions based on sensitivity, range, and beam divergence [1]. Similarly, Hasch et al. (2012) argue that radar systems benefit from narrower beams for precision, especially in short-range scenarios like parking assistance [2].
+The key formula used to describe optical beam responsivity is detailed in Appendix A.
 
 ---
 
@@ -56,17 +58,19 @@ Literature confirms that bundle geometry plays a pivotal role in sensing accurac
 - **Detection Resolution**: Ability to distinguish close objects.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## 5. Methodology
 
 A literature study was conducted using IEEE articles and sensor design papers. Two key sources include:
 
-- Zubia et al. (2024), which presents equations to compute beam structure and responsivity in trifurcated optical sensors [7].  
-- Hasch et al. (2012), discussing automotive radar sensor design principles for optimal angular and distance resolution [8].  
+- Zubia et al. (2024), which presents equations to compute beam structure and responsivity in trifurcated optical sensors [1].  
+- Hasch et al. (2012), discussing automotive radar sensor design principles for optimal angular and distance resolution [2].  
 
 Comparative analysis was applied across six criteria: resolution, sharpness, signal strength, range, noise interference, and motion sensitivity.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## 6. Results
 
@@ -81,9 +85,10 @@ Bundles refer to the light or radiation beams that detect object presence or dis
 
 ### 6.3 Influencing Parameters
 
-- **Beam Divergence**: Increases with larger diameters, reducing precision [7].  
-- **Focal Distance**: Determines optimal detection range and focus [7].  
-- **Detection Resolution**: Smaller diameters improve object distinction [8].
+- **Beam Divergence**: Increases with larger diameters, reducing precision [1].  
+- **Focal Distance**: Determines optimal detection range and focus [1].  
+- **Detection Resolution**: Smaller diameters improve object distinction [2].
+The sensor specifications used for comparison are summarized in Appendix B.
 
 ### 6.4 Performance Comparison
 
@@ -103,19 +108,22 @@ Bundles refer to the light or radiation beams that detect object presence or dis
 ### 7.1 Conclusion
 
 Beam diameter directly affects sensor reading quality. Narrow bundles enhance precision but at the cost of increased sensitivity to environmental factors.
+For a full breakdown of the performance comparison, see Appendix C.
 
 ### 7.2 Recommendation
 
 Use narrow bundles in controlled environments requiring high precision, such as indoor testing pools. Broader beams are better suited for unpredictable, noisy outdoor environments.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## 8. References
 
-[7] Zubia, G., Zubia, J., Amorebieta, J., Aldabaldetreku, G., & Durana, G. (2024). *A New Method to Design Trifurcated Optical Fiber Displacement Sensors*. IEEE Sensors Journal, 24(2).  
-[8] Hasch, J., Topak, E., Schnabel, R., Zwick, T., Weigel, R., & Waldschmidt, C. (2012). *Millimeter-Wave Technology for Automotive Radar Sensors in the 77 GHz Frequency Band*. IEEE Transactions on Microwave Theory and Techniques, 60(3), 845-860.
+[1] Zubia, G., Zubia, J., Amorebieta, J., Aldabaldetreku, G., & Durana, G. (2024). *A New Method to Design Trifurcated Optical Fiber Displacement Sensors*. IEEE Sensors Journal, 24(2).  
+[2] Hasch, J., Topak, E., Schnabel, R., Zwick, T., Weigel, R., & Waldschmidt, C. (2012). *Millimeter-Wave Technology for Automotive Radar Sensors in the 77 GHz Frequency Band*. IEEE Transactions on Microwave Theory and Techniques, 60(3), 845-860.
 
 ---
+<div style="page-break-after: always;"></div>
 
 ## 9. Appendices
 
@@ -126,9 +134,6 @@ From Zubia et al. (2024), the responsivity of a trifurcated optical fiber displa
 η(z) = sinh(A₂ / z²tan²θ₀) / sinh(A₁ / z²tan²θ₀) × exp[-q / z²]
 
 yaml
-Altijd details weergeven
-
-Kopiëren
 
 Where:  
 - `A₁ = ρ₁∆ρ₁` and `A₂ = ρ₂∆ρ₂` represent structural constants,  
