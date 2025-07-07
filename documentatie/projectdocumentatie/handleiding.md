@@ -23,7 +23,7 @@ Hier vindt je een [Interne Achitectuur diagram](./../diagrammen/InterneArchitect
 
 
 ### Behuizing
-1. Print de behuizing uit met een 3d printer (zie behuizing.obj)
+1. Print de behuizing uit met een 3d printer (zie [behuizing.obj](../../hardware/Behuizing.obj))
 2. Installeer het lcd scherm, de raspberry pi en de radar sensor zoals op de foto
 
 
@@ -45,9 +45,10 @@ Zie hiervoor ook het [elektrisch schema](../diagrammen/ElektrischSchema.pdf).
 
 ## Raspberry Pi setup
 ### Systeem
-Zorg dat je een Raspbian 64 bit OS hebt en zorg dat je in de commandline zit.
+Voordat je begint moet je ervoor zorgen dat je een raspberian 60 bit besturingssysteem op je raspberry pi hebt staan. Deze kun je verkrijgen op de officiele Raspberry Pi [site](https://www.raspberrypi.com/software/). Zorg hierna dat je verbinding hebt met de raspberry pi met ssh.
 
-Eerst gaan we de Raspberry Pi updaten. Daarnaast installeren we ook meteen python3 en pip.
+
+Eerst moet de Raspberry Pi geupdate worden. Daarnaast installeren we ook meteen python3 en pip.
 ```bash
 sudo apt update && sudo apt install python3 python3-pip
 ```
@@ -58,16 +59,17 @@ sudo dpkg --add-architecture armhf
 sudo apt update
 sudo apt install libc6:armhf libgpiod2:armhf
 ```
+
 Hierna moet je de Raspberry Pi rebooten.
 ```bash
 sudo reboot
 ```
-Dit zorgt ervoor dat alles herstart. Doe je dit niet zullen er dingen niet werken.
+Dit zorgt ervoor dat alles herstart. Doe je dit niet zal de 32bit support niet werken.
 Om de controleren of het instaleren goed is gegaan kun je `uname -m` gebruiken. Dit moet `aarch64` aangeven.
 
 Omdat we een I2C Screen gebruiken moeten we I2C aanzetten. dit doe je door `sudo raspi-config` te typen. 
 1. Hierin navigeer je naar 'Interface Options'
-2. Dan selecteer je I2C
+2. Dan selecteer je 'I2C'
 3. Kies 'Yes' 
 4. Navigeer terug en ga naar 'Finish'
 
@@ -81,6 +83,7 @@ Hierna moet je de I2C-tools installeren.
 sudo apt install i2c-tools
 ```
 
+Nu ben je klaar met de systeem libraries.
 
 ### Virtual Software
 Hierna kun je een venv maken. Dit is een virtual envirement. 
