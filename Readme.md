@@ -46,8 +46,8 @@ Een lijst van overige bestanden die de werking/bouw van het prototype kunnen ver
 - [Flowchart code](./documentatie/diagrammen/Flowchart.pdf)
 - [Elektrisch schema](./documentatie/diagrammen/ElektrischSchema.pdf)
 
-## Conclusie 
-conclusie
+## Conclusie
+We hebben in dit project een prototype gebouwd dat goed afstanden tot objecten kan meten en deze informatie via MQTT kan versturen. Door verschillende onderzoeken te doen, kwamen we uit bij de XM125 radar sensor, die in de praktijk ook goed blijkt te werken, zolang er toegang is tot alle juiste functies. Het systeem voldoet aan de belangrijkste eisen, zoals een stevige behuizing en het gebruik van een open communicatieprotocol. In de testomgeving werkt alles zoals het hoort, maar het zou mooi zijn om de sensor ook echt op het water te testen. Al met al laat dit project zien dat je met vrij simpele middelen een open-source sensormodule kunt maken die het aanmeren van schepen makkelijker en duurzamer maakt.
 
 ## Advies
 De sensoor die we nu gebruiken heeft de mogelijkheden om tot in iedergeval 20m 'accuraat' te meten, zoals is vernoemd in het [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf), maar zo ver wij weten ziet hier een licenstie achter en omdat wij echter 'externe problemen' hadden in het project hebben wij niet de mogelijkheid gekregen om hier in verder te kijken. 
