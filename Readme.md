@@ -28,16 +28,17 @@ Voor het detecteren van de kade of verschillende objecten met de sensor, moet er
 
 * #### Het ontwerp moet waterdicht en robuust zijn
 * #### Het moet voldoen aan de SDI-standaarden
+    SDI (standerdized distributed intelegence) is een methode om meerdere losse systemen met elkaar te laten communiceren. Het idee is om elke module standaard eenheden te laten gebruiken voor het uitwisselen van gegevens. Denk hierbij aan snelheid in m/s, afstand in m, tempratuur in C, tijd in s, etc. Hierdoor kunnen alle modules met elkaar praten zonder extra informatie nodig te hebben omdat alles in een eenheid is. In het project is de eenheid in m (meter) gebruikt.
 * #### Het moet alle data via MQTT versturen
     Aangezien MQTT een veel gebruikte oplossing is voor communicatie tussen verschillende microcontrollers is er een eis dat dit gebruikt wordt in het project. Om ervoor te zorgen dat alle functionaliteiten tot het uiterste benut worden is er onderzoek naar gedaan, zie [hier](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Uit de resultaten van dit onderzoek blijkt dat dit communcatieprotocol een goede basis is voor als het eindproducten van dit project straks op grotere schaal zal worden toegepast
-
 * #### Het systeem moet op afstand bedienbaar zijn via een gebruikersinterface
+    In het project is er gebruik gemaakt van MQTT. Met MQTT is de sensor te stoppen en te starten. Deze commands gaan over de topic: `sensor1/action`. Gebruik `STOP` of `START` om de sensor te stoppen en te starten. De gebruikersinterface van de eigen MQTT server kan gebruikt worden om op de juiste topic deze commands te sturen.
 
 
 ## Het prototype
 Er is als eindproduct van dit project een prototype ontworpen die de gestelde requirements kan laten zien, deze wordt gedomonstreerd in de [demo video](./demovideo.mp4).
 
-Voor het gebruiken of namaken van het prototype verwijzen we je naar de  [handleiding](./documentatie/projectdocumentatie/handleiding.md), hierin is volledig beschreven hoe het prototype gebouwd is met eventuele visuele 
+Voor het gebruiken of namaken van het prototype verwijzen we je naar de [handleiding](./documentatie/projectdocumentatie/handleiding.md), hierin is volledig beschreven hoe het prototype gebouwd is met eventuele visuele 
 beschrijvingen.
 
 Een lijst van overige bestanden die de werking/bouw van het prototype kunnen verhelderen:

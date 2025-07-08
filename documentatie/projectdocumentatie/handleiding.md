@@ -143,20 +143,26 @@ pip install beautifulsoup4
 python3 -m acconeer.exptool.flash flash -d XM125 -f
 ```
 
+### Broker
+De code op de raspberry pi maakt een MQTT verbinding met een server. Indien er geen server is, is er een voorbeeld server meegeleverd. Om deze Docker server te runnen is docker wel vereist. Opzetten gaat als volgt:
+- Start docker desktop.
+- navigeer naar de map `/Project-7-8/software/broker`
+- Start de server met `docker compose up -d --build`
 
+Om de server te stoppen word het volgende command gebruikt: `docker compose down`.
 
 ## Code
 
-Als de code niet werkt doordat jouw user geen machtigingen heeft moet je de machtigingen geven met het volgende command. hierna moet je ook rebooten.
+Als de code niet werkt doordat de user geen machtigingen heeft moeten de machtigingen geven worden met het volgende command. Hierna is rebooten noodzakelijk.
 ```bash
 sudo usermod -a -G dialout $(whoami)
 sudo reboot
 ```
 
+De testcode moet nog geupdate worden met het IP, poort, gebruikersnaam en wachtwoord van de server. Voor de meegeleverde server is de gebruikersnaam en wachtwoord al correct ingevuld. Als er geen wachtwoord is op de server hoef je de gebruikersnaam en wachtwoord niet in te vullen en moet je de lijn met de volgende comment weghalen: `If you dont have a password on your broker you can remove this line`.
+
 De testcode staat bij [code](../../software/raspberrypi/project.py).
 
-
-Om het hele systeem te testen is er ook een broker nodig. Je verbind met de broker door het IP address, port, gebruikersnaam en wachtwoord aan te passen naar de gegevens van jouw broker. Voor nu staat de gebruikersnaam en het wachtwoord erin voor de broker die is meegeleverd ([broker](../../software/broker/)).
 
 ```py
 import numpy as np

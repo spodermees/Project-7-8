@@ -56,7 +56,7 @@ def initSensor():
 
 # MQTT setup
 mqttClient = mqtt.Client()
-mqttClient.username_pw_set(username, password)
+mqttClient.username_pw_set(username, password)  # If you dont have a password on your broker you can remove this line
 
 def initMQTT():
     mqttClient.connect(broker, port, 60)
