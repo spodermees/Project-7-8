@@ -1,4 +1,12 @@
-**Risico-iventarisatie**
+# Risico-Inventarisatie
+## Context
+
+"Autonoom Manoeuvreren In De Haven" is een project opgestart door Geert Mosterdijk, mede-eigenaar van het bedrijf Sens2Sea. Zij zijn gespecialiseerd in maritieme radar- en meetsystemen en hebben de wens om Schepen autonoom te laten aanmeren in de haven. Zij zien dit voor zich door een systeem te maken voor op schepen waarbij er verschillende sensor- en aandrijfmodules zijn, deze werken vervolgens nauw samen om ervoor te zorgen dat de aandrijfmodules het schip autonoom naar de kade kunnen voortbewegen.
+
+## Inleiding
+Bij het ontwerpen en realiseren van een project als deze komen vele verschillende risico's naar voren waar rekening mee gehouden moeten worden. Door deze vooraf te inventariseren en te documenteren wordt het voorkomen van eventuele problemen makkelijker gemaakt. In dit verslag vind je dan ook project gerelateerde risico's en op welke manier er rekening mee is gehouden.
+
+
 <table>
 <colgroup>
 <col style="width: 26%"/>
@@ -142,5 +150,10 @@
 <td>4</td>
 <td>02-06-2025</td>
 <td>Na feedback van de 50% opleverset zijn er risico's weg gehaald en toegevoegd</td>
+</tr>
+<tr>
+<td>5</td>
+<td>08-07-2025</td>
+<td>Bestand context en inleiding gegeven voor betere samenhang met project</td>
 </tr>
 </tbody>

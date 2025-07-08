@@ -84,4 +84,4 @@ Op basis van de testresultaten en feedback kan geconcludeerd worden dat het syst
 |---|---|---|
 |1|02-06-2025|Gebruikersacceptatie test opgesteld voor de eindmarkt|
 |2|05-06-2025/ 06-06-2025|Geberuikersacceptatie test ingevult na het horen van de feedback gegeven op de eindmarkt|
-|3|30-06-2025|Gebruikersacceptatie test veranderd na feedback van de opleverset|
+|3|30-06-2025|Gebruikersacceptatie test aangepast en uitgebreid na feedback van de opleverset|
