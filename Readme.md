@@ -24,7 +24,6 @@ Vanuit de opdrachtgever zijn er verschillende requirements opgesteld, deze zijn 
 * #### Het moet nauwkeurig afstanden tot objecten kunnen meten: 
     Voor het meten van de afstand tot de kade of andere objecten is er een sensor nodig, daarom is er onderzoek gedaan naar welke het beste zou passen binnen dit project, zie [hier](./documentatie/onderzoek/eigenonderzoek/Sensoronderzoek/SensorResearch.pdf). In dit verslag worden alle requirements uitgebreid meegenomen. Uit de conclusie is gebleken dat de XM125 radar sensor het meest geschikt is voor dit project, echter is de theorie niet altijd zoals de praktijk. Om die reden is er een [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf) gedaan om er zeker van te zijn dat de gekozen sensor zowel nu als in de toekomst op correcte wijze de afstand kan meten
 Voor het detecteren van de kade of verschillende objecten met de sensor, moet er worden gekeken naar iets genaamd een [bundel](./documentatie/onderzoek/eigenonderzoek/Bundelonderzoek/BundelonderzoekE.md). In dit literatuur onderzoek wordt er gekeken naar wat de bundel op een sensor is en hoe het 'readings' beïnvloed. Uit het onderzoek is gebleken dat waar het binnen de andere requirements valt we een zo'n klein mogelijke bundel willen hebben en hierop hebben we keuze kunnen maken voor een sensor.
-* #### Het moet de bewegingssnelheid kunnen bepalen
 
 * #### Het ontwerp moet waterdicht en robuust zijn
 * #### Het moet voldoen aan de SDI-standaarden
@@ -32,7 +31,7 @@ Voor het detecteren van de kade of verschillende objecten met de sensor, moet er
 * #### Het moet alle data via MQTT versturen
     Aangezien MQTT een veel gebruikte oplossing is voor communicatie tussen verschillende microcontrollers is er een eis dat dit gebruikt wordt in het project. Om ervoor te zorgen dat alle functionaliteiten tot het uiterste benut worden is er onderzoek naar gedaan, zie [hier](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Uit de resultaten van dit onderzoek blijkt dat dit communcatieprotocol een goede basis is voor als het eindproducten van dit project straks op grotere schaal zal worden toegepast
 * #### Het systeem moet op afstand bedienbaar zijn via een gebruikersinterface
-    In het project is er gebruik gemaakt van MQTT. Met MQTT is de sensor te stoppen en te starten. Deze commands gaan over de topic: `sensor1/action`. Gebruik `STOP` of `START` om de sensor te stoppen en te starten. De gebruikersinterface van de eigen MQTT server kan gebruikt worden om op de juiste topic deze commands te sturen.
+    In het project is er gebruik gemaakt van MQTT. Met MQTT is de sensor te stoppen en te starten. Deze commands gaan over de to `sensor1/action`. Gebruik `STOP` of `START` om de sensor te stoppen en te starten. De gebruikersinterface van de eigen MQTT server kan gebruikt worden om op de juiste topic deze commands te sturen.
 
 
 ## Het prototype
