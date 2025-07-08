@@ -26,6 +26,7 @@ Vanuit de opdrachtgever zijn er verschillende requirements opgesteld, deze zijn 
 Voor het detecteren van de kade of verschillende objecten met de sensor, moet er worden gekeken naar iets genaamd een [bundel](./documentatie/onderzoek/eigenonderzoek/Bundelonderzoek/BundelonderzoekE.md). In dit literatuur onderzoek wordt er gekeken naar wat de bundel op een sensor is en hoe het 'readings' beïnvloed. Uit het onderzoek is gebleken dat waar het binnen de andere requirements valt we een zo'n klein mogelijke bundel willen hebben en hierop hebben we keuze kunnen maken voor een sensor.
 
 * #### Het ontwerp moet waterdicht en robuust zijn
+    Doordat er problemen waren met 3d printen is er een behuizing van hout gemaakt. Door deze keuze is het prototype niet waterdicht. Maar het prototype is wel redelijk robust. Als je het prototype van 5 cm laat vallen blijft het heel.
 * #### Het moet voldoen aan de SDI-standaarden
     SDI (standerdized distributed intelegence) is een methode om meerdere losse systemen met elkaar te laten communiceren. Het idee is om elke module standaard eenheden te laten gebruiken voor het uitwisselen van gegevens. Denk hierbij aan snelheid in m/s, afstand in m, tempratuur in C, tijd in s, etc. Hierdoor kunnen alle modules met elkaar praten zonder extra informatie nodig te hebben omdat alles in een eenheid is. In het project is de eenheid in m (meter) gebruikt.
 * #### Het moet alle data via MQTT versturen
