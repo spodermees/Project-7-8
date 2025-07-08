@@ -12,7 +12,7 @@ Doordat huidige systemen niet open-source zijn, is onderhoud of reparatie alleen
 Helaas zijn mensen niet perfect en maken deze soms wel eens foutjes, wanneer je deze factor weg laat bij het aanmeren van schepen, zullen fouten minder snel voorkomen en zal de energie van de motoren op veel efficientere wijze worden ingezet. Dit kan, in zo'n enorme economie als de scheepvaart, al veel CO2 uitstoot besparen en dus een enorme impact hebben op het klimaat.
 
 ## Context
-Dit project 7/8 zal zich focussen op het ontwikkelen van de Sensormodules die de taak hebben om de afstand tot de kade te meten en deze door te sturen naar de MQTT broker. Vanaf daar kan deze data verwerkt worden en de motoren aangestuurd worden. In de onderstaande afbeelding zie hoe dit er uit zal zien, waarbij alle groene onderdelen binnen de scope van dit project zijn.
+Dit project 7/8 zal zich focussen op het ontwikkelen van de sensormodules die de taak hebben om de afstand tot de kade te meten en deze door te sturen naar de MQTT broker. Vanaf daar kan deze data verwerkt worden en de motoren aangestuurd worden. In de onderstaande afbeelding zie je overzichtelijk hoe dit er uit zal komen te zien, waarbij alle groene onderdelen binnen de scope van dit project zijn. Alle overige onderdelen zullen misschien bij het testen voorbij komen of zijn 
 
 ![Indeling](./documentatie/diagrammen/Architectuur.png)
 *Afbeelding: scope project*
@@ -28,7 +28,7 @@ Voor het detecteren van de kade of verschillende objecten met de sensor, moet er
 * #### Het ontwerp moet waterdicht en robuust zijn
     Doordat er problemen waren met 3d printen is er een behuizing van hout gemaakt. Door deze keuze is het prototype niet waterdicht. Maar het prototype is wel redelijk robust. Als je het prototype van 5 cm laat vallen blijft het heel.
 * #### Het moet voldoen aan de SDI-standaarden
-    SDI (standerdized distributed intelegence) is een methode om meerdere losse systemen met elkaar te laten communiceren. Het idee is om elke module standaard eenheden te laten gebruiken voor het uitwisselen van gegevens. Denk hierbij aan snelheid in m/s, afstand in m, tempratuur in C, tijd in s, etc. Hierdoor kunnen alle modules met elkaar praten zonder extra informatie nodig te hebben omdat alles in een eenheid is. In het project is de eenheid in m (meter) gebruikt.
+    SDI (standardized distributed intelegence) is een methode om meerdere losse systemen met elkaar te laten communiceren. Het idee is om elke module standaard eenheden te laten gebruiken voor het uitwisselen van gegevens. Denk hierbij aan snelheid in m/s, afstand in m, tempratuur in C, tijd in s, etc. Hierdoor kunnen alle modules met elkaar praten zonder extra informatie nodig te hebben omdat alles in een eenheid is. In het project is de eenheid in m (meter) gebruikt. Om dit voor het gehele project en eventuele toekomstige uitbreidingen gelijk te houden zijn de SDI standaard gedocumenteerd in [de SDI docs](./documentatie/projectdocumentatie/SDIdocs.md)
 * #### Het moet alle data via MQTT versturen
     Aangezien MQTT een veel gebruikte oplossing is voor communicatie tussen verschillende microcontrollers is er een eis dat dit gebruikt wordt in het project. Om ervoor te zorgen dat alle functionaliteiten tot het uiterste benut worden is er onderzoek naar gedaan, zie [hier](./documentatie/onderzoek/eigenonderzoek/MQTTonderzoek/MQTT_research.pdf). Uit de resultaten van dit onderzoek blijkt dat dit communcatieprotocol een goede basis is voor als het eindproducten van dit project straks op grotere schaal zal worden toegepast
 * #### Het systeem moet op afstand bedienbaar zijn via een gebruikersinterface
@@ -36,21 +36,21 @@ Voor het detecteren van de kade of verschillende objecten met de sensor, moet er
 
 
 ## Het prototype
-Er is als eindproduct van dit project een prototype ontworpen die de gestelde requirements kan laten zien, deze wordt gedomonstreerd in de [demo video](./demovideo.mp4).
+Er is als eindproduct van dit project een prototype ontworpen die alle functionaliteiten kan en requirements kan aantonen, deze wordt gedomonstreerd in de [demo video](./demovideo.mp4).
 
 Voor het gebruiken of namaken van het prototype verwijzen we je naar de [handleiding](./documentatie/projectdocumentatie/handleiding.md), hierin is volledig beschreven hoe het prototype gebouwd is met eventuele visuele 
 beschrijvingen.
 
-Een lijst van overige bestanden die de werking/bouw van het prototype kunnen verhelderen:
+Een lijst van overige bestanden die de werking/bouw van het prototype verhelderen:
 - [Architectuur diagram](./documentatie/diagrammen/Architectuur.png)
 - [Interne Achitectuur diagram](./documentatie/diagrammen/InterneArchitectuur.png)
 - [Flowchart code](./documentatie/diagrammen/Flowchart.pdf)
 - [Elektrisch schema](./documentatie/diagrammen/ElektrischSchema.pdf)
 
 ## Conclusie
-We hebben in dit project een prototype gebouwd dat goed afstanden tot objecten kan meten en deze informatie via MQTT kan versturen. Door verschillende onderzoeken te doen, kwamen we uit bij de XM125 radar sensor, die in de praktijk ook goed blijkt te werken, zolang er toegang is tot alle juiste functies. Het systeem voldoet aan de belangrijkste eisen, zoals een stevige behuizing en het gebruik van een open communicatieprotocol. In de testomgeving werkt alles zoals het hoort, maar het zou mooi zijn om de sensor ook echt op het water te testen. Al met al laat dit project zien dat je met vrij simpele middelen een open-source sensormodule kunt maken die het aanmeren van schepen makkelijker en duurzamer maakt.
+We hebben in dit project een prototype gebouwd dat goed afstanden tot objecten kan meten en deze informatie via MQTT kan versturen. Door verschillende onderzoeken te doen is gebleken dat de XM125 radar sensor het meest geschikt zou zijn voor dit project. In praktijk was dit tot op zekere hoogte ook het geval, echter was er voor de volledig benutting van de capaciteiten van de sensor een software nodig die niet openbaar beschikbaar was. Het gerealiseerde prototype voldoet aan de belangrijkste eisen, zoals een stevige behuizing en het gebruik van een open communicatieprotocol. In de testomgeving werkt alles zoals het hoort, maar het testen op een echt schip in het water is er helaas niet aan te pas gekomen. Al met al laat dit project zien dat je met vrij simpele middelen een open-source sensormodule kan ontwerpen die de ideeen van Geert Mosterdijk realiseren.
 
 ## Advies
-De sensoor die we nu gebruiken heeft de mogelijkheden om tot in iedergeval 20m 'accuraat' te meten, zoals is vernoemd in het [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf), maar zo ver wij weten ziet hier een licenstie achter en omdat wij echter 'externe problemen' hadden in het project hebben wij niet de mogelijkheid gekregen om hier in verder te kijken. 
+De sensor die we nu gebruiken heeft de mogelijkheden om tot in iedergeval 20m 'accuraat' te meten, zoals is vernoemd in het [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf), maar zo ver wij weten ziet hier een licentie achter en omdat wij echter 'externe problemen' hadden in het project hebben wij niet de mogelijkheid gekregen om hier in verder te kijken. 
 Wij raden dan ook zeker aan om hier in verder te kijken, kijk of je de juiste functies kan 'bemachtigen' zodat de sensor zijn volledige potentieel kan bereiken en op een langere afstand dan 3 meter 'accuraat' kan meten.
 Voor de volgende stap buiten de sensor, zouden wij nog adviseren om het in water te testen want daar hebben wij de mogelijkheid voor gekregen, om te kijken hoe de sensor reageer op het 'op en neer' bewegen van het water/ golven.

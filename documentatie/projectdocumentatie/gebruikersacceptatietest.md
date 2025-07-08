@@ -29,7 +29,7 @@ Realtime resultaten werden weergegeven op een lokaal LCD-scherm/ Groot scherm op
 
 Er is een video-opname gemaakt van de test (Zie demo video).
 
-![Testopstelling](image-2.png)
+![Testopstelling](./../../images/testopstelling.png)
 
 Testopstelling
 
@@ -59,8 +59,8 @@ Testopstelling
 
 ## Visuele Ondersteuning
 
-[1] ![alt text](image-1.png)
-[2]![alt text](image.png)
+[1] ![AfstandDemo](./../../images/AfstandDemo.png)
+[2]![MQTT Demo](./../../images/MQTTdemo.png)
 
 ## 💬 Feedback van opdrachtgever / eindgebruiker
 
