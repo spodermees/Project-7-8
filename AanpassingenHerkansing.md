@@ -2,7 +2,7 @@
 ### DONE:
     - Inleiding en context toegevoegd aan documentatie
     - RobuustheidsAnalyse in MD gezet
-    - Images en onn
+    - Images en onrelevante bestanden naar OneDrive verplaatst
 
 ### TODO:
 - Readme aanpassen
