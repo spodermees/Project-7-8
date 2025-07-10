@@ -12,7 +12,7 @@ Doordat huidige systemen niet open-source zijn, is onderhoud of reparatie alleen
 Helaas zijn mensen niet perfect en maken deze soms wel eens foutjes, wanneer je deze factor weg laat bij het aanmeren van schepen, zullen fouten minder snel voorkomen en zal de energie van de motoren op veel efficientere wijze worden ingezet. Dit kan, in zo'n enorme economie als de scheepvaart, al veel CO2 uitstoot besparen en dus een enorme impact hebben op het klimaat.
 
 ## Context
-Dit project 7/8 zal zich focussen op het ontwikkelen van de sensormodules die de taak hebben om de afstand tot de kade te meten en deze door te sturen naar de MQTT broker. Vanaf daar kan deze data verwerkt worden en de motoren aangestuurd worden. In de onderstaande afbeelding zie je overzichtelijk hoe dit er uit zal komen te zien, waarbij alle groene onderdelen binnen de scope van dit project zijn. Alle overige onderdelen zullen misschien bij het testen voorbij komen of zijn 
+Dit project 7/8 zal zich focussen op het ontwikkelen van de sensormodules die de taak hebben om de afstand tot de kade te meten en deze door te sturen naar de MQTT broker. Vanaf daar kan deze data verwerkt worden en de motoren aangestuurd worden. In de onderstaande afbeelding zie je overzichtelijk hoe dit er uit zal komen te zien, waarbij alle groene onderdelen binnen de scope van dit project zijn. De overige onderdelen zullen niet behandeld worden, deze worden op dit moment gezien als eventuele vervolg op dit huidige project.
 
 ![Indeling](./documentatie/diagrammen/Architectuur.png)
 *Afbeelding: scope project*
@@ -60,7 +60,9 @@ Voor de volgende stap buiten de sensor, zouden wij nog adviseren om het in water
 ## Advies 2
 De huidig gebruikte radar sensor (XM125) heeft de mogelijkheid om tot 20 meter accuraat te meten, zoals is vernoemd in het [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf). echter is dat voor de omvang en context van dit project een stapje te groot, voor het maken van het eerste prototype zou ons advies zijn een sensor te kiezen die eenvoudiger is en makkelijker in gebruik. Dan heb je een prototype die een goede basis legt voor eventuele verdere ontwikkelingen.
 
-Mocht er wel met de XM125 verder gewerkt worden zouden wij het volgende adviseren: Zorg ervoor dat alle benodigde software volledig onder controle is zodat alle toepassingen ervan goed benut kunnen worden. Daarnaast zou deze sensor beter te pas komen in een proffesionelere testopstelling of op een echt schip zodat de testomstandigheden beter de realiteit schetsen.
+Als er in een vervolgproject met de XM125 verder gewerkt zal worden zouden wij het volgende adviseren: Zorg ervoor dat alle benodigde software volledig onder controle is zodat alle toepassingen ervan goed benut kunnen worden en pas de tests hier op aan, de manier waarop de huidige tests zijn opgezet heeft daar geen rekening mee gehouden en zal dan ook niet meer valide zijn. Daarnaast zou deze sensor beter te pas komen in een proffesionelere testopstelling of op een echt schip, gezien de range van zo'n 20 meter. Bij het testen in een andere omgeving kan er direct met meer rekening gehouden worden, denk hierbij aan het schommelen van het schip of lastige weersomstandigheden. Dit zorgt ervoor dat een vervolgproject zich al meer op de details kan gaan focussen en het een bruikbaarder prototype wordt.
+
+
 
 ## Contributors
 
