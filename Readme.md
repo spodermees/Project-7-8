@@ -48,9 +48,25 @@ Een lijst van overige bestanden die de werking/bouw van het prototype verheldere
 - [Elektrisch schema](./documentatie/diagrammen/ElektrischSchema.pdf)
 
 ## Conclusie
-We hebben in dit project een prototype gebouwd dat goed afstanden tot objecten kan meten en deze informatie via MQTT kan versturen. Door verschillende onderzoeken te doen is gebleken dat de XM125 radar sensor het meest geschikt zou zijn voor dit project. In praktijk was dit tot op zekere hoogte ook het geval, echter was er voor de volledig benutting van de capaciteiten van de sensor een software nodig die niet openbaar beschikbaar was. Het gerealiseerde prototype voldoet aan de belangrijkste eisen, zoals een stevige behuizing en het gebruik van een open communicatieprotocol. In de testomgeving werkt alles zoals het hoort, maar het testen op een echt schip in het water is er helaas niet aan te pas gekomen. Al met al laat dit project zien dat je met vrij simpele middelen een open-source sensormodule kan ontwerpen die de ideeen van Geert Mosterdijk realiseren.
+We hebben in dit project een prototype gebouwd dat goed afstanden tot objecten kan meten en deze informatie via MQTT kan versturen. Door verschillende onderzoeken te doen is gebleken dat de XM125 radar sensor het meest geschikt zou zijn voor dit project. In praktijk was dit tot op zekere hoogte ook het geval, echter was er voor de volledig benutting van de capaciteiten van de sensor een software nodig die niet openbaar beschikbaar was. Het gerealiseerde prototype voldoet aan de belangrijkste eisen, zoals een stevige behuizing en het gebruik van een open communicatieprotocol. In de testomgeving werkt alles zoals het hoort, maar het testen op een echt schip in het water is er helaas niet aan te pas gekomen. Al met al laat dit project zien dat je met vrij simpele middelen een open-source sensormodule kan ontwerpen die de idëeen van Geert Mosterdijk realiseren.
 
 ## Advies
 De sensor die we nu gebruiken heeft de mogelijkheden om tot in iedergeval 20m 'accuraat' te meten, zoals is vernoemd in het [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf), maar zo ver wij weten ziet hier een licentie achter en omdat wij echter 'externe problemen' hadden in het project hebben wij niet de mogelijkheid gekregen om hier in verder te kijken. 
 Wij raden dan ook zeker aan om hier in verder te kijken, kijk of je de juiste functies kan 'bemachtigen' zodat de sensor zijn volledige potentieel kan bereiken en op een langere afstand dan 3 meter 'accuraat' kan meten.
 Voor de volgende stap buiten de sensor, zouden wij nog adviseren om het in water te testen want daar hebben wij de mogelijkheid voor gekregen, om te kijken hoe de sensor reageer op het 'op en neer' bewegen van het water/ golven.
+
+
+## Advies 2
+De huidig gebruikte radar sensor (XM125) heeft de mogelijkheid om tot 20 meter accuraat te meten, zoals is vernoemd in het [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf). echter is dat voor de omvang en context van dit project een stapje te groot, voor het maken van het eerste prototype zou ons advies zijn een sensor te kiezen die eenvoudiger is en makkelijker in gebruik. Dan heb je een prototype die een goede basis legt voor eventuele verdere ontwikkelingen.
+
+Mocht er wel met de XM125 verder gewerkt worden zouden wij het volgende adviseren: Zorg ervoor dat alle benodigde software volledig onder controle is zodat alle toepassingen ervan goed benut kunnen worden. Daarnaast zou deze sensor beter te pas komen in een proffesionelere testopstelling of op een echt schip zodat de testomstandigheden beter de realiteit schetsen.
+
+## Contributors
+
+- Hwayda Bashair (1049850)
+- Hidde Gerritsen (1079142)
+- Olaf Goudriaan (1071349)
+- Mees van der Waal (1052159)
+
+
+© https://github.com/spodermees/Project-7-8
