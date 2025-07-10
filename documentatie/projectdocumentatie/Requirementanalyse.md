@@ -1,8 +1,6 @@
 # Requirementanalyse
 
 ## Definities
-<!-- 
-*(Eventueel hier termen als “functie”, “kwaliteit”, “restrictie”, “SDI”, “MQTT” kort verklaren indien gewenst.)* -->
 - SDI (Standardized Distributed Intelligence) is een manier waarop slimme systemen samenwerken door informatie met elkaar te delen
 
 - MQTT (Message Queuing Telemetry Transport) is een eenvoudig protocol waarmee apparaten snel en efficiënt berichten naar elkaar sturen, zelfs als het netwerk langzaam of onbetrouwbaar is.
