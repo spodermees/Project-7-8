@@ -32,10 +32,10 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
 
 ---
 
-### 1. Afstandsmeting (20m ±1 cm)
+### 1. Afstandsmeting (10m ±1 cm)
 
 * **Beschrijving**:
-  Het systeem moet in staat zijn de afstand tot de kade te meten met een nauwkeurigheid van ±1 cm, tot op minimaal 20 meter afstand.
+  Het systeem moet in staat zijn de afstand tot de kade te meten met een nauwkeurigheid van ±1 cm, tot op minimaal 10 meter afstand.
 
 * **Categorie**:
   *Functionele eis* 
@@ -53,7 +53,7 @@ Het doel is het ontwikkelen van een prototype dat voldoet aan de volgende functi
 
   * **Testprotocol**:
 
-    1. Zet het meetsysteem op verschillende vaste afstanden (0–20 m).
+    1. Zet het meetsysteem op verschillende vaste afstanden (0-10 m).
     2. Voer 100 metingen uit per afstand.
     3. Vergelijk de metingen met referentieafstanden en analyseer de standaarddeviatie (≤ 0,5 cm).
 
