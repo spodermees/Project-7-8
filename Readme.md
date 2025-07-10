@@ -7,7 +7,7 @@ Het autonoom aanmeren van schepen lijkt iets wat anno 2025 allang mogelijk moet 
 Er bestaan reeds sensormodules voor op schepen die het al mogelijk maken de afstand tot de kade te meten. Deze zijn echter lastig/duur te onderhouden, in bezit van grote bedrijven en niet open source. Door hier zelf een variant op te ontwikkelen die al deze problemen tackled, hoopt Geert dat de scheepvaart in de toekomst efficienter en duurzamer zal zijn
 
 ## Impact
-Doordat huidige systemen niet open-source zijn, is onderhoud of reparatie alleen uit te voeren door de producent. Dit brengt veel kosten, onnodige wachttijden of ongewenst afval met zich mee. Door het creeeren van een module die juist makkelijk te onderhouden is, zorg je ervoor dat er altijd iemand op een schip aanwezig is die in staat is om dit uit te voeren. Dit kan bedrijven veel geld en tijd schelen.
+Doordat huidige systemen niet open-source zijn, is onderhoud of reparatie alleen uit te voeren door de producent. Dit brengt veel kosten, onnodige wachttijden of ongewenst afval met zich mee. Door het crëeeren van een module die juist makkelijk te onderhouden is, zorg je ervoor dat er altijd iemand op een schip aanwezig is die in staat is om dit uit te voeren. Dit kan bedrijven veel geld en tijd schelen.
 
 Helaas zijn mensen niet perfect en maken deze soms wel eens foutjes, wanneer je deze factor weg laat bij het aanmeren van schepen, zullen fouten minder snel voorkomen en zal de energie van de motoren op veel efficientere wijze worden ingezet. Dit kan, in zo'n enorme economie als de scheepvaart, al veel CO2 uitstoot besparen en dus een enorme impact hebben op het klimaat.
 
@@ -49,7 +49,6 @@ Een lijst van overige bestanden die de werking/bouw van het prototype verheldere
 
 ## Conclusie
 Er is in dit project een prototype gebouwd dat afstanden kan meten, met als eis dat objecten tot 10 meter met een nauwkeurigheid van 1 centimeter gemeten worden en deze informatie via MQTT kan versturen. Door verschillende onderzoeken te doen is gebleken dat de XM125 radar sensor het meest geschikt zou zijn voor dit project. In praktijk was dit tot op zekere hoogte ook het geval, echter heeft de sensor niet verder dan 3 meter gemeten. Voor de volledig benutting van de capaciteiten van de sensor was software nodig die niet openbaar beschikbaar is. Het gerealiseerde prototype voldoet aan de belangrijkste eisen, zoals een stevige behuizing en het gebruik van een open communicatieprotocol. In de testomgeving werkt alles zoals het hoort, maar het testen op een echt schip in het water is er helaas niet aan te pas gekomen. Al met al laat dit project zien dat je met vrij simpele middelen een open-source sensormodule kan ontwerpen die de ideeen van Geert Mosterdijk realiseren.
-
 
 ## Advies 
 De huidig gebruikte radar sensor (XM125) heeft de mogelijkheid om tot 10 meter accuraat te meten, zoals is vernoemd in het [experimenteel onderzoek](./documentatie/onderzoek/eigenonderzoek/Experimenteelonderzoek/experimentalresearch.pdf). echter is dat voor de omvang en context van dit project een stapje te groot, voor het maken van het eerste prototype zou ons advies zijn een sensor te kiezen die eenvoudiger is en makkelijker in gebruik. Dan heb je een prototype die een goede basis legt voor eventuele verdere ontwikkelingen.
